@@ -1,9 +1,10 @@
 import React from "react";
+import porfilePicture from "../assets/img/profile-picture.jpg";
 
 const Home = () => {
   return (
-    <div class="container">
-      <div class="content">
+    <div className="container background-container">
+      <div className="content">
         <header>
           <h2>Hola, soy Nacho</h2>
           <p>
@@ -14,11 +15,11 @@ const Home = () => {
             Toco la guitarra y juego al futbol.
           </p>
         </header>
-        <span class="image">
-          <img src="../assets/img/profile-picture.jpg" alt="" />
+        <span className="profile-image">
+          <img src={porfilePicture} alt="" />
         </span>
       </div>
-      <a href="#" class="goto-next"></a>
+      <a href="#" className="goto-next"></a>
     </div>
   );
 };
