@@ -29,7 +29,6 @@
 .profile-image > img {
   display: block;
   width: 100%;
-  
 }
 
 .content > header {
@@ -58,7 +57,9 @@ header > p {
   line-height: 3.5em;
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
+  z-index: 100;
 }
 
 #nav {
@@ -110,7 +111,21 @@ header > p {
   color: #e44c65;
 }
 
+/* CSS University */
 
+.main-section {
+  background-image: url(../src/assets/img/exterior2.jpg);
+}
+
+.section-container {
+  height: 100%;
+  top: 0;
+  right: 0;
+  width: 28em;
+  border: 0 solid;
+  border-left-width: 0.35em;
+  border-color: #e44c65;
+}
 
 /* CSS general */
 
@@ -121,16 +136,6 @@ header > p {
 
 body {
   font-family: "Roboto", sans-serif;
-}
-
-app-header {
-  position: absolute;
-  background: transparent;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  height: 3.5em;
 }
 
 .content {
@@ -147,7 +152,6 @@ app-header {
 
 .section-container {
   background: rgba(23, 24, 32, 0.95);
-  border: 0 solid;
   opacity: 1;
   position: absolute;
   vertical-align: baseline;
@@ -156,7 +160,6 @@ app-header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* padding: 6em 3em; */
 }
 
 .section-content {
