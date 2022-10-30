@@ -1,5 +1,6 @@
 import Home from "./components/Home";
 import Navigation from "./components/Nav";
+import Programming from "./components/Programming";
 import University from "./components/University";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Navigation />
       <Home />
       <University />
+      <Programming />
     </div>
   );
 }

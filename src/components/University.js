@@ -2,7 +2,7 @@ import React from 'react'
 
 const University = () => {
     return (
-        <section className="main-section shadow-section">
+        <section className="main-section main-section-university shadow-section">
   <div className="section-container">
     <div className="section-content">
       <div className="section-header">
