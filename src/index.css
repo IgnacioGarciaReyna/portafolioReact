@@ -50,6 +50,68 @@ header > p {
   font-weight: 100;
 }
 
+/* CSS nav */
+
+.container-navigation {
+  background-color: #1a1b24;
+  height: 3.5em;
+  line-height: 3.5em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#nav {
+  position: absolute;
+  right: 1em;
+  top: 0;
+}
+
+#button-resume {
+  background-color: #e44c65;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  padding: 0 1.25em;
+  height: 2em;
+  display: inline-block;
+  line-height: 2em;
+}
+
+#nav > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav > ul > li {
+  list-style: none;
+  margin: 0 0.7em;
+}
+
+#button-resume {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+#button-resume:hover {
+  background-color: #e76278;
+}
+
+.header-pag-item {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.header-pag-item:hover {
+  color: #e44c65;
+}
+
+
+
 /* CSS general */
 
 * {
