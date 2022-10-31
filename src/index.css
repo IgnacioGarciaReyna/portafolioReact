@@ -60,12 +60,17 @@ header > p {
   left: 0;
   width: 100%;
   z-index: 100;
+
+  
 }
 
 #nav {
   position: absolute;
-  right: 1em;
+ 
   top: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 #button-resume {

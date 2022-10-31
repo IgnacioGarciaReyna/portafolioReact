@@ -16,7 +16,7 @@ const Navigation = () => {
   return (
     <div className="container-navigation">
       <nav id="nav">
-        <ul>
+        <ul className="nav-links">
           <li>
             <Link
               to="home"
@@ -77,6 +77,8 @@ const Navigation = () => {
               Tecnologias
             </Link>
           </li>
+        </ul>
+        <ul>
           <li>
             <Link
               to="footer"
