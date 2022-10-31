@@ -136,6 +136,19 @@ header > p {
   border-color: #5480f1;
 }
 
+/* CSS University */
+
+.main-section-jobs {
+  background-image: url(../src/assets/img/office-mrm.jpg);
+}
+
+.main-section-jobs > .section-container {
+  right: 0;
+  border: 0 solid;
+  border-left-width: 0.35em;
+  border-color: #e44c65;
+}
+
 /* CSS general */
 
 * {
