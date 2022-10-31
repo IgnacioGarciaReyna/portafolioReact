@@ -1,6 +1,17 @@
 import React from "react";
+import resumeURL from "../assets/Currículum Vitae - Ignacio Garcia Reyna.pdf";
 
 const Navigation = () => {
+  const downloadResume = () => {
+    const downloadInstance = document.createElement("a");
+    downloadInstance.href = resumeURL;
+    downloadInstance.target = "_blank";
+    downloadInstance.download = "Resume";
+    document.getElementById("container")?.appendChild(downloadInstance);
+    downloadInstance.click();
+    document.getElementById("container")?.removeChild(downloadInstance);
+  };
+
   return (
     <div className="container-navigation">
       <nav id="nav">
@@ -38,7 +49,7 @@ const Navigation = () => {
             <a
               id="button-resume"
               className="button primary"
-            //   onClick={downloadResume}
+              onClick={downloadResume}
             >
               Descargar Currículum
             </a>
