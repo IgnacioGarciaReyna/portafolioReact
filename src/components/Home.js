@@ -5,7 +5,7 @@ import University from "./University";
 
 const Home = () => {
   return (
-    <div className="container background-container">
+    <div id="home" className="container background-container">
       <div className="content">
         <header>
           <h2>Hola, soy Nacho</h2>

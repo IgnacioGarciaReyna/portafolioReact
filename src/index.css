@@ -109,6 +109,7 @@ header > p {
 
 .header-pag-item:hover {
   color: #e44c65;
+  cursor: pointer;
 }
 
 /* CSS University */

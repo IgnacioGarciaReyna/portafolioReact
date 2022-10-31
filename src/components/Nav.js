@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import resumeURL from "../assets/Currículum Vitae - Ignacio Garcia Reyna.pdf";
 
 const Navigation = () => {
@@ -17,33 +18,76 @@ const Navigation = () => {
       <nav id="nav">
         <ul>
           <li>
-            <a className="header-pag-item" href="">
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              className="header-pag-item"
+            >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="header-pag-item" href="">
-              Algo
-            </a>
-            {/* <!-- <ul>
-            <li><a href="left-sidebar.html">Left Sidebar</a></li>
-            <li><a href="right-sidebar.html">Right Sidebar</a></li>
-            <li><a href="no-sidebar.html">No Sidebar</a></li>
-            <li>
-              <a href="#">Submenu</a>
-              <ul>
-                <li><a href="#">Option 1</a></li>
-                <li><a href="#">Option 2</a></li>
-                <li><a href="#">Option 3</a></li>
-                <li><a href="#">Option 4</a></li>
-              </ul>
-            </li>
-          </ul> --> */}
+            <Link
+              to="university"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              className="header-pag-item"
+            >
+              Universidad
+            </Link>
           </li>
           <li>
-            <a className="header-pag-item" href="">
-              Algo 1
-            </a>
+            <Link
+              to="programming"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              className="header-pag-item"
+            >
+              Programación
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="jobs"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              className="header-pag-item"
+            >
+              Trabajo
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="technologies"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              className="header-pag-item"
+            >
+              Tecnologias
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="footer"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              className="header-pag-item"
+            >
+              Contacto
+            </Link>
           </li>
           <li>
             <a
