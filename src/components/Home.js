@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-scroll";
 import porfilePicture from "../assets/img/profile-picture.jpg";
+import University from "./University";
 
 const Home = () => {
   return (
@@ -19,7 +21,7 @@ const Home = () => {
           <img src={porfilePicture} alt="" />
         </span>
       </div>
-      <a href="#" className="goto-next"></a>
+      <Link to="university" spy={true} smooth={true} offset={0} duration={500} className="goto-next"></Link>
     </div>
   );
 };

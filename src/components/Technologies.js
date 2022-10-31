@@ -9,7 +9,7 @@ import htmlIcon from "../assets/img/html-circ-icon.png"
 
 
 const Technologies = () => {
-    return (<section id="" className="shadow-section">
+    return (<section id="technologies" className="shadow-section">
     <div className="container-technologies">
       <header className="">
         <h2>Technologies</h2>

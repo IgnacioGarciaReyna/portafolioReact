@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-scroll';
 
 const University = () => {
     return (
-        <section className="main-section main-section-university shadow-section">
+        <section id="university" className="main-section main-section-university shadow-section">
   <div className="section-container">
     <div className="section-content">
       <div className="section-header">
@@ -30,7 +31,7 @@ const University = () => {
       </div>
     </div>
   </div>
-  <a href="#" className="goto-next"></a>
+  <Link to="programming" spy={true} smooth={true} offset={0} duration={500} className="goto-next"></Link>
 </section>
     );
 }
