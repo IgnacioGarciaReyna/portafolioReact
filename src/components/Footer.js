@@ -27,7 +27,7 @@ const Footer = () => {
           </a>
         </li>
         <li className="social-link">
-          <a href="#">
+          <a href="mailto:ignaciogarciareyna@live.com">
             <img src={mailIcon} className="social-icon" />
           </a>
         </li>
