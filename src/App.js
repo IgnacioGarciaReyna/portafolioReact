@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Jobs from "./components/Jobs";
 import Navigation from "./components/Nav";
@@ -14,6 +15,7 @@ function App() {
       <Programming />
       <Jobs />
       <Technologies />
+      <Footer />
     </div>
   );
 }

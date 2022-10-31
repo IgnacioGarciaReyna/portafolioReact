@@ -239,6 +239,33 @@ header > p {
 }
 
 
+/* CSS Footer */
+#footer{
+  background-color: #272833;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18em;
+}
+
+.container-icons{
+  display: flex;
+}
+
+.social-link{
+  height: 2.5em;
+  line-height: 2.5em;
+  text-decoration: none;
+  list-style: none;
+  margin: 0 1.5rem;
+}
+
+.social-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+}
+
 /* CSS general */
 
 * {
