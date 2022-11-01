@@ -12,9 +12,11 @@ const Home = () => {
           <p>
             Soy desarrollador Front End.
             <br />
-            Me gusta el cine y el cafe.
+            Me gusta el cine,
             <br />
-            Toco la guitarra y juego al futbol.
+            me la paso jugando al futbol,
+            <br />
+            y en mis ratos libres toco la guitarra.
           </p>
         </header>
         <span className="profile-image">

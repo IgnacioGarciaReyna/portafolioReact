@@ -22,7 +22,7 @@ const Footer = () => {
           </a>
         </li>
         <li className="social-link">
-          <a href="https://www.hackerrank.com/ignaciogarciare1">
+          <a target="_blank" href="https://www.hackerrank.com/ignaciogarciare1">
             <img src={hackerRank} className="social-icon" />
           </a>
         </li>
