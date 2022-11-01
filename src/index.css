@@ -120,7 +120,7 @@ header > p {
 /* CSS University */
 
 .main-section-university {
-  background-image: url(../src/assets/img/exterior2.jpg);
+  background-image: url(../src/assets/img/unqui-salida.jpeg);
 }
 
 .main-section-university > .section-container {
@@ -132,7 +132,7 @@ header > p {
 
 /* CSS Programming */
 .main-section-programming {
-  background-image: url(../src/assets/img/codellege-captura.jpg);
+  background-image: url(../src/assets/img/computerprogramming2.jpg);
 }
 
 .main-section-programming > .section-container {
