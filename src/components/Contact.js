@@ -1,11 +1,11 @@
 import React from "react";
 
-const Projects = () => {
+const Contact = () => {
   return (
-    <section id="projects" className="shadow-section">
+    <section id="contacto" className="shadow-section">
       <div className="container-projects">
         <header className="">
-          <h2>Proyectos</h2>
+          <h2>Contacto</h2>
           {/* <p>Something</p>  */}
           <div className="separator-line"></div>
         </header>
@@ -24,4 +24,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Contact;
