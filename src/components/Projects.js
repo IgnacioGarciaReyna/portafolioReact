@@ -8,9 +8,9 @@ import gitIcon from "../assets/img/Git-Icon-1788C.png";
 import cssIcon from "../assets/img/css-circ-icon.png";
 import htmlIcon from "../assets/img/html-circ-icon.png";
 
-const Technologies = () => {
+const Projects = () => {
   return (
-    <section id="technologies" className="shadow-section">
+    <section id="projects" className="shadow-section">
       <div className="container-technologies">
         <header className="">
           <h2>Tecnologías</h2>
@@ -20,38 +20,38 @@ const Technologies = () => {
         <div className="grid-technologies">
           <div className="row">
             <section className="technology">
-              <img className="icon" alt="React" src={reactIcon} />
+              <img className="icon" src={reactIcon} />
               <h3>React</h3>
             </section>
             <section className="technology">
-              <img className="icon" alt="Angular" src={angularIcon} />
+              <img className="icon" src={angularIcon} />
               <h3>Angular</h3>
             </section>
             <section className="technology">
-              <img className="icon" alt="TypeScript" src={typescriptIcon} />
+              <img className="icon" src={typescriptIcon} />
               <h3>TypeScript</h3>
             </section>
             <section className="technology">
-              <img className="icon" alt="JavaScript" src={javascriptIcon} />
+              <img className="icon" src={javascriptIcon} />
               <h3>JavaScript</h3>
             </section>
           </div>
 
           <div className="row">
             <section className="technology">
-              <img className="icon" alt="GIT" src={gitIcon} />
+              <img className="icon" src={gitIcon} />
               <h3>GIT</h3>
             </section>
             <section className="technology">
-              <img className="icon" alt="Bootstrap" src={bootstrapIcon} />
+              <img className="icon" src={bootstrapIcon} />
               <h3>Bootstrap</h3>
             </section>
             <section className="technology">
-              <img className="icon" alt="CSS" src={cssIcon} />
+              <img className="icon" src={cssIcon} />
               <h3>CSS</h3>
             </section>
             <section className="technology">
-              <img className="icon" alt="HTML" src={htmlIcon} />
+              <img className="icon" src={htmlIcon} />
               <h3>HTML</h3>
             </section>
           </div>
@@ -66,4 +66,4 @@ const Technologies = () => {
   );
 };
 
-export default Technologies;
+export default Projects;

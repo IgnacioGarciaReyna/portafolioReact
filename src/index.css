@@ -24,6 +24,7 @@
   width: 18rem;
   overflow: hidden;
   border-radius: 100%;
+  border: 3px solid #ffffff;
 }
 
 .profile-image > img {
@@ -115,6 +116,18 @@ header > p {
 .header-pag-item:hover {
   color: #e44c65;
   cursor: pointer;
+}
+
+/* CSS About */
+.main-section-about {
+  background-image: url(../src/assets/img/programadorsentado.jpg);
+}
+
+.main-section-about > .section-container {
+  right: 0;
+  border: 0 solid;
+  border-left-width: 0.35em;
+  border-color: #e44c65;
 }
 
 /* CSS University */

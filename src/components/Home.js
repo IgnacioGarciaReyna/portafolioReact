@@ -8,22 +8,33 @@ const Home = () => {
     <div id="home" className="container background-container">
       <div className="content">
         <header>
-          <h2>Hola, soy Nacho</h2>
           <p>
-            Soy desarrollador Front End.
-            <br />
+            <b>Hola!</b> <br /> Mi nombre es
+          </p>
+          <h2>Ignacio Garcia Reyna</h2>
+          <p>
+            y soy <b>Desarrollador Front End</b>.
+            {/* <br />
+           
             Me gusta el cine,
             <br />
             me la paso jugando al futbol,
             <br />
-            y en mis ratos libres toco la guitarra.
+            y en mis ratos libres toco la guitarra. */}
           </p>
         </header>
         <span className="profile-image">
           <img src={porfilePicture} alt="" />
         </span>
       </div>
-      <Link to="university" spy={true} smooth={true} offset={0} duration={500} className="goto-next"></Link>
+      <Link
+        to="university"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={500}
+        className="goto-next"
+      ></Link>
     </div>
   );
 };
