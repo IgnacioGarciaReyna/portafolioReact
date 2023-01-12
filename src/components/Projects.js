@@ -42,12 +42,10 @@ const Projects = () => {
           {/* <p>Something</p>  */}
           <div className="separator-line"></div>
         </header>
-        <div className="">
-          <div className="row">
-            {projects.map((project) => (
-              <ProjectCard project={project} key={project.id} />
-            ))}
-          </div>
+        <div className="projects-row">
+          {projects.map((project) => (
+            <ProjectCard project={project} key={project.id} />
+          ))}
         </div>
         <footer className="">
           <a href="#" className="transparent-button black-button">
