@@ -1,12 +1,14 @@
 import React from "react";
 
+const projectImages = require.context("../assets/img/", true)
+
 const ProjectCard = ({ project }) => {
   return (
     <div className="card-container">
       <p>{project.title}</p>
       <p>{project.technology}</p>
       <p>{project.description}</p>
-      <img src={project.img} alt={project.title} />
+      <img src={projectImages(project.img)} alt={project.title} className="card-image"/>
       <div className="card-buttons">
         <a
           href={project.url}

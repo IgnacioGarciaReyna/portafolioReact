@@ -1,12 +1,11 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import PokeApiImg from "../assets/img/pokeapi-home.png";
 
 const projects = [
   {
     id: "1",
     title: "PokeApi",
-    img: { PokeApiImg },
+    img: "./pokeapi-home.png",
     description:
       "Aplicación que muestra los distintos pokemones y sus habilidades.",
     technology: "Angular",
@@ -16,7 +15,7 @@ const projects = [
   {
     id: "2",
     title: "Portafolio",
-    img: "src/assets/img/portafolio-home.png",
+    img: "./portafolio-home.png",
     description: "Página personal creada para la busqueda de trabajo.",
     technology: "React",
     url: "https://github.com/IgnacioGarciaReyna",
@@ -25,7 +24,7 @@ const projects = [
   {
     id: "3",
     title: "Portafolio",
-    img: "../assets/img/portafolio-home.png",
+    img: "./portafolio-home.png",
     description: "Página personal creada para la busqueda de trabajo.",
     technology: "React",
     url: "https://github.com/IgnacioGarciaReyna",
