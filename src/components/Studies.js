@@ -38,7 +38,7 @@ const Studies = () => {
             </p>
           </div>
           <div>
-            <a href="#" className="trasparent-button">
+            <a href="#" className="transparent-button white-button">
               Learn More
             </a>
           </div>

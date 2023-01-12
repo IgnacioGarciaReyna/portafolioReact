@@ -57,7 +57,7 @@ const Technologies = () => {
           </div>
         </div>
         <footer className="">
-          <a href="#" className="trasparent-button">
+          <a href="#" className="transparent-button white-button">
             Something
           </a>
         </footer>

@@ -1,5 +1,4 @@
 import React from "react";
-import PokeApiImg from "../assets/img/pokeapi-home.png";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -9,10 +8,18 @@ const ProjectCard = ({ project }) => {
       <p>{project.description}</p>
       <img src={project.img} alt={project.title} />
       <div className="card-buttons">
-        <a href="#" className="trasparent-button">
+        <a
+          href={project.url}
+          target="_blank"
+          className="transparent-button black-button"
+        >
           Sitio
         </a>
-        <a href="#" className="trasparent-button">
+        <a
+          href={project.repository}
+          target="_blank"
+          className="transparent-button black-button"
+        >
           Repo
         </a>
       </div>
