@@ -1,4 +1,31 @@
 import React from "react";
+import ProjectCard from "./ProjectCard";
+import PokeApiImg from "../assets/img/pokeapi-home.png";
+
+const projects = [
+  {
+    id: "1",
+    title: "PokeApi",
+    img: { PokeApiImg },
+    description:
+      "Aplicación que muestra los distintos pokemones y sus habilidades.",
+    technology: "Angular",
+  },
+  {
+    id: "2",
+    title: "Portafolio",
+    img: "src/assets/img/portafolio-home.png",
+    description: "Página personal creada para la busqueda de trabajo.",
+    technology: "React",
+  },
+  {
+    id: "3",
+    title: "Portafolio",
+    img: "../assets/img/portafolio-home.png",
+    description: "Página personal creada para la busqueda de trabajo.",
+    technology: "React",
+  },
+];
 
 const Projects = () => {
   return (
@@ -11,7 +38,9 @@ const Projects = () => {
         </header>
         <div className="">
           <div className="row">
-            <div className="card"></div>
+            {projects.map((project) => (
+              <ProjectCard project={project} key={project.id} />
+            ))}
           </div>
         </div>
         <footer className="">
