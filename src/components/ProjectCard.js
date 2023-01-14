@@ -5,10 +5,10 @@ const projectImages = require.context("../assets/img/", true)
 const ProjectCard = ({ project }) => {
   return (
     <div className="card-container">
-      <p>{project.title}</p>
-      <p>{project.technology}</p>
-      <p>{project.description}</p>
       <img src={projectImages(project.img)} alt={project.title} className="card-image"/>
+      <p className="project-title">{project.title}</p>
+      <p className="project-technology">{project.technology}</p>
+      <p className="project-description">{project.description}</p>
       <div className="card-buttons">
         <a
           href={project.url}
