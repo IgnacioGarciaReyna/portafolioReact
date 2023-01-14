@@ -10,9 +10,12 @@ const Contact = () => {
           <div className="separator-line"></div>
         </header>
         <div className="">
-          <div className="row">
-            <div className="card"></div>
-          </div>
+          <form className="contact-form">
+            <input type="text" />
+            <input type="email" />
+            <input type="text" />
+            <input type="submit" />
+          </form>
         </div>
         <footer className="">
           <a href="#" className="transparent-button white-button">
