@@ -347,6 +347,10 @@ header > p {
   border-radius: 20px;
 }
 
+.social-icon:hover {
+  filter: invert(61%) sepia(59%) saturate(3689%) hue-rotate(313deg) brightness(96%) contrast(88%);
+}
+
 /* CSS general */
 
 * {
@@ -514,11 +518,39 @@ body {
 
 /* CSS Resume */
 .grid-resume {
+  margin-top: 35px;
   display: flex;
   color: #ffffff;
 }
 
+.grid-resume > .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.resume-title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.resume-title {
+  margin: 10px;
+}
+
+.resume-icon {
+  filter: invert(76%) sepia(48%) saturate(541%) hue-rotate(90deg)
+    brightness(103%) contrast(102%);
+}
+
 .resume-item {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
   margin: 10px;
   border: 1px solid #ffffff;
 }

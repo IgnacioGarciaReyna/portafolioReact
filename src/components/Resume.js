@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-scroll";
 import ResumeItem from "./ResumeItem";
 import StudiesIcon from "../assets/img/resume-icon1.png";
 import JobsIcon from "../assets/img/resume-icon2.png";
@@ -77,9 +76,15 @@ const Resume = () => {
         </header>
         <div className="grid-resume">
           <div className="column">
-            <div>
-              <img src={StudiesIcon} alt="Studies" />
-              <h3>Educación</h3>
+            <div className="resume-title-container">
+              <img
+                className="resume-title resume-icon"
+                src={StudiesIcon}
+                alt="Studies"
+              />
+              <h3 className="resume-title">
+                <span className="green-span">Educación</span>
+              </h3>
             </div>
             <div>
               {degrees.map((degree) => (
@@ -88,9 +93,15 @@ const Resume = () => {
             </div>
           </div>
           <div className="column">
-            <div>
-              <img src={JobsIcon} alt="Jobs" />
-              <h3>Experiencia</h3>
+            <div className="resume-title-container">
+              <img
+                className="resume-title resume-icon"
+                src={JobsIcon}
+                alt="Jobs"
+              />
+              <h3 className="resume-title">
+                <span className="green-span">Experiencia</span>
+              </h3>
             </div>
             <div>
               {experiences.map((experience) => (
@@ -105,7 +116,6 @@ const Resume = () => {
           </a>
         </footer>
       </div>
-      
     </section>
   );
 };
