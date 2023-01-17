@@ -10,7 +10,7 @@ const About = () => {
       <div className="section-container">
         <div className="section-content">
           <div className="section-header">
-            <h2>Hola, soy Nacho!</h2>
+            <h2>Hola, soy <span className="green-span">Nacho</span> !</h2>
             <p>Acerca de mi:</p>
           </div>
           <div className="section-text">
