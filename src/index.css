@@ -128,18 +128,6 @@ header > p {
   border-color: #e44c65;
 }
 
-/* CSS Studies */
-.main-section-studies {
-  background-image: url(../src/assets/img/computerprogramming2.jpg);
-}
-
-.main-section-studies > .section-container {
-  left: 0;
-  border: 0 solid;
-  border-right-width: 0.35em;
-  border-color: #5480f1;
-}
-
 /* CSS University */
 
 .main-section-university {
@@ -509,4 +497,16 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
+}
+
+
+/* CSS Resume */
+.grid-resume{
+  display: flex;
+  color: #ffffff;
+}
+
+.resume-item{
+  margin: 10px;
+  border: 1px solid #ffffff;
 }

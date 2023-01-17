@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-scroll";
 import ResumeItem from "./ResumeItem";
+import StudiesIcon from "../assets/img/resume-icon1.png";
+import JobsIcon from "../assets/img/resume-icon2.png";
 
 const degrees = [
   {
@@ -76,6 +78,7 @@ const Resume = () => {
         <div className="grid-resume">
           <div className="column">
             <div>
+              <img src={StudiesIcon} alt="Studies" />
               <h3>Educación</h3>
             </div>
             <div>
@@ -86,6 +89,7 @@ const Resume = () => {
           </div>
           <div className="column">
             <div>
+              <img src={JobsIcon} alt="Jobs" />
               <h3>Experiencia</h3>
             </div>
             <div>
