@@ -13,14 +13,14 @@ const ProjectCard = ({ project }) => {
         <a
           href={project.url}
           target="_blank"
-          className="transparent-button black-button"
+          className="transparent-button white-button"
         >
           Sitio
         </a>
         <a
           href={project.repository}
           target="_blank"
-          className="transparent-button black-button"
+          className="transparent-button white-button"
         >
           Repo
         </a>
