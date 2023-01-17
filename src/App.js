@@ -6,7 +6,7 @@ import Jobs from "./components/Jobs";
 import Navigation from "./components/Nav";
 import Programming from "./components/Programming";
 import Projects from "./components/Projects";
-import Studies from "./components/Studies";
+import Resume from "./components/Resume";
 import Technologies from "./components/Technologies";
 import University from "./components/University";
 
@@ -20,7 +20,7 @@ function App() {
       {/* <University />
       <Programming />
       <Jobs /> */}
-      <Studies />
+      <Resume />
       <Technologies />
       <Contact />
       <Footer />
