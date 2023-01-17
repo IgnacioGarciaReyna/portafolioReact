@@ -174,7 +174,7 @@ header > p {
 /* CSS Projects */
 
 .container-projects {
-  background-color: #f7f7f7;
+  background-color: #dfd2d2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -541,15 +541,23 @@ body {
 }
 
 .resume-item {
+  width: 30rem;
   display: flex;
   flex-direction: column;
-  width: 30rem;
   margin: 10px;
   border: 1px solid rgba(255, 255, 255, 0.07);
 }
 
 .resume-item:hover {
   border: 1px solid #4bffa5;
+}
+
+.item-duration,
+.item-title,
+.green-span,
+.item-subtitle,
+.item-text {
+  margin: 10px 5px;
 }
 
 .item-duration {
