@@ -28,7 +28,7 @@ const Home = () => {
         </span>
       </div>
       <Link
-        to="university"
+        to="about"
         spy={true}
         smooth={true}
         offset={0}

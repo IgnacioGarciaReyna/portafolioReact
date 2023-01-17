@@ -38,7 +38,7 @@ const About = () => {
         </div>
       </div>
       <Link
-        to="programming"
+        to="projects"
         spy={true}
         smooth={true}
         offset={0}
