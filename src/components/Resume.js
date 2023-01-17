@@ -49,7 +49,7 @@ const degrees = [
   },
 ];
 
-const experiencies = [
+const experiences = [
   {
     id: "20",
     title: "QA Analyst",
@@ -93,8 +93,8 @@ const Resume = () => {
               <h3>Experiencia</h3>
             </div>
             <div>
-              {degrees.map((degree) => (
-                <ResumeItem item={degree} key={degree.id} />
+              {experiences.map((experience) => (
+                <ResumeItem item={experience} key={experience.id} />
               ))}
             </div>
           </div>
@@ -105,6 +105,7 @@ const Resume = () => {
           </a>
         </footer>
       </div>
+      
     </section>
   );
 };

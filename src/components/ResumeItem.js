@@ -6,6 +6,7 @@ const ResumeItem = ({ item }) => {
       <h4>{item.title}</h4>
       <p>{item.subtitle}</p>
       <p>{item.duration}</p>
+      {item.text != "" ? <p>{item.text}</p> : null}
     </div>
   );
 };
