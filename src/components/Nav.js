@@ -31,38 +31,38 @@ const Navigation = () => {
           </li>
           <li>
             <Link
-              to="university"
+              to="about"
               spy={true}
               smooth={true}
               offset={0}
               duration={500}
               className="header-pag-item"
             >
-              Universidad
+              About me
             </Link>
           </li>
           <li>
             <Link
-              to="programming"
+              to="projects"
               spy={true}
               smooth={true}
               offset={0}
               duration={500}
               className="header-pag-item"
             >
-              Programación
+              Projects
             </Link>
           </li>
           <li>
             <Link
-              to="jobs"
+              to="resume"
               spy={true}
               smooth={true}
               offset={0}
               duration={500}
               className="header-pag-item"
             >
-              Trabajo
+              Resume
             </Link>
           </li>
           <li>
@@ -81,7 +81,7 @@ const Navigation = () => {
         <ul>
           <li>
             <Link
-              to="footer"
+              to="contact"
               spy={true}
               smooth={true}
               offset={0}

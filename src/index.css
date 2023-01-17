@@ -490,6 +490,10 @@ body {
 }
 
 /* Css Contact */
+#contact{
+  height: 100vh;
+}
+
 .contact-form {
   height: 50vh;
   width: 40vw;

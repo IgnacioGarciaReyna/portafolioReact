@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section id="contacto" className="shadow-section">
+    <section id="contact" className="shadow-section">
       <div className="container-projects">
         <header className="">
           <h2>Contacto</h2>
