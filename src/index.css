@@ -546,10 +546,29 @@ body {
   flex-direction: column;
   margin: 10px;
   border: 1px solid rgba(255, 255, 255, 0.07);
+  transition: 0.5s;
 }
 
 .resume-item:hover {
-  border: 1px solid #4bffa5;
+  transition: 0.5s;
+  /* border: 1px solid #365c4a; */
+  background-color: #4bffa5;
+}
+
+.item-title {
+  color: #4bffa5;
+  transition: 0.5s;
+}
+
+.item-subtitle {
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.item-duration,
+.item-text {
+  color: rgba(255, 255, 255, 0.75);
+  transition: 0.5s;
 }
 
 .item-duration,
@@ -560,10 +579,22 @@ body {
   margin: 10px 5px;
 }
 
-.item-duration {
-  color: rgba(255, 255, 255, 0.75);
+.resume-item:hover .item-title {
+  color: #1a1b24;
+  transition: 0.5s;
 }
 
-.item-text {
-  color: rgba(255, 255, 255, 0.75);
+.resume-item:hover .item-subtitle {
+  color: #1a1b24;
+  transition: 0.5s;
+}
+
+.resume-item:hover .item-duration {
+  color: #1a1b24;
+  transition: 0.5s;
+}
+
+.resume-item:hover .item-text {
+  color: #1a1b24;
+  transition: 0.5s;
 }
