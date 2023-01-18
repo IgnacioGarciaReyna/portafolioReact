@@ -8,7 +8,9 @@ const ResumeItem = ({ item }) => {
         <span className="green-span">{item.title}</span>{" "}
       </h4>
       <p className="item-subtitle">{item.subtitle}</p>
-      {item.text !== "" ? <p className="item-text">{item.text}</p> : null}
+      {item.text !== ""
+        ? item.lines.map((line) => <p className="item-text">{line}</p>)
+        : null}
     </div>
   );
 };
