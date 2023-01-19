@@ -84,7 +84,7 @@ const Resume = () => {
         <header className="">
           <h2>Resume</h2>
           {/* <p>Something</p> */}
-          <div className="separator-line"></div>
+          <div className="separator-line green-separator"></div>
         </header>
         <div className="grid-resume">
           <div className="column">
@@ -122,11 +122,6 @@ const Resume = () => {
             </div>
           </div>
         </div>
-        <footer className="">
-          <a href="#" className="transparent-button white-button">
-            Something
-          </a>
-        </footer>
       </div>
     </section>
   );

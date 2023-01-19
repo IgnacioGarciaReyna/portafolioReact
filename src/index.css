@@ -510,6 +510,10 @@ body {
 }
 
 /* CSS Resume */
+.green-separator{
+  background-color: #4bffa5;
+}
+
 .grid-resume {
   margin-top: 35px;
   display: flex;
@@ -551,7 +555,6 @@ body {
 
 .resume-item:hover {
   transition: 0.5s;
-  /* border: 1px solid #365c4a; */
   background-color: #4bffa5;
 }
 
@@ -578,7 +581,7 @@ body {
 .green-span,
 .item-subtitle,
 .item-text {
-  margin: 10px 5px;
+  margin: 10px;
 }
 
 .resume-item:hover .item-title {
