@@ -4,6 +4,7 @@ import emailjs from "emailjs-com";
 const Contact = () => {
   const enviarMail = (e) => {
     e.preventDefault();
+    console.log(e.target);
     emailjs
       .sendForm(
         "service_6ym9gsa",
@@ -25,11 +26,33 @@ const Contact = () => {
           <div className="separator-line"></div>
         </header>
         <div className="">
-          <form className="contact-form">
-            <input type="text" />
-            <input type="email" />
-            <input type="text" />
-            <input type="submit" />
+          <form className="contact-form" onSubmit={enviarMail}>
+            <div className="">
+              <label>
+                <b>Nombre</b>
+              </label>
+              <input type="text" className="" id="name" name="name" />
+            </div>
+            <div className="">
+              <label>
+                <b>Email</b>
+              </label>
+              <input type="text" className="" id="email" name="email" />
+            </div>
+            <div className="">
+              <label>
+                <b>Mensaje</b>
+              </label>
+              <textarea
+                type="text"
+                className=""
+                id="message"
+                name="message"
+              ></textarea>
+            </div>
+            <button type="submit" className="">
+              Enviar
+            </button>
           </form>
         </div>
         <footer className="">
