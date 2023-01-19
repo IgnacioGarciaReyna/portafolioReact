@@ -567,9 +567,11 @@ body {
 
 .item-duration,
 .item-text {
+  font-size: small;
   color: rgba(255, 255, 255, 0.75);
   transition: 0.5s;
 }
+
 
 .item-duration,
 .item-title,
