@@ -1,6 +1,21 @@
 import React from "react";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
+  const enviarMail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_6ym9gsa",
+        "template_d0f19nu",
+        e.target,
+        "RuAWibwya93KcAZ0m"
+      )
+      .then((res) => {
+        console.log(res);
+      });
+  };
+
   return (
     <section id="contact" className="shadow-section">
       <div className="container-projects">
