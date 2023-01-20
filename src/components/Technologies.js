@@ -15,7 +15,7 @@ const Technologies = () => {
         <header className="">
           <h2>Tecnologías</h2>
           {/* <p>Something</p> */}
-          <div className="separator-line"></div>
+          <div className="separator-line green-separator"></div>
         </header>
         <div className="grid-technologies">
           <div className="row">
