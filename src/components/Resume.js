@@ -48,9 +48,9 @@ const experiences = [
     subtitle: "MRM",
     duration: "2022 - Actualidad",
     lines: [
-      "Creación de páginas en cmd de Adobe y testeo manual de componentes y páginas web.",
-      "Trabajo en equipo multinacional/plurinacional (mitad del equipo en filipinas) en la cuenta de GMC/ Chevrolet organizado con el Sistema de tickets de Jira.",
+      "Creación de páginas en Adobe AEM y testeo manual de componentes y páginas web en ambiente de pruebas.",
       "Creación de Test Cases en Zephir y Bug tickets.",
+      "Trabajo en equipo plurinacional en la cuenta de GMC/ Chevrolet organizado con el Sistema de tickets de Jira.",
     ],
   },
   {
