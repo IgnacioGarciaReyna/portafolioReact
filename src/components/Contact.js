@@ -25,41 +25,42 @@ const Contact = () => {
           {/* <p>Something</p>  */}
           <div className="separator-line"></div>
         </header>
-        <div className="">
+        <div className="form-container">
           <form className="contact-form" onSubmit={enviarMail}>
             <div className="">
-              <label>
-                <b>Nombre</b>
-              </label>
-              <input type="text" className="" id="name" name="name" />
+              <input
+                type="text"
+                className="input-form"
+                id="name"
+                name="name"
+                placeholder="Nombre"
+              />
             </div>
             <div className="">
-              <label>
-                <b>Email</b>
-              </label>
-              <input type="text" className="" id="email" name="email" />
+              <input
+                type="text"
+                className="input-form"
+                id="email"
+                name="email"
+                placeholder="Email"
+              />
             </div>
             <div className="">
-              <label>
-                <b>Mensaje</b>
-              </label>
               <textarea
                 type="text"
-                className=""
+                className="input-form"
                 id="message"
                 name="message"
+                placeholder="Mensaje"
+                cols="50"
+                rows="8"
               ></textarea>
             </div>
-            <button type="submit" className="">
+            <button type="submit" className="transparent-button black-button">
               Enviar
             </button>
           </form>
         </div>
-        <footer className="">
-          <a href="#" className="transparent-button white-button">
-            Something
-          </a>
-        </footer>
       </div>
     </section>
   );

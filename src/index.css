@@ -500,6 +500,10 @@ body {
   height: 100vh;
 }
 
+.form-container{
+  margin-top: 70px;
+}
+
 .contact-form {
   height: 50vh;
   width: 40vw;
@@ -509,8 +513,16 @@ body {
   align-items: flex-start;
 }
 
+.input-form {
+  border-radius: 3px;
+  border: 2px solid rgba(0, 0, 0, 0.05);
+  width: 100%;
+  line-height: 1;
+  font-size: 18px;
+}
+
 /* CSS Resume */
-.green-separator{
+.green-separator {
   background-color: #4bffa5;
 }
 
@@ -575,7 +587,6 @@ body {
   color: rgba(255, 255, 255, 0.75);
   transition: 0.5s;
 }
-
 
 .item-duration,
 .item-title,
