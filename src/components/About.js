@@ -15,19 +15,20 @@ const About = () => {
           </div>
           <div className="section-text">
             <p>
-              Ademas de estudiar Licenciatura en Informática y Desarrollo Front
-              End, me gusta pasar mi tiempo libre mirando cine y tocando la
-              guitarra. Ah! También me gusta el futbol, juego todos los partidos
-              a la semana que puedo. Mi infusión preferida es el café, mi
-              director de cine preferido es David Lynch y mi jugador de futbol
-              que mas me gusta es Leandro Paredes.
+             En 2019 decidí comenzar a estudiar Licenciatura en Informática, 
+             en 2021 cursé el Programa Up de Codellege by Softtek donde aprendí Angular, 
+             Inglés conversacional y me certifiqué como Scrum Developer. 
+             En 2022 realicé un curso de React de Udemy y desde junio trabajo como QA Analyst en MRM 
+             donde estuve cursando Inglés in Company con Lingua University. 
+             
             </p>
           </div>
           <div className="section-text">
             <p>
-              Antes de empezar con Programación, estudiaba Audiovisión porque quería ser productor musical.
-              Después de cursar varias materias, me dí cuenta que no quería vivir de eso, así que me incliné por seguir
-              en otra area que me gustaba: Informática.
+            Ademas de estudiar Licenciatura en Informática y Desarrollo Front
+              End, me gusta pasar mi tiempo libre mirando cine y tocando la
+              guitarra. También me gusta el futbol, juego todos los partidos
+              a la semana que puedo.
             </p>
           </div>
           <div>
