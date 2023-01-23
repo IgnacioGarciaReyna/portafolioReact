@@ -7,6 +7,7 @@ import reactIcon from "../assets/img/react-cuadrado.png";
 import gitIcon from "../assets/img/Git-Icon-1788C.png";
 import cssIcon from "../assets/img/css-circ-icon.png";
 import htmlIcon from "../assets/img/html-circ-icon.png";
+import { Link } from "react-scroll";
 
 const Technologies = () => {
   return (
@@ -56,12 +57,20 @@ const Technologies = () => {
             </section>
           </div>
         </div>
-        <footer className="">
+        {/* <footer className="">
           <a href="#" className="transparent-button white-button">
             Something
           </a>
-        </footer>
+        </footer> */}
       </div>
+      <Link
+        to="contact"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={500}
+        className="goto-next"
+      ></Link>
     </section>
   );
 };

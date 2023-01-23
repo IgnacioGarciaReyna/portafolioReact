@@ -1,5 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
+import { Link } from "react-scroll";
 
 const Contact = () => {
   const enviarMail = (e) => {
@@ -62,6 +63,14 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      <Link
+        to="home"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={500}
+        className="goto-next"
+      ></Link>
     </section>
   );
 };

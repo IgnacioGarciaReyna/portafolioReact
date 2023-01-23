@@ -2,6 +2,7 @@ import React from "react";
 import ResumeItem from "./ResumeItem";
 import StudiesIcon from "../assets/img/resume-icon1.png";
 import JobsIcon from "../assets/img/resume-icon2.png";
+import { Link } from "react-scroll";
 
 const degrees = [
   {
@@ -122,6 +123,14 @@ const Resume = () => {
             </div>
           </div>
         </div>
+        <Link
+          to="technologies"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          className="goto-next"
+        ></Link>
       </div>
     </section>
   );

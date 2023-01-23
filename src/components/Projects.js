@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import ProjectCard from "./ProjectCard";
 
 const projects = [
@@ -46,11 +47,19 @@ const Projects = () => {
             <ProjectCard project={project} key={project.id} />
           ))}
         </div>
-        <footer className="">
+        {/* <footer className="">
           <a href="#" className="transparent-button black-button">
             Something
           </a>
-        </footer>
+        </footer> */}
+        <Link
+        to="resume"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={500}
+        className="goto-next"
+      ></Link>
       </div>
     </section>
   );
