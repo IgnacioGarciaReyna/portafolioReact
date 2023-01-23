@@ -52,7 +52,8 @@ const Projects = () => {
             Something
           </a>
         </footer> */}
-        <Link
+      </div>
+      <Link
         to="resume"
         spy={true}
         smooth={true}
@@ -60,7 +61,6 @@ const Projects = () => {
         duration={500}
         className="goto-next"
       ></Link>
-      </div>
     </section>
   );
 };
