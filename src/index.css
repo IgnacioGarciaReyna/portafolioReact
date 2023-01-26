@@ -387,7 +387,7 @@ header > p {
 .social-icon:hover {
   transition: 0.5s;
   filter: invert(72%) sepia(97%) saturate(301%) hue-rotate(87deg)
-    brightness(210%) contrast(101%);
+    brightness(280%) contrast(101%);
 }
 
 /* CSS general */
@@ -505,7 +505,8 @@ body {
 }
 
 .goto-next:hover {
-  background-color: var(--details-color-2);
+  filter: invert(72%) sepia(97%) saturate(301%) hue-rotate(87deg)
+    brightness(280%) contrast(101%);
 }
 
 .shadow-section {
