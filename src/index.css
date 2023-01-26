@@ -1,3 +1,8 @@
+:root {
+  --details-color-1: #4bffa5;
+  --details-color-2: #4bffa5;
+}
+
 /* CSS Home*/
 
 .background-container {
@@ -24,11 +29,11 @@
   width: 18rem;
   overflow: hidden;
   border-radius: 100%;
-  border: 3px solid #4bffa5;
+  border: 3px solid var(--details-color-1);
 }
 
 .green-span {
-  color: #4bffa5;
+  color: var(--details-color-1);
 }
 
 .profile-image > img {
@@ -46,7 +51,7 @@ h2 {
   line-height: 1.5em;
   letter-spacing: -0.025em;
   font-weight: 400;
-  color: #4bffa5;
+  color: var(--details-color-1);
 }
 
 header > p {
@@ -78,7 +83,7 @@ header > p {
 }
 
 #button-resume {
-  background-color: #e44c65;
+  background-color:  var(--details-color-2);
   border-radius: 4px;
   cursor: pointer;
   text-align: center;
@@ -117,7 +122,7 @@ header > p {
 }
 
 .header-pag-item:hover {
-  color: #e44c65;
+  color:  var(--details-color-2);
   cursor: pointer;
 }
 
@@ -130,7 +135,7 @@ header > p {
   right: 0;
   border: 0 solid;
   border-left-width: 0.35em;
-  border-color: #e44c65;
+  border-color:  var(--details-color-2);
 }
 
 /* CSS University */
@@ -143,7 +148,7 @@ header > p {
   right: 0;
   border: 0 solid;
   border-left-width: 0.35em;
-  border-color: #e44c65;
+  border-color:  var(--details-color-2);
 }
 
 /* CSS Programming */
@@ -168,7 +173,7 @@ header > p {
   right: 0;
   border: 0 solid;
   border-left-width: 0.35em;
-  border-color: #e44c65;
+  border-color:  var(--details-color-2);
 }
 
 /* CSS Projects */
@@ -234,7 +239,7 @@ header > p {
 .project-title {
   margin-top: 4px;
   font-size: 1.25em;
-  color: #4bffa5;
+  color: var(--details-color-1);
 }
 
 .project-description {
@@ -281,7 +286,7 @@ header > p {
 }
 
 .separator-line {
-  background-color: #e44c65;
+  background-color:  var(--details-color-2);
   height: 0.1em;
   width: 25em;
   margin: 3em 0 0 0;
@@ -318,7 +323,7 @@ header > p {
 }
 
 .grid-technologies > .row > section:hover {
-  color: #4bffa5;
+  color: var(--details-color-1);
 }
 
 .technology > .icon {
@@ -474,8 +479,8 @@ body {
 }
 
 .transparent-button:hover {
-  box-shadow: inset 0 0 0 1px #e44c65;
-  color: #e44c65;
+  box-shadow: inset 0 0 0 1px  var(--details-color-2);
+  color:  var(--details-color-2);
 }
 
 .goto-next {
@@ -490,7 +495,7 @@ body {
 }
 
 .goto-next:hover {
-  background-color: #e44c65;
+  background-color:  var(--details-color-2);
 }
 
 .shadow-section {
@@ -527,7 +532,7 @@ body {
 /* CSS Resume */
 
 .green-separator {
-  background-color: #4bffa5;
+  background-color: var(--details-color-1);
 }
 
 .grid-resume {
@@ -572,11 +577,11 @@ body {
 
 .resume-item:hover {
   transition: 0.5s;
-  background-color: #4bffa5;
+  background-color: var(--details-color-1);
 }
 
 .item-title {
-  color: #4bffa5;
+  color: var(--details-color-1);
   transition: 0.5s;
 }
 
