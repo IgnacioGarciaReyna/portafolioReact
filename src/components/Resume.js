@@ -16,12 +16,12 @@ const degrees = [
     id: "2",
     title: "React | La guía completa: Hooks, Context, Redux y MERN",
     subtitle: "Udemy",
-    duration: "2022 - Sin concluir",
+    duration: "2022",
     lines: [],
   },
   {
     id: "3",
-    title: "Inglés in Company | Nivel Intermediate",
+    title: "English in Company | Intermediate Level",
     subtitle: "Lingua Universi",
     duration: "2022",
     lines: [],
@@ -49,9 +49,9 @@ const experiences = [
     subtitle: "MRM",
     duration: "2022 - Actualidad",
     lines: [
-      "Creación de páginas en Adobe AEM y testeo manual de componentes y páginas web en ambiente de pruebas.",
-      "Creación de Test Cases en Zephir y Bug tickets.",
-      "Trabajo en equipo plurinacional en la cuenta de GMC/ Chevrolet organizado con el Sistema de tickets de Jira.",
+      "Creación de páginas en Adobe AEM para testeo manual de componentes en ambiente de pruebas.",
+      "Creación de Bug Tickets y Test Cases en Zephir.",
+      "Trabajo en conjunto con el equipo de MRM Manila (Filipinas) organizado con el sistema de tickets de Jira.",
     ],
   },
   {
