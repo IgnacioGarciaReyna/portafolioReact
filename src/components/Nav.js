@@ -77,8 +77,6 @@ const Navigation = () => {
               Tecnologias
             </Link>
           </li>
-        </ul>
-        <ul>
           <li>
             <Link
               to="contact"
@@ -91,6 +89,8 @@ const Navigation = () => {
               Contacto
             </Link>
           </li>
+        </ul>
+        <ul>
           <li>
             <a
               id="button-resume"

@@ -57,7 +57,7 @@ const Contact = () => {
                 rows="8"
               ></textarea>
             </div>
-            <button type="submit" className="transparent-button black-button">
+            <button type="submit" className="transparent-button white-button">
               Enviar
             </button>
           </form>
