@@ -11,7 +11,7 @@ const Home = () => {
           <p>
             <b>Hola!</b> <br /> Mi nombre es
           </p>
-          <h2>Ignacio Garcia Reyna</h2>
+          <h2 className="typewriter">Ignacio Garcia Reyna</h2>
           <p>
             y soy <b>Desarrollador Front End</b>.
             {/* <br />
