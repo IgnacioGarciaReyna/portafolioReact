@@ -106,6 +106,18 @@ header > p {
   }
 }
 
+/* M */
+@media (max-width: 960px) {
+}
+
+/* S */
+@media (max-width: 600px) {
+}
+
+/* XS */
+@media (max-width: 420px) {
+}
+
 /* CSS nav */
 
 .container-navigation {
@@ -266,6 +278,27 @@ header > p {
   margin-bottom: 30px;
 }
 
+/* M */
+@media (max-width:960px) {
+  .container-projects{
+    height: auto;
+  }
+
+  .projects-row {
+    flex-direction: column;
+  }
+}
+
+/* S */
+@media (max-width:600px) {
+  
+}
+
+/* XS */
+@media (max-width:420px) {
+  
+}
+
 /* CSS Cards */
 
 .card-container {
@@ -274,8 +307,8 @@ header > p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 20%;
-  height: 50vh;
+  width: 290px;
+  height: 345px;
   margin: 60px 30px 30px 30px;
   /* box-shadow: 4px 4px 4px 4px #ffffff; */
   color: white;
@@ -307,6 +340,18 @@ header > p {
 
 .card-image {
   width: 95%;
+}
+
+/* M */
+@media (max-width: 960px) {
+}
+
+/* S */
+@media (max-width: 600px) {
+}
+
+/* XS */
+@media (max-width: 420px) {
 }
 
 /* CSS Technologies */

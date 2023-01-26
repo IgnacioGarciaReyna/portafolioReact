@@ -31,11 +31,11 @@ const About = () => {
               a la semana que puedo.
             </p>
           </div>
-          <div>
+          {/* <div>
             <a href="#" className="transparent-button white-button">
               Learn More
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
       <Link
