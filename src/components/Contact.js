@@ -28,36 +28,33 @@ const Contact = () => {
         </header>
         <div className="form-container">
           <form className="contact-form" onSubmit={enviarMail}>
-            <div className="">
-              <input
-                type="text"
-                className="input-form"
-                id="name"
-                name="name"
-                placeholder="Nombre"
-              />
-            </div>
-            <div className="">
-              <input
-                type="text"
-                className="input-form"
-                id="email"
-                name="email"
-                placeholder="Email"
-              />
-            </div>
-            <div className="">
-              <textarea
-                type="text"
-                className="input-form"
-                id="message"
-                name="message"
-                placeholder="Mensaje"
-                cols="50"
-                rows="8"
-              ></textarea>
-            </div>
-            <button type="submit" className="transparent-button white-button">
+            <input
+              type="text"
+              className="input-form"
+              id="name"
+              name="name"
+              placeholder="Nombre"
+            />
+
+            <input
+              type="text"
+              className="input-form"
+              id="email"
+              name="email"
+              placeholder="Email"
+            />
+
+            <textarea
+              type="text"
+              className="input-form"
+              id="message"
+              name="message"
+              placeholder="Mensaje"
+              cols="3"
+              rows="8"
+            ></textarea>
+
+            <button id="submit-contact-button" type="submit" className="unstyle">
               Enviar
             </button>
           </form>

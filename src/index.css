@@ -522,11 +522,12 @@ body {
 
 .form-container {
   margin-top: 70px;
+  width: 70%;
 }
 
 .contact-form {
   height: 50vh;
-  width: 40vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -534,15 +535,50 @@ body {
 }
 
 .input-form {
+  outline-color: transparent;
+  background-color: transparent;
   border-radius: 3px;
-  border: 2px solid rgba(0, 0, 0, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.05);
   width: 100%;
   line-height: 1;
   font-size: 18px;
+  padding: 15px 20px;
+  margin: 20px 0;
+  transition: 0.5s;
 }
 
-.back-to-home{
-  transform: rotate(180deg)
+.input-form:hover {
+  border: 2px solid var(--details-color-2);
+  transition: 0.5s;
+}
+
+.unstyle {
+  all: unset;
+}
+
+#submit-contact-button {
+  background-color: transparent;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 300;
+  height: 3em;
+  line-height: 3em;
+  padding: 0 2.25em;
+  text-decoration: none;
+  margin: 2.5em 0;
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 30%);
+  color: #ffffff;
+}
+
+#submit-contact-button:hover {
+  box-shadow: inset 0 0 0 1px var(--details-color-2);
+  color: var(--details-color-2);
+}
+
+.back-to-home {
+  transform: rotate(180deg);
 }
 
 /* CSS Resume */
@@ -622,8 +658,6 @@ body {
   color: rgba(255, 255, 255, 0.75);
   transition: 0.5s;
 }
-
-
 
 .item-title,
 .green-span,
