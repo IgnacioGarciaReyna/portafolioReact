@@ -184,6 +184,24 @@ header > p {
   cursor: pointer;
 }
 
+/* M */
+@media (max-width:960px) {
+  /* Se rompe a los 716px */
+  .header-pag-item{
+    font-size: 15px;
+  }
+}
+
+/* S */
+@media (max-width:600px) {
+  
+}
+
+/* XS */
+@media (max-width:420px) {
+  
+}
+
 /* CSS About */
 .main-section-about {
   background-image: url(../src/assets/img/programadorsentado.jpg);
