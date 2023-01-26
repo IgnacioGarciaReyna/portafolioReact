@@ -777,3 +777,24 @@ body {
   color: #1a1b24;
   transition: 0.5s;
 }
+
+/* M */
+@media (max-width:960px) {
+  .grid-resume{
+    flex-direction: column;
+  }
+
+  .grid-resume > .column{
+    margin-top: 40px;
+  }
+}
+
+/* S */
+@media (max-width:600px) {
+  
+}
+
+/* XS */
+@media (max-width:420px) {
+  
+}
