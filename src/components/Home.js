@@ -23,7 +23,7 @@ const Home = () => {
             y en mis ratos libres toco la guitarra. */}
           </p>
         </header>
-        <span className="profile-image">
+        <span className="profile-image floating-img">
           <img src={porfilePicture} alt="" />
         </span>
       </div>
