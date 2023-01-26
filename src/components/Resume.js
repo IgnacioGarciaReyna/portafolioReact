@@ -14,7 +14,7 @@ const degrees = [
   },
   {
     id: "2",
-    title: "React: La guía completa",
+    title: "React | La guía completa: Hooks, Context, Redux y MERN",
     subtitle: "Udemy",
     duration: "2022 - Sin concluir",
     lines: [],

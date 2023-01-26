@@ -517,6 +517,7 @@ body {
 /* Css Contact */
 #contact {
   height: 100vh;
+  background-color: #1a1b24;
 }
 
 .form-container {
@@ -538,6 +539,10 @@ body {
   width: 100%;
   line-height: 1;
   font-size: 18px;
+}
+
+.back-to-home{
+  transform: rotate(180deg)
 }
 
 /* CSS Resume */
@@ -566,6 +571,7 @@ body {
   align-items: center;
   width: 100%;
   height: 53px;
+  margin: 0 0 15px 0;
 }
 
 .resume-title {
@@ -575,6 +581,7 @@ body {
 .resume-icon {
   filter: invert(76%) sepia(48%) saturate(541%) hue-rotate(90deg)
     brightness(103%) contrast(102%);
+  margin: 0 0 0 3em;
 }
 
 .resume-item {
@@ -601,6 +608,14 @@ body {
   transition: 0.5s;
 }
 
+.item-duration {
+  margin: 8px 15px 2px 15px;
+}
+
+.item-text {
+  margin: 4px 15px 4px 15px;
+}
+
 .item-duration,
 .item-text {
   font-size: small;
@@ -608,12 +623,12 @@ body {
   transition: 0.5s;
 }
 
-.item-duration,
+
+
 .item-title,
 .green-span,
-.item-subtitle,
-.item-text {
-  margin: 10px;
+.item-subtitle {
+  margin: 6px 15px 6px 15px;
 }
 
 .resume-item:hover .item-title {

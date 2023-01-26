@@ -20,7 +20,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="shadow-section">
-      <div className="container-projects">
+      <div className="container-technologies">
         <header className="">
           <h2>Contacto</h2>
           {/* <p>Something</p>  */}
@@ -69,7 +69,7 @@ const Contact = () => {
         smooth={true}
         offset={0}
         duration={500}
-        className="goto-next"
+        className="goto-next back-to-home"
       ></Link>
     </section>
   );
