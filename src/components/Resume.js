@@ -51,7 +51,8 @@ const experiences = [
     lines: [
       "Creación de páginas en Adobe AEM para testeo manual de componentes en ambiente de pruebas.",
       "Creación de Bug Tickets y Test Cases en Zephir.",
-      "Trabajo en conjunto con el equipo de MRM Manila (Filipinas) organizado con el sistema de tickets de Jira.",
+      "Manejo de tickets en Jira.",
+      "Trabajo en conjunto con el equipo de MRM Manila (Filipinas).",
     ],
   },
   {
