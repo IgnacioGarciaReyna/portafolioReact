@@ -11,6 +11,7 @@ const degrees = [
     subtitle: "Universidad Nacional de Quilmes",
     duration: "2019 - Actualidad",
     lines: [],
+    reference: {},
   },
   {
     id: "2",
@@ -18,6 +19,10 @@ const degrees = [
     subtitle: "Udemy",
     duration: "2022",
     lines: [],
+    reference: {
+      text: "Ver Curso",
+      link: "https://www.udemy.com/course/react-de-principiante-a-experto-creando-mas-de-10-aplicaciones/",
+    },
   },
   {
     id: "3",
@@ -25,6 +30,10 @@ const degrees = [
     subtitle: "Lingua Universi",
     duration: "2022",
     lines: [],
+    reference: {
+      text: "Ver Lingua Universi",
+      link: "https://www.linguauniversi.com/english",
+    },
   },
   {
     id: "4",
@@ -32,6 +41,8 @@ const degrees = [
     subtitle: "Certiprof ",
     duration: "2021",
     lines: [],
+    reference: {
+    },
   },
   {
     id: "5",
@@ -39,6 +50,7 @@ const degrees = [
     subtitle: "Universidad Nacional de Lanús",
     duration: "2019",
     lines: [],
+    reference: {},
   },
 ];
 
@@ -54,6 +66,10 @@ const experiences = [
       "Manejo de tickets en Jira.",
       "Trabajo en conjunto con el equipo de MRM Manila (Filipinas).",
     ],
+    reference: {
+      text: "Ver MRM",
+      link: "https://www.mrm.com/en/",
+    },
   },
   {
     id: "21",
@@ -65,6 +81,10 @@ const experiences = [
       "JavaScript: Funciones, Objetos, APIs, Eventos, Callbacks y Promesas.",
       "CSS: Flexbox, Grid. Booststrap, Angular Material y Bulma.",
     ],
+    reference: {
+      text: "Ver Codellege",
+      link: "https://codellege.com/",
+    },
   },
   {
     id: "22",
@@ -76,6 +96,7 @@ const experiences = [
       "Asesoramiento de armado y compra de equipos.",
       "Instalación de SO y software.",
     ],
+    reference: {},
   },
 ];
 

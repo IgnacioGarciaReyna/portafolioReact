@@ -9,6 +9,11 @@ const ResumeItem = ({ item }) => {
       {item.text !== ""
         ? item.lines.map((line) => <p className="item-text">· {line}</p>)
         : null}
+      {item.reference.text ? (
+        <a className="item-text" target="_blank" href={item.reference.link}>
+          {item.reference.text}
+        </a>
+      ) : null}
     </div>
   );
 };
