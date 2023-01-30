@@ -77,7 +77,6 @@ const Contact = () => {
               name="name"
               placeholder="Nombre"
             />
-
             <input
               type="text"
               className="input-form"

@@ -604,7 +604,7 @@ body {
 
 /* Css Contact */
 #contact {
-  height: 100vh;
+  height: auto;
   background-color: #1a1b24;
 }
 
