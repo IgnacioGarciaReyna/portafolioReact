@@ -88,7 +88,7 @@ const Contact = () => {
 
             <textarea
               type="text"
-              className="input-form"
+              className="contact-textarea"
               id="message"
               name="message"
               placeholder="Mensaje"
