@@ -21,38 +21,38 @@ const Technologies = () => {
         <div className="grid-technologies">
           <div className="row">
             <section className="technology">
-              <img className="icon" alt="React" src={reactIcon} />
+              <img className="technology-icon" alt="React" src={reactIcon} />
               <h3>React</h3>
             </section>
             <section className="technology">
-              <img className="icon" alt="Angular" src={angularIcon} />
+              <img className="technology-icon" alt="Angular" src={angularIcon} />
               <h3>Angular</h3>
             </section>
             <section className="technology">
-              <img className="icon" alt="TypeScript" src={typescriptIcon} />
+              <img className="technology-icon" alt="TypeScript" src={typescriptIcon} />
               <h3>TypeScript</h3>
             </section>
             <section className="technology">
-              <img className="icon" alt="JavaScript" src={javascriptIcon} />
+              <img className="technology-icon" alt="JavaScript" src={javascriptIcon} />
               <h3>JavaScript</h3>
             </section>
           </div>
 
           <div className="row">
             <section className="technology">
-              <img className="icon" alt="GIT" src={gitIcon} />
+              <img className="technology-icon" alt="GIT" src={gitIcon} />
               <h3>GIT</h3>
             </section>
             <section className="technology">
-              <img className="icon" alt="Bootstrap" src={bootstrapIcon} />
+              <img className="technology-icon" alt="Bootstrap" src={bootstrapIcon} />
               <h3>Bootstrap</h3>
             </section>
             <section className="technology">
-              <img className="icon" alt="CSS" src={cssIcon} />
+              <img className="technology-icon" alt="CSS" src={cssIcon} />
               <h3>CSS</h3>
             </section>
             <section className="technology">
-              <img className="icon" alt="HTML" src={htmlIcon} />
+              <img className="technology-icon" alt="HTML" src={htmlIcon} />
               <h3>HTML</h3>
             </section>
           </div>

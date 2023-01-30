@@ -439,7 +439,7 @@ header > p {
   color: var(--details-color-1);
 }
 
-.technology > .icon {
+.technology > .technology-icon {
   background: #272833;
   border-radius: 100%;
   display: inline-block;
@@ -447,6 +447,13 @@ header > p {
   width: 6em;
   line-height: 5.65em;
   margin: 0 0 2em 0;
+  filter: grayscale(100%);
+  transition: .5s;
+}
+
+.grid-technologies > .row > section:hover .technology-icon {
+  filter: grayscale(0%);
+  transition: .5s;
 }
 
 @media screen and (max-width: 980px) {
