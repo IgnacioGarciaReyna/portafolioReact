@@ -185,21 +185,19 @@ header > p {
 }
 
 /* M */
-@media (max-width:960px) {
+@media (max-width: 960px) {
   /* Se rompe a los 716px */
-  .header-pag-item{
+  .header-pag-item {
     font-size: 15px;
   }
 }
 
 /* S */
-@media (max-width:600px) {
-  
+@media (max-width: 600px) {
 }
 
 /* XS */
-@media (max-width:420px) {
-  
+@media (max-width: 420px) {
 }
 
 /* CSS About */
@@ -297,8 +295,8 @@ header > p {
 }
 
 /* M */
-@media (max-width:960px) {
-  .container-projects{
+@media (max-width: 960px) {
+  .container-projects {
     height: auto;
   }
 
@@ -308,13 +306,11 @@ header > p {
 }
 
 /* S */
-@media (max-width:600px) {
-  
+@media (max-width: 600px) {
 }
 
 /* XS */
-@media (max-width:420px) {
-  
+@media (max-width: 420px) {
 }
 
 /* CSS Cards */
@@ -472,31 +468,6 @@ header > p {
   justify-content: center;
   align-items: center;
   height: 18em;
-}
-
-.container-icons {
-  display: flex;
-}
-
-.social-link {
-  height: 2.5em;
-  line-height: 2.5em;
-  text-decoration: none;
-  list-style: none;
-  margin: 0 1.5rem;
-}
-
-.social-icon {
-  height: 40px;
-  width: 40px;
-  border-radius: 20px;
-  transition: 0.8s;
-}
-
-.social-icon:hover {
-  transition: 0.3s;
-  filter: invert(72%) sepia(97%) saturate(301%) hue-rotate(87deg)
-    brightness(280%) contrast(101%);
 }
 
 /* CSS general */
@@ -692,6 +663,31 @@ body {
   transform: rotate(180deg);
 }
 
+.container-icons {
+  display: flex;
+}
+
+.social-link {
+  height: 2.5em;
+  line-height: 2.5em;
+  text-decoration: none;
+  list-style: none;
+  margin: 0 1.5rem;
+}
+
+.social-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  transition: 0.8s;
+}
+
+.social-icon:hover {
+  transition: 0.3s;
+  filter: invert(72%) sepia(97%) saturate(301%) hue-rotate(87deg)
+    brightness(280%) contrast(101%);
+}
+
 /* CSS Resume */
 
 .green-separator {
@@ -797,22 +793,20 @@ body {
 }
 
 /* M */
-@media (max-width:960px) {
-  .grid-resume{
+@media (max-width: 960px) {
+  .grid-resume {
     flex-direction: column;
   }
 
-  .grid-resume > .column{
+  .grid-resume > .column {
     margin-top: 40px;
   }
 }
 
 /* S */
-@media (max-width:600px) {
-  
+@media (max-width: 600px) {
 }
 
 /* XS */
-@media (max-width:420px) {
-  
+@media (max-width: 420px) {
 }

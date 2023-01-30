@@ -1,10 +1,35 @@
 import React from "react";
 import emailjs from "emailjs-com";
 import { Link } from "react-scroll";
-import linkedinIcon from "../assets/img/linkedin-icon-white.png";
-import githubIcon from "../assets/img/github-icon-white.png";
-import hackerRank from "../assets/img/fake-hackerrank.png";
-import mailIcon from "../assets/img/mail-icon.png";
+
+const socialIconsImages = require.context("../assets/img/", true);
+
+const socials = [
+  {
+    id: "1",
+    name: "Linkedin",
+    href: "https://www.linkedin.com/in/ignaciogarciareyna/",
+    src: "./linkedin-icon-white.png",
+  },
+  {
+    id: "2",
+    name: "GitHub",
+    href: "https://github.com/IgnacioGarciaReyna",
+    src: "./github-icon-white.png",
+  },
+  {
+    id: "3",
+    name: "HackerRank",
+    href: "https://www.hackerrank.com/ignaciogarciare1",
+    src: "./fake-hackerrank.png",
+  },
+  {
+    id: "4",
+    name: "Mail",
+    href: "mailto:ignaciogarciareyna@live.com",
+    src: "./mail-icon.png",
+  },
+];
 
 const Contact = () => {
   const enviarMail = (e) => {
@@ -31,32 +56,17 @@ const Contact = () => {
           <div className="separator-line"></div>
         </header>
         <ul className="container-icons">
-          <li className="social-link">
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/ignaciogarciareyna/"
-            >
-              <img src={linkedinIcon} className="social-icon" />
-            </a>
-          </li>
-          <li className="social-link">
-            <a target="_blank" href="https://github.com/IgnacioGarciaReyna">
-              <img src={githubIcon} className="social-icon" />
-            </a>
-          </li>
-          <li className="social-link">
-            <a
-              target="_blank"
-              href="https://www.hackerrank.com/ignaciogarciare1"
-            >
-              <img src={hackerRank} className="social-icon" />
-            </a>
-          </li>
-          <li className="social-link">
-            <a href="mailto:ignaciogarciareyna@live.com">
-              <img src={mailIcon} className="social-icon" />
-            </a>
-          </li>
+          {socials.map((social) => (
+            <li className="social-link">
+              <a target="_blank" href={social.href}>
+                <img
+                  src={socialIconsImages(social.src)}
+                  alt={social.name}
+                  className="social-icon"
+                />
+              </a>
+            </li>
+          ))}
         </ul>
         <div className="form-container">
           <form className="contact-form" onSubmit={enviarMail}>
