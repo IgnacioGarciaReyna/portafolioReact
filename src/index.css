@@ -467,7 +467,15 @@ header > p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 18em;
+  height: 5em;
+}
+
+.footer-content-container{
+  height: 100%;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
 }
 
 /* CSS general */
