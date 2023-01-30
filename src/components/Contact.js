@@ -1,6 +1,10 @@
 import React from "react";
 import emailjs from "emailjs-com";
 import { Link } from "react-scroll";
+import linkedinIcon from "../assets/img/linkedin-icon-white.png";
+import githubIcon from "../assets/img/github-icon-white.png";
+import hackerRank from "../assets/img/fake-hackerrank.png";
+import mailIcon from "../assets/img/mail-icon.png";
 
 const Contact = () => {
   const enviarMail = (e) => {
@@ -26,6 +30,34 @@ const Contact = () => {
           {/* <p>Something</p>  */}
           <div className="separator-line"></div>
         </header>
+        <ul className="container-icons">
+          <li className="social-link">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/ignaciogarciareyna/"
+            >
+              <img src={linkedinIcon} className="social-icon" />
+            </a>
+          </li>
+          <li className="social-link">
+            <a target="_blank" href="https://github.com/IgnacioGarciaReyna">
+              <img src={githubIcon} className="social-icon" />
+            </a>
+          </li>
+          <li className="social-link">
+            <a
+              target="_blank"
+              href="https://www.hackerrank.com/ignaciogarciare1"
+            >
+              <img src={hackerRank} className="social-icon" />
+            </a>
+          </li>
+          <li className="social-link">
+            <a href="mailto:ignaciogarciareyna@live.com">
+              <img src={mailIcon} className="social-icon" />
+            </a>
+          </li>
+        </ul>
         <div className="form-container">
           <form className="contact-form" onSubmit={enviarMail}>
             <input
@@ -54,7 +86,11 @@ const Contact = () => {
               rows="8"
             ></textarea>
 
-            <button id="submit-contact-button" type="submit" className="unstyle">
+            <button
+              id="submit-contact-button"
+              type="submit"
+              className="unstyle"
+            >
               Enviar
             </button>
           </form>
