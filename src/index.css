@@ -490,11 +490,11 @@ header > p {
   height: 40px;
   width: 40px;
   border-radius: 20px;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 
 .social-icon:hover {
-  transition: 0.5s;
+  transition: 0.3s;
   filter: invert(72%) sepia(97%) saturate(301%) hue-rotate(87deg)
     brightness(280%) contrast(101%);
 }
