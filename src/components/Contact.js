@@ -70,6 +70,7 @@ const Contact = () => {
         </ul>
         <div className="form-container">
           <form className="contact-form" onSubmit={enviarMail}>
+            <p className="sendme-text">Let's keep in touch!</p>
             <input
               type="text"
               className="input-form"
