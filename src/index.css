@@ -609,7 +609,7 @@ body {
 }
 
 .form-container {
-  margin-top: 70px;
+  margin-top: 40px;
   width: 70%;
 }
 
@@ -672,6 +672,7 @@ body {
 }
 
 .container-icons {
+  margin: 40px;
   display: flex;
 }
 
