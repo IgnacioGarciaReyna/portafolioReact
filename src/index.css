@@ -456,14 +456,18 @@ header > p {
 }
 
 @media screen and (max-width: 980px) {
-  .technology {
-    width: 50%;
+  .grid-technologies {
+    grid-template-columns: auto auto auto;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .technology {
-    width: 100%;
+  .grid-technologies {
+    grid-template-columns: auto auto;
+  }
+
+  .technology > .technology-icon {
+    filter: none;
   }
 }
 
