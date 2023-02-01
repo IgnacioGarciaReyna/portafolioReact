@@ -19,43 +19,51 @@ const Technologies = () => {
           <div className="separator-line green-separator"></div>
         </header>
         <div className="grid-technologies">
-          <div className="row">
-            <section className="technology">
-              <img className="technology-icon" alt="React" src={reactIcon} />
-              <h3>React</h3>
-            </section>
-            <section className="technology">
-              <img className="technology-icon" alt="Angular" src={angularIcon} />
-              <h3>Angular</h3>
-            </section>
-            <section className="technology">
-              <img className="technology-icon" alt="TypeScript" src={typescriptIcon} />
-              <h3>TypeScript</h3>
-            </section>
-            <section className="technology">
-              <img className="technology-icon" alt="JavaScript" src={javascriptIcon} />
-              <h3>JavaScript</h3>
-            </section>
-          </div>
+          <section className="technology">
+            <img className="technology-icon" alt="React" src={reactIcon} />
+            <h3>React</h3>
+          </section>
+          <section className="technology">
+            <img className="technology-icon" alt="Angular" src={angularIcon} />
+            <h3>Angular</h3>
+          </section>
+          <section className="technology">
+            <img
+              className="technology-icon"
+              alt="TypeScript"
+              src={typescriptIcon}
+            />
+            <h3>TypeScript</h3>
+          </section>
+          <section className="technology">
+            <img
+              className="technology-icon"
+              alt="JavaScript"
+              src={javascriptIcon}
+            />
+            <h3>JavaScript</h3>
+          </section>
 
-          <div className="row">
-            <section className="technology">
-              <img className="technology-icon" alt="GIT" src={gitIcon} />
-              <h3>GIT</h3>
-            </section>
-            <section className="technology">
-              <img className="technology-icon" alt="Bootstrap" src={bootstrapIcon} />
-              <h3>Bootstrap</h3>
-            </section>
-            <section className="technology">
-              <img className="technology-icon" alt="CSS" src={cssIcon} />
-              <h3>CSS</h3>
-            </section>
-            <section className="technology">
-              <img className="technology-icon" alt="HTML" src={htmlIcon} />
-              <h3>HTML</h3>
-            </section>
-          </div>
+          <section className="technology">
+            <img className="technology-icon" alt="GIT" src={gitIcon} />
+            <h3>GIT</h3>
+          </section>
+          <section className="technology">
+            <img
+              className="technology-icon"
+              alt="Bootstrap"
+              src={bootstrapIcon}
+            />
+            <h3>Bootstrap</h3>
+          </section>
+          <section className="technology">
+            <img className="technology-icon" alt="CSS" src={cssIcon} />
+            <h3>CSS</h3>
+          </section>
+          <section className="technology">
+            <img className="technology-icon" alt="HTML" src={htmlIcon} />
+            <h3>HTML</h3>
+          </section>
         </div>
         {/* <footer className="">
           <a href="#" className="transparent-button white-button">
