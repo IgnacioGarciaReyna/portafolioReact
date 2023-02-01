@@ -851,6 +851,9 @@ body {
 
 /* S */
 @media (max-width: 600px) {
+  .resume-item {
+    width: 70vw;
+  }
 }
 
 /* XS */
