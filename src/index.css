@@ -1,12 +1,13 @@
 :root {
   --details-color-1: #4bffa5;
-  --details-color-2: #4bffa5;
+  --background-color-1: #101010;
 }
+/* #101010 */
 
 /* CSS Home*/
 
 .background-container {
-  background-color: #1a1b24;
+  background-color: var(--background-color-1);
   height: 100vh;
   color: #ffffff;
 }
@@ -121,7 +122,7 @@ header > p {
 /* CSS nav */
 
 .container-navigation {
-  background-color: #1a1b24;
+  background-color: var(--background-color-1);
   height: 3.5em;
   line-height: 3.5em;
   position: fixed;
@@ -141,7 +142,7 @@ header > p {
 }
 
 #button-resume {
-  background-color: var(--details-color-2);
+  background-color: var(--details-color-1);
   border-radius: 4px;
   cursor: pointer;
   text-align: center;
@@ -164,7 +165,7 @@ header > p {
 }
 
 #button-resume {
-  color: #1a1b24;
+  color: var(--background-color-1);
   text-decoration: none;
   font-weight: 300;
 }
@@ -180,7 +181,7 @@ header > p {
 }
 
 .header-pag-item:hover {
-  color: var(--details-color-2);
+  color: var(--details-color-1);
   cursor: pointer;
 }
 
@@ -209,7 +210,7 @@ header > p {
   right: 0;
   border: 0 solid;
   border-left-width: 0.35em;
-  border-color: var(--details-color-2);
+  border-color: var(--details-color-1);
 }
 
 /* CSS University */
@@ -222,7 +223,7 @@ header > p {
   right: 0;
   border: 0 solid;
   border-left-width: 0.35em;
-  border-color: var(--details-color-2);
+  border-color: var(--details-color-1);
 }
 
 /* CSS Programming */
@@ -247,13 +248,13 @@ header > p {
   right: 0;
   border: 0 solid;
   border-left-width: 0.35em;
-  border-color: var(--details-color-2);
+  border-color: var(--details-color-1);
 }
 
 /* CSS Projects */
 
 .container-projects {
-  background-color: #313341;
+  background-color: var(--background-color-1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -320,7 +321,7 @@ header > p {
 /* CSS Cards */
 
 .card-container {
-  background: #1a1b24;
+  background: var(--background-color-1);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -331,11 +332,13 @@ header > p {
   color: white;
   border-radius: 5%;
   transition: all 0.5s ease-in-out;
+  border: 1px solid #282828;
 }
 
 .card-container:hover {
   transition: all 0.5s ease-in-out;
   margin: 30px 30px 60px 30px;
+  border: 1px solid #797979;
 }
 
 .project-title {
@@ -372,7 +375,7 @@ header > p {
 /* CSS Technologies */
 
 .container-technologies {
-  background-color: #1a1b24;
+  background-color: var(--background-color-1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -400,7 +403,7 @@ header > p {
 }
 
 .separator-line {
-  background-color: var(--details-color-2);
+  background-color: var(--details-color-1);
   height: 0.1em;
   width: 25em;
   margin: 3em 0 0 0;
@@ -435,9 +438,7 @@ header > p {
   font-weight: 100;
 }
 
-.technology:hover {
-  color: var(--details-color-1);
-}
+
 
 .technology > .technology-icon {
   background: #272833;
@@ -448,7 +449,7 @@ header > p {
   line-height: 5.65em;
   margin: 0 0 2em 0;
   filter: grayscale(100%);
-  transition: 0.5s;
+  transition: 3s;
 }
 
 .technology:hover .technology-icon {
@@ -474,7 +475,7 @@ header > p {
 
 /* CSS Footer */
 #footer {
-  background-color: #272833;
+  background-color: var(--background-color-1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -501,7 +502,7 @@ body {
 }
 
 .content {
-  background-color: #1a1b24;
+  background-color: var(--background-color-1);
   color: #ffffff;
 }
 
@@ -513,7 +514,7 @@ body {
 }
 
 .section-container {
-  background: rgba(23, 24, 32, 0.95);
+  background: rgba(22, 22, 22, 0.95);
   opacity: 1;
   position: absolute;
   vertical-align: baseline;
@@ -588,8 +589,8 @@ body {
 }
 
 .transparent-button:hover {
-  box-shadow: inset 0 0 0 1px var(--details-color-2);
-  color: var(--details-color-2);
+  box-shadow: inset 0 0 0 1px var(--details-color-1);
+  color: var(--details-color-1);
 }
 
 .goto-next {
@@ -616,7 +617,7 @@ body {
 /* Css Contact */
 #contact {
   height: auto;
-  background-color: #1a1b24;
+  background-color: var(--background-color-1);
 }
 
 .form-container {
@@ -655,7 +656,7 @@ body {
 }
 
 .contact-textarea:hover {
-  border: 2px solid var(--details-color-2);
+  border: 2px solid var(--details-color-1);
   transition: 0.5s;
 }
 
@@ -673,7 +674,7 @@ body {
 }
 
 .input-form:hover {
-  border: 2px solid var(--details-color-2);
+  border: 2px solid var(--details-color-1);
   transition: 0.5s;
 }
 
@@ -699,8 +700,8 @@ body {
 }
 
 #submit-contact-button:hover {
-  box-shadow: inset 0 0 0 1px var(--details-color-2);
-  color: var(--details-color-2);
+  box-shadow: inset 0 0 0 1px var(--details-color-1);
+  color: var(--details-color-1);
   transition: 0.5s;
 }
 
@@ -729,11 +730,12 @@ body {
   height: 40px;
   width: 40px;
   border-radius: 20px;
-  transition: 0.8s;
+  transition: 1s;
 }
 
 .social-name {
-  color: #1a1b24;
+  transition: 1s;
+  color: var(--background-color-1);
 }
 
 .social-link:hover .social-name {
@@ -741,7 +743,7 @@ body {
   transition: 0.5s;
 }
 
-.social-link:hover .social-icon{
+.social-link:hover .social-icon {
   transition: 0.3s;
   filter: invert(72%) sepia(97%) saturate(301%) hue-rotate(87deg)
     brightness(280%) contrast(101%);
@@ -749,25 +751,24 @@ body {
 
 /* M */
 @media (max-width: 960px) {
-  .social-link{
+  .social-link {
     margin: 0 2rem;
   }
 }
 
 /* S */
 @media (max-width: 600px) {
-  .social-link{
+  .social-link {
     margin: 0 1rem;
   }
 }
 
 /* XS */
 @media (max-width: 420px) {
-  .social-link{
+  .social-link {
     margin: 0 0.8rem;
   }
 }
-
 
 /* CSS Resume */
 
@@ -854,22 +855,22 @@ body {
 }
 
 .resume-item:hover .item-title {
-  color: #1a1b24;
+  color: var(--background-color-1);
   transition: 0.5s;
 }
 
 .resume-item:hover .item-subtitle {
-  color: #1a1b24;
+  color: var(--background-color-1);
   transition: 0.5s;
 }
 
 .resume-item:hover .item-duration {
-  color: #1a1b24;
+  color: var(--background-color-1);
   transition: 0.5s;
 }
 
 .resume-item:hover .item-text {
-  color: #1a1b24;
+  color: var(--background-color-1);
   transition: 0.5s;
 }
 
