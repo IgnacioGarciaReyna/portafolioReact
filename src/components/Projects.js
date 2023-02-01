@@ -42,7 +42,7 @@ const Projects = () => {
           {/* <p>Something</p>  */}
           <div className="separator-line"></div>
         </header>
-        <div className="projects-row">
+        <div className="projects-grid">
           {projects.map((project) => (
             <ProjectCard project={project} key={project.id} />
           ))}
