@@ -65,6 +65,7 @@ const Contact = () => {
                   className="social-icon"
                 />
               </a>
+              <p className="social-name">{social.name}</p>
             </li>
           ))}
         </ul>
