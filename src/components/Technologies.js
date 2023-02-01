@@ -70,15 +70,17 @@ const Technologies = () => {
             Something
           </a>
         </footer> */}
+        <div className="goto-next-container">
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            className="goto-next"
+          ></Link>
+        </div>
       </div>
-      <Link
-        to="contact"
-        spy={true}
-        smooth={true}
-        offset={0}
-        duration={500}
-        className="goto-next"
-      ></Link>
     </section>
   );
 };

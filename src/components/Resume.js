@@ -41,8 +41,7 @@ const degrees = [
     subtitle: "Certiprof ",
     duration: "2021",
     lines: [],
-    reference: {
-    },
+    reference: {},
   },
   {
     id: "5",
@@ -145,14 +144,16 @@ const Resume = () => {
             </div>
           </div>
         </div>
-        <Link
-          to="technologies"
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-          className="goto-next"
-        ></Link>
+        <div className="goto-next-container">
+          <Link
+            to="technologies"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            className="goto-next"
+          ></Link>
+        </div>
       </div>
     </section>
   );

@@ -106,15 +106,17 @@ const Contact = () => {
             </button>
           </form>
         </div>
+        <div className="goto-next-container">
+          <Link
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            className="goto-next back-to-home"
+          ></Link>
+        </div>
       </div>
-      <Link
-        to="home"
-        spy={true}
-        smooth={true}
-        offset={0}
-        duration={500}
-        className="goto-next back-to-home"
-      ></Link>
     </section>
   );
 };

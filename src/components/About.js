@@ -10,25 +10,27 @@ const About = () => {
       <div className="section-container">
         <div className="section-content">
           <div className="section-header">
-            <h2>Hola, soy <span className="green-span">Nacho</span> !</h2>
+            <h2>
+              Hola, soy <span className="green-span">Nacho</span> !
+            </h2>
             <p>Acerca de mi:</p>
           </div>
           <div className="section-text">
             <p>
-             En 2019 decidí comenzar a estudiar Licenciatura en Informática, 
-             en 2021 cursé el Programa Up de Codellege by Softtek donde aprendí Angular, 
-             Inglés conversacional y me certifiqué como Scrum Developer. 
-             En 2022 realicé un curso de React de Udemy y desde junio trabajo como QA Analyst en MRM 
-             donde estuve cursando Inglés in Company con Lingua University. 
-             
+              En 2019 decidí comenzar a estudiar Licenciatura en Informática, en
+              2021 cursé el Programa Up de Codellege by Softtek donde aprendí
+              Angular, Inglés conversacional y me certifiqué como Scrum
+              Developer. En 2022 realicé un curso de React de Udemy y desde
+              junio trabajo como QA Analyst en MRM donde estuve cursando Inglés
+              in Company con Lingua University.
             </p>
           </div>
           <div className="section-text">
             <p>
-            Ademas de estudiar Licenciatura en Informática y Desarrollo Front
+              Ademas de estudiar Licenciatura en Informática y Desarrollo Front
               End, me gusta pasar mi tiempo libre mirando cine y tocando la
-              guitarra. También me gusta el futbol, juego todos los partidos
-              a la semana que puedo.
+              guitarra. También me gusta el futbol, juego todos los partidos a
+              la semana que puedo.
             </p>
           </div>
           {/* <div>
@@ -38,14 +40,16 @@ const About = () => {
           </div> */}
         </div>
       </div>
-      <Link
-        to="projects"
-        spy={true}
-        smooth={true}
-        offset={0}
-        duration={500}
-        className="goto-next"
-      ></Link>
+      <div className="goto-next-container">
+        <Link
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          className="goto-next"
+        ></Link>
+      </div>
     </section>
   );
 };

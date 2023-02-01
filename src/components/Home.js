@@ -27,14 +27,16 @@ const Home = () => {
           <img src={porfilePicture} alt="" />
         </span>
       </div>
-      <Link
-        to="about"
-        spy={true}
-        smooth={true}
-        offset={0}
-        duration={500}
-        className="goto-next"
-      ></Link>
+      <div className="goto-next-container">
+        <Link
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          className="goto-next"
+        ></Link>
+      </div>
     </div>
   );
 };

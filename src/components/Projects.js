@@ -49,18 +49,20 @@ const Projects = () => {
         </div>
         {/* <footer className="">
           <a href="#" className="transparent-button black-button">
-            Something
+            GitHub
           </a>
         </footer> */}
+        <div className="goto-next-container">
+          <Link
+            to="resume"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            className="goto-next"
+          ></Link>
+        </div>
       </div>
-      <Link
-        to="resume"
-        spy={true}
-        smooth={true}
-        offset={0}
-        duration={500}
-        className="goto-next"
-      ></Link>
     </section>
   );
 };

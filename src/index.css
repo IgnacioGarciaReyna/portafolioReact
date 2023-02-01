@@ -8,15 +8,15 @@
 
 .background-container {
   background-color: var(--background-color-1);
-  height: 100vh;
+  height: auto;
   color: #ffffff;
 }
 
 .background-container > .content {
   display: flex;
+  height: 90vh;
   align-items: center;
   justify-content: center;
-  height: 100%;
 }
 
 .profile-image {
@@ -109,6 +109,14 @@ header > p {
 
 /* M */
 @media (max-width: 960px) {
+  .background-container > .content {
+    flex-direction: column-reverse;
+    margin: 40px 0;
+  }
+
+  .background-container {
+    height: 100vh;
+  }
 }
 
 /* S */
@@ -117,6 +125,28 @@ header > p {
 
 /* XS */
 @media (max-width: 420px) {
+}
+
+/* CSS Go to next arrows */
+
+.goto-next-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.goto-next {
+  background-image: url(./assets/img/bottom-arrow.png);
+  background-size: cover;
+  width: 6em;
+  height: 5em;
+  z-index: 1;
+}
+
+.goto-next:hover {
+  filter: invert(72%) sepia(97%) saturate(301%) hue-rotate(87deg)
+    brightness(280%) contrast(101%);
 }
 
 /* CSS nav */
@@ -204,6 +234,10 @@ header > p {
 /* CSS About */
 .main-section-about {
   background-image: url(../src/assets/img/programadorsentado.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
 }
 
 .main-section-about > .section-container {
@@ -438,8 +472,6 @@ header > p {
   font-weight: 100;
 }
 
-
-
 .technology > .technology-icon {
   background: #272833;
   border-radius: 100%;
@@ -591,22 +623,6 @@ body {
 .transparent-button:hover {
   box-shadow: inset 0 0 0 1px var(--details-color-1);
   color: var(--details-color-1);
-}
-
-.goto-next {
-  background-image: url(./assets/img/bottom-arrow.png);
-  background-size: cover;
-  width: 6em;
-  height: 5em;
-  position: absolute;
-  z-index: 1;
-  bottom: 2em;
-  left: 47%;
-}
-
-.goto-next:hover {
-  filter: invert(72%) sepia(97%) saturate(301%) hue-rotate(87deg)
-    brightness(280%) contrast(101%);
 }
 
 .shadow-section {
