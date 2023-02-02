@@ -3,6 +3,7 @@ import ResumeItem from "./ResumeItem";
 import StudiesIcon from "../assets/img/resume-icon1.png";
 import JobsIcon from "../assets/img/resume-icon2.png";
 import { Link } from "react-scroll";
+import resumeURL from "../assets/Currículum Vitae - Ignacio Garcia Reyna.pdf";
 
 const degrees = [
   {
@@ -99,6 +100,16 @@ const experiences = [
   },
 ];
 
+const downloadResume = () => {
+  const downloadInstance = document.createElement("a");
+  downloadInstance.href = resumeURL;
+  downloadInstance.target = "_blank";
+  downloadInstance.download = "Resume";
+  document.getElementById("container")?.appendChild(downloadInstance);
+  downloadInstance.click();
+  document.getElementById("container")?.removeChild(downloadInstance);
+};
+
 const Resume = () => {
   return (
     <section id="resume" className="shadow-section">
@@ -144,6 +155,16 @@ const Resume = () => {
             </div>
           </div>
         </div>
+        <div className="">
+          <a
+            href="#"
+            className="transparent-button white-button"
+            onClick={downloadResume}
+          >
+            Descargar Currículum
+          </a>
+        </div>
+
         <div className="goto-next-container">
           <Link
             to="technologies"

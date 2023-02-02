@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
-import resumeURL from "../assets/Currículum Vitae - Ignacio Garcia Reyna.pdf";
+
 
 const Navigation = () => {
   const navRef = useRef();
@@ -14,15 +14,7 @@ const Navigation = () => {
     navRef.current.classList.remove("show");
   };
 
-  const downloadResume = () => {
-    const downloadInstance = document.createElement("a");
-    downloadInstance.href = resumeURL;
-    downloadInstance.target = "_blank";
-    downloadInstance.download = "Resume";
-    document.getElementById("container")?.appendChild(downloadInstance);
-    downloadInstance.click();
-    document.getElementById("container")?.removeChild(downloadInstance);
-  };
+  
 
   return (
     <div className="container-navigation">
@@ -109,17 +101,6 @@ const Navigation = () => {
           <FaTimes className="nav-close-menu" onClick={showNavMenu} />
         </ul>
         <FaBars className="nav-button-menu" onClick={showNavMenu} />
-        <ul>
-          <li className="li-resume-button">
-            <a
-              id="button-resume"
-              className="button primary"
-              onClick={downloadResume}
-            >
-              Descargar Currículum
-            </a>
-          </li>
-        </ul>
       </nav>
     </div>
   );
