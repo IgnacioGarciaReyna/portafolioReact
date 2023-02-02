@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-scroll";
 import resumeURL from "../assets/Currículum Vitae - Ignacio Garcia Reyna.pdf";
 
 const Navigation = () => {
+
+  const navRef = useRef();
+
+  const showNavMenu = () => {
+    navRef.current.classList.toggle("show")
+  };
+
   const downloadResume = () => {
     const downloadInstance = document.createElement("a");
     downloadInstance.href = resumeURL;
@@ -16,7 +23,7 @@ const Navigation = () => {
   return (
     <div className="container-navigation">
       <nav id="nav">
-        <ul className="nav-links">
+        <ul className="nav-items-container" ref={navRef}>
           <li>
             <Link
               to="home"
@@ -24,7 +31,7 @@ const Navigation = () => {
               smooth={true}
               offset={0}
               duration={500}
-              className="header-pag-item"
+              className="nav-item"
             >
               Home
             </Link>
@@ -36,7 +43,7 @@ const Navigation = () => {
               smooth={true}
               offset={0}
               duration={500}
-              className="header-pag-item"
+              className="nav-item"
             >
               About me
             </Link>
@@ -48,7 +55,7 @@ const Navigation = () => {
               smooth={true}
               offset={0}
               duration={500}
-              className="header-pag-item"
+              className="nav-item"
             >
               Projects
             </Link>
@@ -60,7 +67,7 @@ const Navigation = () => {
               smooth={true}
               offset={0}
               duration={500}
-              className="header-pag-item"
+              className="nav-item"
             >
               Resume
             </Link>
@@ -72,7 +79,7 @@ const Navigation = () => {
               smooth={true}
               offset={0}
               duration={500}
-              className="header-pag-item"
+              className="nav-item"
             >
               Tecnologias
             </Link>
@@ -84,14 +91,18 @@ const Navigation = () => {
               smooth={true}
               offset={0}
               duration={500}
-              className="header-pag-item"
+              className="nav-item"
             >
               Contacto
             </Link>
           </li>
         </ul>
+        <span className="nav-button-menu" onClick={showNavMenu}>
+          {" "}
+          <i></i>{" "}
+        </span>
         <ul>
-          <li>
+          <li className="li-resume-button">
             <a
               id="button-resume"
               className="button primary"

@@ -176,7 +176,6 @@ header > p {
 
 #nav {
   position: absolute;
-
   top: 0;
   display: flex;
   justify-content: space-between;
@@ -194,16 +193,33 @@ header > p {
   line-height: 2em;
 }
 
-#nav > ul {
+.nav-items-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
-#nav > ul > li {
+.nav-items-container > li {
   list-style: none;
   margin: 0 0.7em;
+  display: block;
+}
+
+.nav-items-container.show {
+  top: 3.5em;
+}
+
+.nav-button-menu {
+  display: none;
+  cursor: pointer;
+  height: 3rem;
+  width: 3rem;
+  background-color: var(--details-color-1);
+}
+
+.li-resume-button {
+  all: unset;
 }
 
 #button-resume {
@@ -216,22 +232,34 @@ header > p {
   background-color: #85fcc0;
 }
 
-.header-pag-item {
+.nav-item {
   color: #ffffff;
   text-decoration: none;
   font-weight: 300;
 }
 
-.header-pag-item:hover {
+.nav-item:hover {
   color: var(--details-color-1);
   cursor: pointer;
 }
 
 /* M */
 @media (max-width: 960px) {
-  /* Se rompe a los 716px */
-  .header-pag-item {
+  .nav-items-container {
+    position: fixed;
+    width: 100vw;
+    height: calc(100% - 3.5em);
+    top: -100vh;
+    transition: all 0.4s;
+    flex-direction: column;
+  }
+
+  .nav-item {
     font-size: 15px;
+  }
+
+  .nav-button-menu {
+    display: block;
   }
 }
 
@@ -241,6 +269,14 @@ header > p {
 
 /* XS */
 @media (max-width: 420px) {
+}
+
+/* Mobile Landscape */
+@media screen and (max-width: 858px) and (orientation: landscape) {
+  .nav-items-container {
+    overflow: scroll;
+    height: calc(100% - 3.5em);
+  }
 }
 
 /* CSS About */
