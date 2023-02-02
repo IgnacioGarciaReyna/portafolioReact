@@ -259,7 +259,7 @@ header > p {
   border-color: var(--details-color-1);
 }
 
-.aboutme-curiosity{
+.aboutme-curiosity {
   font-weight: 200;
 }
 
@@ -558,6 +558,21 @@ header > p {
 .footer-text {
   font-weight: 100;
   font-size: small;
+}
+
+/* M */
+@media (max-width: 960px) {
+}
+
+/* S */
+@media (max-width: 600px) {
+  .footer-text {
+    font-size: 10px;
+  }
+}
+
+/* XS */
+@media (max-width: 420px) {
 }
 
 /* CSS general */
