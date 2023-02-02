@@ -17,22 +17,32 @@ const About = () => {
           </div>
           <div className="section-text">
             <p>
-              Ademas de estudiar Licenciatura en Informática y Desarrollo Front
-              End, me gusta pasar mi tiempo libre mirando cine y tocando la
-              guitarra. También me gusta el futbol, juego todos los partidos a
-              la semana que puedo.
+              Ademas de programando, me gusta pasar mi tiempo libre mirando
+              <span className="green-span"> cine</span> y tocando la
+              <span className="green-span"> guitarra</span>. También me gusta
+              jugar la mayor cantidad de partidos de
+              <span className="green-span"> futbol</span> a la semana que puedo.
             </p>
           </div>
           <div className="section-text">
             <p>
-              En 2019 decidí comenzar a estudiar Licenciatura en Informática, en
-              2021 cursé el Programa Up de Codellege by Softtek donde aprendí
-              Angular, Inglés conversacional y me certifiqué como Scrum
-              Developer. En 2022 realicé un curso de React de Udemy y desde
-              junio trabajo como QA Analyst en MRM donde estuve cursando Inglés
-              in Company con Lingua University.
+              Comencé a estudiar
+              <span className="green-span"> programación</span> porque siempre
+              tuve facilidad con la tecnología. Desde la primer matería de
+              facultad, pasando por los cursos de Front End y luego trabajando
+              en los proyectos, programar siempre me resultó algo muy
+              <span className="green-span"> divertido</span>.
             </p>
           </div>
+          <div className="section-text">
+            <p>
+              *Curiosidad:{" "}
+              <span className="aboutme-curiosity">
+                Antes de ser programador estudiaba para ser Productor Musical.
+              </span>
+            </p>
+          </div>
+
           {/* <div>
             <a href="#" className="transparent-button white-button">
               Learn More
