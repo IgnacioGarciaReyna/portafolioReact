@@ -4,9 +4,9 @@ const Footer = () => {
   return (
     <footer id="footer">
       <div className="footer-content-container">
-        <p>
-          2023 © Diseñado y Desarrollado por Ignacio Manuel Garcia Reyna con
-          React
+        <p className="footer-text">
+          2023 © Diseñado y Desarrollado con React por Ignacio Manuel Garcia
+          Reyna
         </p>
       </div>
     </footer>

@@ -522,6 +522,11 @@ header > p {
   align-items: center;
 }
 
+.footer-text{
+  font-weight: 100;
+  font-size: small;
+}
+
 /* CSS general */
 
 * {
