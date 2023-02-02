@@ -141,7 +141,7 @@ header > p {
 
 /* CSS Go to next arrows */
 
-.goto-next-container{
+.goto-next-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -257,6 +257,27 @@ header > p {
   border: 0 solid;
   border-left-width: 0.35em;
   border-color: var(--details-color-1);
+}
+
+.aboutme-curiosity{
+  font-weight: 200;
+}
+
+/* M */
+@media (max-width: 960px) {
+}
+
+/* S */
+@media (max-width: 600px) {
+  .main-section-about > .section-container {
+    vertical-align: baseline;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* XS */
+@media (max-width: 420px) {
 }
 
 /* CSS University */
@@ -534,7 +555,7 @@ header > p {
   align-items: center;
 }
 
-.footer-text{
+.footer-text {
   font-weight: 100;
   font-size: small;
 }
@@ -567,7 +588,7 @@ body {
   opacity: 1;
   position: absolute;
   vertical-align: baseline;
-  color: rgba(255, 255, 255, 0.75);
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -891,7 +912,6 @@ body {
 }
 
 .item-title,
-.green-span,
 .item-subtitle {
   margin: 6px 15px 6px 15px;
 }
