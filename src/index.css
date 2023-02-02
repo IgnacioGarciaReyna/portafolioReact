@@ -154,11 +154,13 @@ header > p {
   width: 6em;
   height: 5em;
   z-index: 1;
+  transition: 0.5s;
 }
 
 .goto-next:hover {
   filter: invert(72%) sepia(97%) saturate(301%) hue-rotate(87deg)
     brightness(280%) contrast(101%);
+  transition: 0.5s;
 }
 
 /* CSS nav */
@@ -215,10 +217,16 @@ header > p {
 .nav-button-menu {
   display: none;
   cursor: pointer;
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 1.6rem;
+  width: 1.6rem;
   color: #ffffff;
-  margin: 0 0.5rem;
+  margin: 1rem 1.5rem;
+}
+
+.nav-button-menu:hover {
+  filter: invert(72%) sepia(97%) saturate(301%) hue-rotate(87deg)
+    brightness(280%) contrast(101%);
+  transition: 0.5s;
 }
 
 .nav-close-menu {
@@ -909,7 +917,7 @@ body {
 }
 
 .grid-resume {
-  margin: 4em 0 .3em 0;
+  margin: 4em 0 0.3em 0;
   display: flex;
   color: #ffffff;
 }
@@ -938,8 +946,8 @@ body {
 .resume-icon {
   filter: invert(76%) sepia(48%) saturate(541%) hue-rotate(90deg)
     brightness(103%) contrast(102%);
-    height: 27px;
-    width: auto;
+  height: 27px;
+  width: auto;
 }
 
 .resume-item {
