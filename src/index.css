@@ -794,12 +794,21 @@ body {
   .social-link {
     margin: 0 1rem;
   }
+
+  .social-name {
+    color: #ffffff;
+  }
 }
 
 /* XS */
 @media (max-width: 420px) {
   .social-link {
     margin: 0 0.8rem;
+  }
+
+  .social-icon {
+    height: 50px;
+    width: 50px;
   }
 }
 
