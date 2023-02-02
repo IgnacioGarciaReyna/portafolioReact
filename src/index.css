@@ -179,6 +179,7 @@ header > p {
   top: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
@@ -214,9 +215,21 @@ header > p {
 .nav-button-menu {
   display: none;
   cursor: pointer;
-  height: 3rem;
-  width: 3rem;
-  background-color: var(--details-color-1);
+  height: 2.5rem;
+  width: 2.5rem;
+  color: #ffffff;
+  margin: 0 .5rem;
+}
+
+.nav-close-menu {
+  display: none;
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  color: #ffffff;
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
 }
 
 .li-resume-button {
@@ -260,6 +273,10 @@ header > p {
   }
 
   .nav-button-menu {
+    display: block;
+  }
+
+  .nav-close-menu {
     display: block;
   }
 }

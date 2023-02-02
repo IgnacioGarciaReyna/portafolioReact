@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { Link } from "react-scroll";
+import { FaBars, FaTimes } from "react-icons/fa";
 import resumeURL from "../assets/Currículum Vitae - Ignacio Garcia Reyna.pdf";
 
 const Navigation = () => {
@@ -105,13 +106,9 @@ const Navigation = () => {
               Contacto
             </Link>
           </li>
-          <span className="nav-button-menu" onClick={showNavMenu}>
-            <i></i>
-          </span>
+          <FaTimes className="nav-close-menu" onClick={showNavMenu} />
         </ul>
-        <span className="nav-button-menu" onClick={showNavMenu}>
-          <i></i>
-        </span>
+        <FaBars className="nav-button-menu" onClick={showNavMenu} />
         <ul>
           <li className="li-resume-button">
             <a
