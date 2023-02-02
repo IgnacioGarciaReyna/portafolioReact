@@ -157,7 +157,6 @@ const Resume = () => {
         </div>
         <div className="">
           <a
-            href="#"
             className="transparent-button white-button"
             onClick={downloadResume}
           >
