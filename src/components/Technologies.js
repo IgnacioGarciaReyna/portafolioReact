@@ -1,13 +1,50 @@
 import React from "react";
-import angularIcon from "../assets/img/angular-icon.png";
-import typescriptIcon from "../assets/img/ts-icon.png";
-import javascriptIcon from "../assets/img/js-icon.png";
-import bootstrapIcon from "../assets/img/bootstrap-icon.png";
-import reactIcon from "../assets/img/react-cuadrado.png";
-import gitIcon from "../assets/img/Git-Icon-1788C.png";
-import cssIcon from "../assets/img/css-circ-icon.png";
-import htmlIcon from "../assets/img/html-circ-icon.png";
 import { Link } from "react-scroll";
+
+const technologiesImages = require.context("../assets/img/", true);
+
+const technologies = [
+  {
+    id: "1",
+    name: "React",
+    src: "./react-cuadrado.png",
+  },
+  {
+    id: "2",
+    name: "Angular",
+    src: "./angular-icon.png",
+  },
+  {
+    id: "3",
+    name: "TypeScript",
+    src: "./ts-icon.png",
+  },
+  {
+    id: "4",
+    name: "JavaScript",
+    src: "./js-icon.png",
+  },
+  {
+    id: "5",
+    name: "Git",
+    src: "./Git-Icon-1788C.png",
+  },
+  {
+    id: "6",
+    name: "Bootstrap",
+    src: "./bootstrap-icon.png",
+  },
+  {
+    id: "7",
+    name: "CSS",
+    src: "./css-circ-icon.png",
+  },
+  {
+    id: "8",
+    name: "HTML",
+    src: "./html-circ-icon.png",
+  },
+];
 
 const Technologies = () => {
   return (
@@ -19,51 +56,17 @@ const Technologies = () => {
           <div className="separator-line green-separator"></div>
         </header>
         <div className="grid-technologies">
-          <section className="technology">
-            <img className="technology-icon" alt="React" src={reactIcon} />
-            <h3>React</h3>
-          </section>
-          <section className="technology">
-            <img className="technology-icon" alt="Angular" src={angularIcon} />
-            <h3>Angular</h3>
-          </section>
-          <section className="technology">
-            <img
-              className="technology-icon"
-              alt="TypeScript"
-              src={typescriptIcon}
-            />
-            <h3>TypeScript</h3>
-          </section>
-          <section className="technology">
-            <img
-              className="technology-icon"
-              alt="JavaScript"
-              src={javascriptIcon}
-            />
-            <h3>JavaScript</h3>
-          </section>
-
-          <section className="technology">
-            <img className="technology-icon" alt="GIT" src={gitIcon} />
-            <h3>GIT</h3>
-          </section>
-          <section className="technology">
-            <img
-              className="technology-icon"
-              alt="Bootstrap"
-              src={bootstrapIcon}
-            />
-            <h3>Bootstrap</h3>
-          </section>
-          <section className="technology">
-            <img className="technology-icon" alt="CSS" src={cssIcon} />
-            <h3>CSS</h3>
-          </section>
-          <section className="technology">
-            <img className="technology-icon" alt="HTML" src={htmlIcon} />
-            <h3>HTML</h3>
-          </section>
+          {technologies.map((technology) => (
+            <section className="technology">
+              <img
+                className="technology-icon"
+                alt={technology.name}
+                src={technologiesImages(technology.src)}
+                key={technology.name}
+              />
+              <h3>{technology.name}</h3>
+            </section>
+          ))}
         </div>
         {/* <footer className="">
           <a href="#" className="transparent-button white-button">
