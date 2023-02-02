@@ -124,7 +124,7 @@ const Resume = () => {
             <div className="resume-title-container">
               <img
                 className="resume-title resume-icon"
-                src={StudiesIcon}
+                src={JobsIcon}
                 alt="Studies"
               />
               <h3 className="resume-title">
@@ -141,7 +141,7 @@ const Resume = () => {
             <div className="resume-title-container">
               <img
                 className="resume-title resume-icon"
-                src={JobsIcon}
+                src={StudiesIcon}
                 alt="Jobs"
               />
               <h3 className="resume-title">
