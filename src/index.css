@@ -2,7 +2,6 @@
   --details-color-1: #4bffa5;
   --background-color-1: #101010;
 }
-/* #101010 */
 
 /* CSS Home*/
 
@@ -63,18 +62,18 @@ header > p {
 
 @keyframes floater {
   0% {
-    transform: translateY(-10%);
+    transform: translateY(-5%);
     transition: ease 0.5s;
   }
   50% {
-    transform: translateY(10%);
+    transform: translateY(5%);
     transition: ease 0.5s;
   }
 }
 
 .floating-img {
-  transform: translateY(-10%);
-  animation: floater 5s infinite;
+  transform: translateY(-5%);
+  animation: floater 8s infinite;
   transition: ease 0.5s;
 }
 
@@ -111,16 +110,26 @@ header > p {
 @media (max-width: 960px) {
   .background-container > .content {
     flex-direction: column-reverse;
-    margin: 40px 0;
+    margin: 30px 0 0px 0;
+    height: 85vh;
   }
 
   .background-container {
-    height: 100vh;
+    height: auto;
   }
 }
 
 /* S */
 @media (max-width: 600px) {
+  .background-container > .content {
+    margin: 30px 0 0px 0;
+    height: 87vh;
+  }
+
+  .profile-image {
+    height: 15rem;
+    width: 15rem;
+  }
 }
 
 /* XS */
