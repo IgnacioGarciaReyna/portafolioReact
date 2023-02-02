@@ -772,18 +772,19 @@ body {
 }
 
 .contact-textarea {
+  all: unset;
+  resize: none;
   outline-color: transparent;
   background-color: transparent;
   border-radius: 3px;
   border: 2px solid rgba(255, 255, 255, 0.05);
-  width: 100%;
-  line-height: 0;
-  text-align: start;
-
+  width: 95%;
   font-size: 18px;
   padding: 50px 20px;
   margin: 20px 0;
   transition: 0.5s;
+  color: #ffffff;
+  text-align: inherit;
 }
 
 .contact-textarea:hover {
@@ -796,12 +797,13 @@ body {
   background-color: transparent;
   border-radius: 3px;
   border: 2px solid rgba(255, 255, 255, 0.05);
-  width: 100%;
+  width: 95%;
   line-height: 1;
   font-size: 18px;
   padding: 15px 20px;
   margin: 20px 0;
   transition: 0.5s;
+  color: #ffffff;
 }
 
 .input-form:hover {

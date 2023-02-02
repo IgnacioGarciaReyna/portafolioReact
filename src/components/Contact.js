@@ -71,32 +71,34 @@ const Contact = () => {
         </ul>
         <div className="form-container">
           <form className="contact-form" onSubmit={enviarMail}>
-            <p className="sendme-text">Let's keep in touch!</p>
+            <p className="sendme-text">Escribime algo:</p>
             <input
               type="text"
               className="input-form"
               id="name"
               name="name"
               placeholder="Nombre"
+              required
             />
             <input
-              type="text"
+              type="email"
               className="input-form"
               id="email"
               name="email"
               placeholder="Email"
+              required
             />
-
             <textarea
               type="text"
               className="contact-textarea"
               id="message"
               name="message"
               placeholder="Mensaje"
-              cols="3"
-              rows="8"
+              required
+              cols="10"
+              rows="3"
+              
             ></textarea>
-
             <button
               id="submit-contact-button"
               type="submit"
