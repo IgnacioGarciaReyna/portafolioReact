@@ -3,11 +3,10 @@ import { Link } from "react-scroll";
 import resumeURL from "../assets/Currículum Vitae - Ignacio Garcia Reyna.pdf";
 
 const Navigation = () => {
-
   const navRef = useRef();
 
   const showNavMenu = () => {
-    navRef.current.classList.toggle("show")
+    navRef.current.classList.toggle("show");
   };
 
   const downloadResume = () => {
@@ -96,10 +95,12 @@ const Navigation = () => {
               Contacto
             </Link>
           </li>
+          <span className="nav-button-menu" onClick={showNavMenu}>
+            <i></i>
+          </span>
         </ul>
         <span className="nav-button-menu" onClick={showNavMenu}>
-          {" "}
-          <i></i>{" "}
+          <i></i>
         </span>
         <ul>
           <li className="li-resume-button">

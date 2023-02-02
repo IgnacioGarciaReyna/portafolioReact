@@ -198,6 +198,7 @@ header > p {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  background-color: var(--background-color-1);
 }
 
 .nav-items-container > li {
@@ -207,7 +208,7 @@ header > p {
 }
 
 .nav-items-container.show {
-  top: 3.5em;
+  top: 0;
 }
 
 .nav-button-menu {
@@ -248,7 +249,7 @@ header > p {
   .nav-items-container {
     position: fixed;
     width: 100vw;
-    height: calc(100% - 3.5em);
+    height: 100vh;
     top: -100vh;
     transition: all 0.4s;
     flex-direction: column;
