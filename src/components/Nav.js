@@ -9,6 +9,10 @@ const Navigation = () => {
     navRef.current.classList.toggle("show");
   };
 
+  const hideNavbar = () => {
+    navRef.current.classList.remove("show");
+  };
+
   const downloadResume = () => {
     const downloadInstance = document.createElement("a");
     downloadInstance.href = resumeURL;
@@ -31,6 +35,7 @@ const Navigation = () => {
               offset={0}
               duration={500}
               className="nav-item"
+              onClick={hideNavbar}
             >
               Home
             </Link>
@@ -43,6 +48,7 @@ const Navigation = () => {
               offset={0}
               duration={500}
               className="nav-item"
+              onClick={hideNavbar}
             >
               About me
             </Link>
@@ -55,6 +61,7 @@ const Navigation = () => {
               offset={0}
               duration={500}
               className="nav-item"
+              onClick={hideNavbar}
             >
               Projects
             </Link>
@@ -67,6 +74,7 @@ const Navigation = () => {
               offset={0}
               duration={500}
               className="nav-item"
+              onClick={hideNavbar}
             >
               Resume
             </Link>
@@ -79,6 +87,7 @@ const Navigation = () => {
               offset={0}
               duration={500}
               className="nav-item"
+              onClick={hideNavbar}
             >
               Tecnologias
             </Link>
@@ -91,6 +100,7 @@ const Navigation = () => {
               offset={0}
               duration={500}
               className="nav-item"
+              onClick={hideNavbar}
             >
               Contacto
             </Link>
