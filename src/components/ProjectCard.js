@@ -15,7 +15,7 @@ const ProjectCard = ({ project }) => {
           target="_blank"
           className="transparent-button white-button"
         >
-          Sitio
+          Deploy
         </a>
         <a
           href={project.repository}
