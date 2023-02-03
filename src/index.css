@@ -389,7 +389,7 @@ header > p {
   align-items: center;
   justify-content: start;
   padding-bottom: 4em;
-  height: 95vh;
+  height: auto;
 }
 
 .container-projects > header {
@@ -422,7 +422,6 @@ header > p {
   grid-template-columns: auto auto auto;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
 }
 
 /* M */

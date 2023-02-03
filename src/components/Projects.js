@@ -22,15 +22,6 @@ const projects = [
     url: "https://github.com/IgnacioGarciaReyna",
     repository: "https://github.com/IgnacioGarciaReyna/portafolioReact",
   },
-  {
-    id: "3",
-    title: "Portafolio",
-    img: "./portafolio-home.png",
-    description: "Página personal creada para la busqueda de trabajo.",
-    technology: "React",
-    url: "https://github.com/IgnacioGarciaReyna",
-    repository: "https://github.com/IgnacioGarciaReyna/portafolioReact",
-  },
 ];
 
 const Projects = () => {
@@ -47,11 +38,15 @@ const Projects = () => {
             <ProjectCard project={project} key={project.id} />
           ))}
         </div>
-        {/* <footer className="">
-          <a href="#" className="transparent-button black-button">
-            GitHub
+        <div className="">
+          <a
+            target="_blank"
+            href="https://github.com/IgnacioGarciaReyna"
+            className="transparent-button white-button"
+          >
+            Ver GitHub
           </a>
-        </footer> */}
+        </div>
         <div className="goto-next-container">
           <Link
             to="resume"
