@@ -129,6 +129,7 @@ header > p {
   .profile-image {
     height: 15rem;
     width: 15rem;
+    margin: 0;
   }
 }
 
