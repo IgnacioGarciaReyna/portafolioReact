@@ -55,23 +55,9 @@ const Contact = () => {
           {/* <p>Something</p>  */}
           <div className="separator-line"></div>
         </header>
-        <ul className="container-icons">
-          {socials.map((social) => (
-            <li className="social-link">
-              <a target="_blank" href={social.href}>
-                <img
-                  src={socialIconsImages(social.src)}
-                  alt={social.name}
-                  className="social-icon"
-                />
-              </a>
-              <p className="social-name">{social.name}</p>
-            </li>
-          ))}
-        </ul>
         <div className="form-container">
           <form className="contact-form" onSubmit={enviarMail}>
-            <p className="sendme-text">Escribime algo:</p>
+            {/* <p className="sendme-text">Escribime algo:</p> */}
             <input
               type="text"
               className="input-form"
@@ -108,6 +94,20 @@ const Contact = () => {
             </button>
           </form>
         </div>
+        <ul className="container-icons">
+          {socials.map((social) => (
+            <li className="social-link">
+              <a target="_blank" href={social.href}>
+                <img
+                  src={socialIconsImages(social.src)}
+                  alt={social.name}
+                  className="social-icon"
+                />
+              </a>
+              <p className="social-name">{social.name}</p>
+            </li>
+          ))}
+        </ul>
         <div className="goto-next-container">
           <Link
             to="home"

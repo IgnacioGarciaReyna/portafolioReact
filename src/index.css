@@ -424,7 +424,7 @@ header > p {
   justify-content: center;
 }
 
-.container-projects > .transparent-button{
+.container-projects > .transparent-button {
   margin: 0 0 20px 0;
 }
 
@@ -484,7 +484,7 @@ header > p {
   padding: 4px;
 }
 
-.card-buttons{
+.card-buttons {
   display: grid;
   grid-template-columns: 6.5em 6.5em;
 }
@@ -503,11 +503,10 @@ header > p {
   transition: 0.5s;
 }
 
-.card-container:hover .card-image{
+.card-container:hover .card-image {
   filter: grayscale(0%);
   transition: 0.5s;
 }
-
 
 /* M */
 @media (max-width: 960px) {
@@ -772,7 +771,7 @@ body {
 }
 
 .form-container {
-  margin: 40px 0 70px 0;
+  margin: 30px 0 0 0;
   width: 70%;
 }
 
@@ -782,7 +781,7 @@ body {
 }
 
 .contact-form {
-  height: 50vh;
+  height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -794,17 +793,22 @@ body {
 .contact-textarea {
   all: unset;
   resize: none;
+  width: 95%;
+  padding: 15px 20px;
+  text-align: inherit;
+}
+
+.contact-textarea,
+.input-form,
+#submit-contact-button {
+  margin: 10px 0;
+  transition: 0.5s;
+  color: #ffffff;
   outline-color: transparent;
   background-color: transparent;
   border-radius: 3px;
   border: 2px solid rgba(255, 255, 255, 0.05);
-  width: 95%;
   font-size: 18px;
-  padding: 50px 20px;
-  margin: 20px 0;
-  transition: 0.5s;
-  color: #ffffff;
-  text-align: inherit;
 }
 
 .contact-textarea:hover {
@@ -813,17 +817,9 @@ body {
 }
 
 .input-form {
-  outline-color: transparent;
-  background-color: transparent;
-  border-radius: 3px;
-  border: 2px solid rgba(255, 255, 255, 0.05);
   width: 95%;
   line-height: 1;
-  font-size: 18px;
-  padding: 15px 20px;
-  margin: 20px 0;
-  transition: 0.5s;
-  color: #ffffff;
+  padding: 10px 20px;
 }
 
 .input-form:hover {
@@ -836,20 +832,16 @@ body {
 }
 
 #submit-contact-button {
-  background-color: transparent;
-  border-radius: 4px;
   border: 0;
   cursor: pointer;
   display: inline-block;
-  font-weight: 300;
-  height: 3em;
-  line-height: 3em;
+  font-weight: 400;
+  height: 2.5em;
+  line-height: 2.5em;
   padding: 0 2.25em;
   text-decoration: none;
-  margin: 2.5em 0;
   box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.05);
   color: #757575;
-  transition: 0.5s;
 }
 
 #submit-contact-button:hover {
@@ -863,7 +855,7 @@ body {
 }
 
 .container-icons {
-  margin: 40px;
+  margin: 15px;
   display: flex;
 }
 
