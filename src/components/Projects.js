@@ -38,15 +38,13 @@ const Projects = () => {
             <ProjectCard project={project} key={project.id} />
           ))}
         </div>
-        <div className="">
-          <a
-            target="_blank"
-            href="https://github.com/IgnacioGarciaReyna"
-            className="transparent-button white-button"
-          >
-            Ver GitHub
-          </a>
-        </div>
+        <a
+          target="_blank"
+          href="https://github.com/IgnacioGarciaReyna"
+          className="transparent-button white-button"
+        >
+          Ver GitHub
+        </a>
         <div className="goto-next-container">
           <Link
             to="resume"

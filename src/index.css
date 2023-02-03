@@ -424,6 +424,10 @@ header > p {
   justify-content: center;
 }
 
+.container-projects > .transparent-button{
+  margin: 0 0 20px 0;
+}
+
 /* M */
 @media (max-width: 960px) {
   .container-projects {
@@ -454,18 +458,18 @@ header > p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 290px;
-  height: 345px;
-  margin: 60px 30px 30px 30px;
+  width: 270px;
+  height: 320px;
+  margin: 40px 30px 30px 30px;
   color: white;
   border-radius: 5%;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border: 1px solid #282828;
 }
 
 .card-container:hover {
-  transition: all 0.5s ease-in-out;
-  margin: 30px 30px 60px 30px;
+  transition: all 0.3s ease-in-out;
+  margin: 30px 30px 40px 30px;
   border: 1px solid #797979;
 }
 
@@ -480,8 +484,17 @@ header > p {
   padding: 4px;
 }
 
+.card-buttons{
+  display: grid;
+  grid-template-columns: 6.5em 6.5em;
+}
+
 .card-buttons > a {
+  text-align: center;
   margin: 16px 4px 4px 4px;
+  margin: 2 0;
+  padding: 0;
+  height: 3em;
 }
 
 .card-image {
@@ -494,6 +507,7 @@ header > p {
   filter: grayscale(0%);
   transition: 0.5s;
 }
+
 
 /* M */
 @media (max-width: 960px) {
@@ -541,11 +555,11 @@ header > p {
   background-color: var(--details-color-1);
   height: 0.1em;
   width: 25em;
-  margin: 3em 0 0 0;
+  margin: 0;
 }
 
 .grid-technologies {
-  margin: 40px auto;
+  margin: 25px auto;
   width: 80%;
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -731,7 +745,7 @@ body {
   font-weight: 300;
   height: 3em;
   line-height: 3em;
-  padding: 0 2.25em;
+  padding: 0 2em;
   text-decoration: none;
   margin: 2.5em 0;
 }

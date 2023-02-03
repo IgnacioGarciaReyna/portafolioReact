@@ -22,7 +22,7 @@ const ProjectCard = ({ project }) => {
           target="_blank"
           className="transparent-button white-button"
         >
-          Repo
+          Repositorio
         </a>
       </div>
     </div>
