@@ -486,6 +486,13 @@ header > p {
 
 .card-image {
   width: 95%;
+  filter: grayscale(50%);
+  transition: 0.5s;
+}
+
+.card-container:hover .card-image{
+  filter: grayscale(0%);
+  transition: 0.5s;
 }
 
 /* M */
