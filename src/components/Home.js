@@ -13,14 +13,7 @@ const Home = () => {
           </p>
           <h2 className="typewriter">Ignacio Garcia Reyna</h2>
           <p>
-            y soy  &lt;<b>Desarrollador Front End </b>/&gt;.
-            {/* <br />
-           
-            Me gusta el cine,
-            <br />
-            me la paso jugando al futbol,
-            <br />
-            y en mis ratos libres toco la guitarra. */}
+            y soy &lt;<b>Desarrollador Front End </b>/&gt;.
           </p>
         </header>
         <span className="profile-image floating-img">
