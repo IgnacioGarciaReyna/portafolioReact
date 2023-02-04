@@ -1,7 +1,10 @@
 import React, { useRef } from "react";
 import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
+AOS.init();
 
 const Navigation = () => {
   const navRef = useRef();
@@ -14,11 +17,9 @@ const Navigation = () => {
     navRef.current.classList.remove("show");
   };
 
-  
-
   return (
     <div className="container-navigation">
-      <nav id="nav">
+      <nav id="nav" data-aos="fade-down" data-aos-duration="2000">
         <ul className="nav-items-container" ref={navRef}>
           <li>
             <Link
