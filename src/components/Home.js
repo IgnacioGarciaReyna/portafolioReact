@@ -1,12 +1,15 @@
 import React from "react";
 import { Link } from "react-scroll";
 import porfilePicture from "../assets/img/profile-picture.jpg";
-import University from "./University";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 const Home = () => {
   return (
     <div id="home" className="container background-container">
-      <div className="content">
+      <div className="content" data-aos="zoom-out" data-aos-duration="2000">
         <header>
           <p>
             <b>Hi!</b> <br /> My name is
@@ -28,6 +31,9 @@ const Home = () => {
           offset={0}
           duration={500}
           className="goto-next"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-anchor-placement="top-bottom"
         ></Link>
       </div>
     </div>
