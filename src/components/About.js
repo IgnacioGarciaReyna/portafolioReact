@@ -11,34 +11,36 @@ const About = () => {
         <div className="section-content">
           <div className="section-header">
             <h2>
-              Hola, soy <span className="green-span">Nacho</span> !
+              Hi, I'm <span className="green-span">Nacho</span> !
             </h2>
-            <p>Acerca de mi:</p>
+            <p>About me:</p>
           </div>
           <div className="section-text">
             <p>
-              Ademas de programando, me gusta pasar mi tiempo libre mirando
-              <span className="green-span"> cine</span> y tocando la
-              <span className="green-span"> guitarra</span>. También me gusta
-              jugar la mayor cantidad de partidos de
-              <span className="green-span"> futbol</span> a la semana que puedo.
+              Besides programming, I like to hang out watching
+              <span className="green-span"> movies</span> and playing
+              <span className="green-span"> guitar</span>. Also, I like to play
+              as many
+              <span className="green-span"> football</span> games per week as I
+              can.
             </p>
           </div>
           <div className="section-text">
             <p>
-              Comencé a estudiar
-              <span className="green-span"> programación</span> porque siempre
-              tuve facilidad con la tecnología. Desde la primer matería de
-              facultad, pasando por los cursos de Front End y luego trabajando
-              en los proyectos, programar siempre me resultó algo muy
-              <span className="green-span"> divertido</span>.
+              I started studying
+              <span className="green-span"> programming</span> because I've
+              always had a knack for technology. From my first university
+              course, through Front End courses and then working on my own
+              projects, programming has always been a lot of
+              <span className="green-span"> fun</span> for me.
             </p>
           </div>
           <div className="section-text">
             <p>
-              *Curiosidad:{" "}
+              *A curious thing:{" "}
               <span className="aboutme-curiosity">
-                Antes de ser programador estudiaba para ser Productor Musical.
+                Before being a programmer, I was studying to be a Music
+                Producer.
               </span>
             </p>
           </div>

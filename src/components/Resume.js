@@ -3,53 +3,104 @@ import ResumeItem from "./ResumeItem";
 import StudiesIcon from "../assets/img/resume-icon1.png";
 import JobsIcon from "../assets/img/resume-icon2.png";
 import { Link } from "react-scroll";
-import resumeURL from "../assets/Currículum Vitae - Ignacio Garcia Reyna.pdf";
+import resumeURL from "../assets/Resume - Ignacio Garcia Reyna.pdf";
 
 const degrees = [
   {
     id: "1",
-    title: "Licenciatura en Informática",
+    title: {
+      en: "Computer Science Bachelor",
+      es: "Licenciatura en Informática",
+    },
     subtitle: "Universidad Nacional de Quilmes",
-    duration: "2019 - Actualidad",
-    lines: [],
+    duration: {
+      en: "2019 - To date",
+      es: "2019 - Actualidad",
+    },
+    lines: {
+      en: [],
+      es: [],
+    },
     reference: {},
   },
   {
     id: "2",
-    title: "React | La guía completa: Hooks, Context, Redux y MERN",
+    title: {
+      en: "React | The Complete Guide",
+      es: "React | La guía completa: Hooks, Context, Redux y MERN",
+    },
     subtitle: "Udemy",
-    duration: "2022",
-    lines: [],
+    duration: {
+      en: "2022",
+      es: "2022",
+    },
+    lines: {
+      en: [],
+      es: [],
+    },
     reference: {
-      text: "Ver Curso",
+      text: {
+        en: "Read more",
+        es: "Ver Curso",
+      },
       link: "https://www.udemy.com/course/react-de-principiante-a-experto-creando-mas-de-10-aplicaciones/",
     },
   },
   {
     id: "3",
-    title: "English in Company | Intermediate Level",
+    title: {
+      en: "English in Company | Intermediate Level",
+      es: "English in Company | Intermediate Level",
+    },
     subtitle: "Lingua Universi",
-    duration: "2022",
-    lines: [],
+    duration: {
+      en: "2022",
+      es: "2022",
+    },
+    lines: {
+      en: [],
+      es: [],
+    },
     reference: {
-      text: "Ver Lingua Universi",
+      text: {
+        en: "Read more",
+        es: "Ver Lingua Universi",
+      },
       link: "https://www.linguauniversi.com/english",
     },
   },
   {
     id: "4",
-    title: "Scrum Developer Professional Certificate v2020",
+    title: {
+      en: "Scrum Developer Professional Certificate v2020",
+      es: "Scrum Developer Professional Certificate v2020",
+    },
     subtitle: "Certiprof ",
-    duration: "2021",
-    lines: [],
+    duration: {
+      en: "2021",
+      es: "2021",
+    },
+    lines: {
+      en: [],
+      es: [],
+    },
     reference: {},
   },
   {
     id: "5",
-    title: "Curso de Telecomunicaciones y Redes | Reparador de PC",
+    title: {
+      en: "Telecommunications, Networks and Computer Repair",
+      es: "Curso de Telecomunicaciones y Redes | Reparador de PC",
+    },
     subtitle: "Universidad Nacional de Lanús",
-    duration: "2019",
-    lines: [],
+    duration: {
+      en: "2019",
+      es: "2019",
+    },
+    lines: {
+      en: [],
+      es: [],
+    },
     reference: {},
   },
 ];
@@ -57,45 +108,91 @@ const degrees = [
 const experiences = [
   {
     id: "20",
-    title: "QA Analyst",
+    title: {
+      en: "QA Analyst",
+      es: "QA Analyst",
+    },
     subtitle: "MRM",
-    duration: "2022 - Actualidad",
-    lines: [
-      "Creación de páginas en Adobe AEM para testeo manual de componentes en ambiente de pruebas.",
-      "Creación de Bug Tickets y Test Cases en Zephir.",
-      "Manejo de tickets en Jira.",
-      "Trabajo en conjunto con el equipo de MRM Manila (Filipinas).",
-    ],
+    duration: {
+      en: "2022 - To date",
+      es: "2022 - Actualidad",
+    },
+    lines: {
+      en: [
+        "Building pages in Adobe AEM for manual testing of components in a testenvironment.",
+        "Creating Bug Tickets and Test Cases in Zephir.",
+        "Managing tickets on Jira.",
+        "Teamwork with MRM Manila (Philippines).",
+      ],
+      es: [
+        "Creación de páginas en Adobe AEM para testeo manual de componentes en ambiente de pruebas.",
+        "Creación de Bug Tickets y Test Cases en Zephir.",
+        "Manejo de tickets en Jira.",
+        "Trabajo en conjunto con el equipo de MRM Manila (Filipinas).",
+      ],
+    },
     reference: {
-      text: "Ver MRM",
+      text: {
+        en: "Read more",
+        es: "Ver MRM",
+      },
       link: "https://www.mrm.com/en/",
     },
   },
   {
     id: "21",
-    title: "Diseño y Desarrollo Web | Inglés Gramatical",
+    title: {
+      en: "Web Desing and Development | Gramatical English",
+      es: "Diseño y Desarrollo Web | Inglés Gramatical",
+    },
     subtitle: "Codellege by Softtek - Programa UP",
-    duration: "2021",
-    lines: [
-      "Angular: RXJS, Observables, HttpClient, Directivas, Routing, JSONs.",
-      "JavaScript: Funciones, Objetos, APIs, Eventos, Callbacks y Promesas.",
-      "CSS: Flexbox, Grid. Booststrap, Angular Material y Bulma.",
-    ],
+    duration: {
+      en: "2021",
+      es: "2021",
+    },
+    lines: {
+      en: [
+        "Angular: RXJS, Observables, HttpClient, Directives, Routing and JSONs.",
+        "JavaScript: Functions, Objects, APIs, Events, Callbacks and Promises.",
+        "CSS: Flexbox, Grid. Booststrap, Angular Material and Bulma.",
+      ],
+      es: [
+        "Angular: RXJS, Observables, HttpClient, Directivas, Routing, JSONs.",
+        "JavaScript: Funciones, Objetos, APIs, Eventos, Callbacks y Promesas.",
+        "CSS: Flexbox, Grid. Booststrap, Angular Material y Bulma.",
+      ],
+    },
     reference: {
-      text: "Ver Codellege",
+      text: {
+        en: "Read more",
+        es: "Ver Codellege",
+      },
       link: "https://codellege.com/",
     },
   },
   {
     id: "22",
-    title: "Reparador de PC",
+    title: {
+      en: "Computer Repair",
+      es: "Reparador de PC",
+    },
     subtitle: "Freelance",
-    duration: "2019 - 2022",
-    lines: [
-      "Soporte remoto para consultas técnicas.",
-      "Asesoramiento de armado y compra de equipos.",
-      "Instalación de SO y software.",
-    ],
+    duration: {
+      en: "2019 - 2022",
+      es: "2019 - 2022",
+    },
+    lines: {
+      en: [
+        "Remote support for technical inquiries.",
+        "Advice on assembly and purchase of equipment",
+        "Software and Operating System installation.",
+      ],
+      es: [
+        "Soporte remoto para consultas técnicas.",
+        "Asesoramiento de armado y compra de equipos.",
+        "Instalación de SO y software.",
+      ],
+    },
     reference: {},
   },
 ];
@@ -104,7 +201,7 @@ const downloadResume = () => {
   const downloadInstance = document.createElement("a");
   downloadInstance.href = resumeURL;
   downloadInstance.target = "_blank";
-  downloadInstance.download = "Resume";
+  downloadInstance.download = "Resume - Ignacio Garcia Reyna";
   document.getElementById("container")?.appendChild(downloadInstance);
   downloadInstance.click();
   document.getElementById("container")?.removeChild(downloadInstance);
@@ -128,7 +225,7 @@ const Resume = () => {
                 alt="Studies"
               />
               <h3 className="resume-title">
-                <span className="green-span">Educación</span>
+                <span className="green-span">Education</span>
               </h3>
             </div>
             <div>
@@ -145,7 +242,7 @@ const Resume = () => {
                 alt="Jobs"
               />
               <h3 className="resume-title">
-                <span className="green-span">Experiencia</span>
+                <span className="green-span">Experience</span>
               </h3>
             </div>
             <div>
@@ -160,7 +257,7 @@ const Resume = () => {
             className="transparent-button white-button"
             onClick={downloadResume}
           >
-            Descargar Currículum
+            Download Resume
           </a>
         </div>
 

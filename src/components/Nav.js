@@ -82,7 +82,7 @@ const Navigation = () => {
               className="nav-item"
               onClick={hideNavbar}
             >
-              Tecnologias
+              Technologies
             </Link>
           </li>
           <li>
@@ -95,7 +95,7 @@ const Navigation = () => {
               className="nav-item"
               onClick={hideNavbar}
             >
-              Contacto
+              Contact me
             </Link>
           </li>
           <FaTimes className="nav-close-menu" onClick={showNavMenu} />

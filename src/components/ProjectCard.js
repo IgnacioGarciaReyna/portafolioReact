@@ -8,7 +8,7 @@ const ProjectCard = ({ project }) => {
       <img src={projectImages(project.img)} alt={project.title} className="card-image"/>
       <p className="project-title">{project.title}</p>
       <p className="project-technology">{project.technology}</p>
-      <p className="project-description">{project.description}</p>
+      <p className="project-description">{project.description.en}</p>
       <div className="card-buttons">
         <a
           href={project.url}
@@ -22,7 +22,7 @@ const ProjectCard = ({ project }) => {
           target="_blank"
           className="transparent-button white-button"
         >
-          Repositorio
+          Repository
         </a>
       </div>
     </div>

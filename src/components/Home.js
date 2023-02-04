@@ -9,11 +9,11 @@ const Home = () => {
       <div className="content">
         <header>
           <p>
-            <b>Hola!</b> <br /> Mi nombre es
+            <b>Hi!</b> <br /> My name is
           </p>
           <h2 className="typewriter">Ignacio Garcia Reyna</h2>
           <p>
-            y soy &lt;<b>Desarrollador Front End </b>/&gt;.
+            and I'm a &lt;<b>Front End Developer</b>/&gt;.
           </p>
         </header>
         <span className="profile-image floating-img">

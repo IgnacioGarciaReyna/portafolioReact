@@ -7,7 +7,7 @@ const socialIconsImages = require.context("../assets/img/", true);
 const socials = [
   {
     id: "1",
-    name: "Linkedin",
+    name: "LinkedIn",
     href: "https://www.linkedin.com/in/ignaciogarciareyna/",
     src: "./linkedin-icon-white.png",
   },
@@ -25,7 +25,7 @@ const socials = [
   },
   {
     id: "4",
-    name: "Mail",
+    name: "Email",
     href: "mailto:ignaciogarciareyna@live.com",
     src: "./mail-icon.png",
   },
@@ -51,7 +51,7 @@ const Contact = () => {
     <section id="contact" className="shadow-section">
       <div className="container-technologies">
         <header className="">
-          <h2>Contacto</h2>
+          <h2>Contact me</h2>
           {/* <p>Something</p>  */}
           <div className="separator-line"></div>
         </header>
@@ -63,7 +63,7 @@ const Contact = () => {
               className="input-form"
               id="name"
               name="name"
-              placeholder="Nombre"
+              placeholder="Name"
               required
             />
             <input
@@ -79,7 +79,7 @@ const Contact = () => {
               className="contact-textarea"
               id="message"
               name="message"
-              placeholder="Mensaje"
+              placeholder="Message"
               required
               cols="10"
               rows="3"
@@ -90,7 +90,7 @@ const Contact = () => {
               type="submit"
               className="unstyle"
             >
-              Enviar
+              Send
             </button>
           </form>
         </div>

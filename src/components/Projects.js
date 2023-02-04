@@ -7,8 +7,10 @@ const projects = [
     id: "1",
     title: "PokeApi",
     img: "./pokeapi-home.png",
-    description:
-      "Aplicación que muestra los distintos pokemones y sus habilidades.",
+    description: {
+      en: "Application that shows the different pokemons and their abilities.",
+      es: "Aplicación que muestra los distintos pokemones y sus habilidades.",
+    },
     technology: "Angular",
     url: "https://ignaciogarciareyna.github.io/PokedexAngular/",
     repository: "https://github.com/IgnacioGarciaReyna/PokedexAngular",
@@ -17,7 +19,10 @@ const projects = [
     id: "2",
     title: "Portafolio",
     img: "./portafolio-home.png",
-    description: "Página personal creada para la busqueda de trabajo.",
+    description: {
+      en: "Personal page created for job search.",
+      es: "Página personal creada para la busqueda de trabajo.",
+    },
     technology: "React",
     url: "https://github.com/IgnacioGarciaReyna",
     repository: "https://github.com/IgnacioGarciaReyna/portafolioReact",
@@ -29,7 +34,7 @@ const Projects = () => {
     <section id="projects" className="shadow-section">
       <div className="container-projects">
         <header className="">
-          <h2>Proyectos</h2>
+          <h2>Projects</h2>
           {/* <p>Something</p>  */}
           <div className="separator-line"></div>
         </header>
@@ -43,7 +48,7 @@ const Projects = () => {
           href="https://github.com/IgnacioGarciaReyna"
           className="transparent-button white-button"
         >
-          Ver GitHub
+          My GitHub
         </a>
         <div className="goto-next-container">
           <Link

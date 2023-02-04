@@ -51,7 +51,7 @@ const Technologies = () => {
     <section id="technologies" className="shadow-section">
       <div className="container-technologies">
         <header className="">
-          <h2>Tecnologías</h2>
+          <h2>Technologies</h2>
           {/* <p>Something</p> */}
           <div className="separator-line green-separator"></div>
         </header>
