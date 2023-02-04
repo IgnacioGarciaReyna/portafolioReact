@@ -13,7 +13,7 @@ const About = () => {
     >
       <div
         className="section-container"
-        data-aos="fade-left"
+        data-aos="fade-right"
         data-aos-duration="2000"
       >
         <div className="section-content">
