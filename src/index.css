@@ -23,9 +23,25 @@
   width: 80vw;
 }
 
+.home-column{
+  display: flex;
+  width: 40vw;
+}
+
+.home-column-text{
+  align-items: end;
+  justify-content: end;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.home-column-image{
+  align-items: start;
+  justify-content: start;
+}
+
 .profile-image {
   display: inline-block;
-  margin-left: 3em;
   vertical-align: middle;
   border: 0;
   display: inline-block;
@@ -46,11 +62,8 @@
   width: 100%;
 }
 
-.content > header {
-  text-align: right;
-}
-
 h2 {
+  width: 100%;
   font-size: 2.5em;
   margin: 0;
   line-height: 1.5em;
@@ -80,35 +93,6 @@ header > p {
   transform: translateY(-5%);
   animation: floater 8s infinite;
   transition: ease 0.5s;
-}
-
-.typewriter {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 1px solid var(--details-color-1);
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  animation: typing 2.5s steps(40, end), blink-caret 0.5s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: var(--details-color-1);
-  }
 }
 
 /* M */
