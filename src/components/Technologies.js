@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "react-scroll";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 const technologiesImages = require.context("../assets/img/", true);
 
@@ -50,14 +54,18 @@ const Technologies = () => {
   return (
     <section id="technologies" className="shadow-section">
       <div className="container-technologies">
-        <header className="">
+        <header className="" data-aos="fade-up" data-aos-duration="2000">
           <h2>Technologies</h2>
           {/* <p>Something</p> */}
           <div className="separator-line green-separator"></div>
         </header>
         <div className="grid-technologies">
           {technologies.map((technology) => (
-            <section className="technology">
+            <section
+              className="technology"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
               <img
                 className="technology-icon"
                 alt={technology.name}
@@ -81,6 +89,9 @@ const Technologies = () => {
             offset={0}
             duration={500}
             className="goto-next"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="top-bottom"
           ></Link>
         </div>
       </div>
