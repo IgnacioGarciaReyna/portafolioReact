@@ -4,6 +4,10 @@ import StudiesIcon from "../assets/img/resume-icon1.png";
 import JobsIcon from "../assets/img/resume-icon2.png";
 import { Link } from "react-scroll";
 import resumeURL from "../assets/Resume - Ignacio Garcia Reyna.pdf";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 const degrees = [
   {
@@ -211,14 +215,14 @@ const Resume = () => {
   return (
     <section id="resume" className="shadow-section">
       <div className="container-technologies">
-        <header className="">
+        <header className="" data-aos="fade-up" data-aos-duration="2000">
           <h2>Resume</h2>
           {/* <p>Something</p> */}
           <div className="separator-line green-separator"></div>
         </header>
         <div className="grid-resume">
           <div className="column">
-            <div className="resume-title-container">
+            <div className="resume-title-container" data-aos="fade-up" data-aos-duration="2000">
               <img
                 className="resume-title resume-icon"
                 src={JobsIcon}
@@ -228,14 +232,14 @@ const Resume = () => {
                 <span className="green-span">Education</span>
               </h3>
             </div>
-            <div>
+            <div data-aos="zoom-in" data-aos-duration="2000">
               {degrees.map((degree) => (
                 <ResumeItem item={degree} key={degree.id} />
               ))}
             </div>
           </div>
           <div className="column">
-            <div className="resume-title-container">
+            <div className="resume-title-container" data-aos="fade-up" data-aos-duration="2000">
               <img
                 className="resume-title resume-icon"
                 src={StudiesIcon}
@@ -245,7 +249,7 @@ const Resume = () => {
                 <span className="green-span">Experience</span>
               </h3>
             </div>
-            <div>
+            <div data-aos="zoom-in" data-aos-duration="2000">
               {experiences.map((experience) => (
                 <ResumeItem item={experience} key={experience.id} />
               ))}
@@ -256,6 +260,8 @@ const Resume = () => {
           <a
             className="transparent-button white-button"
             onClick={downloadResume}
+            data-aos="zoom-in"
+            data-aos-duration="1000"
           >
             Download Resume
           </a>
@@ -269,6 +275,9 @@ const Resume = () => {
             offset={0}
             duration={500}
             className="goto-next"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="top-bottom"
           ></Link>
         </div>
       </div>
