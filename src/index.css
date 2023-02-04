@@ -863,7 +863,7 @@ body {
 }
 
 .back-to-home {
-  transform: rotate(180deg);
+  background-image: url(./assets/img/bottom-arrow-reverse.png);
 }
 
 .container-icons {
