@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "react-scroll";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 const About = () => {
   return (
@@ -7,7 +11,11 @@ const About = () => {
       id="about"
       className="main-section main-section-about shadow-section"
     >
-      <div className="section-container">
+      <div
+        className="section-container"
+        data-aos="fade-left"
+        data-aos-duration="2000"
+      >
         <div className="section-content">
           <div className="section-header">
             <h2>
@@ -60,6 +68,9 @@ const About = () => {
           offset={0}
           duration={500}
           className="goto-next"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-anchor-placement="top-bottom"
         ></Link>
       </div>
     </section>
