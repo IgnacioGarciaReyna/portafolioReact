@@ -1,6 +1,10 @@
 import React from "react";
 import { Link } from "react-scroll";
 import ProjectCard from "./ProjectCard";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 const projects = [
   {
@@ -33,7 +37,7 @@ const Projects = () => {
   return (
     <section id="projects" className="shadow-section">
       <div className="container-projects">
-        <header className="">
+        <header className="" data-aos="fade-up" data-aos-duration="2000">
           <h2>Projects</h2>
           {/* <p>Something</p>  */}
           <div className="separator-line"></div>
@@ -47,6 +51,8 @@ const Projects = () => {
           target="_blank"
           href="https://github.com/IgnacioGarciaReyna"
           className="transparent-button white-button"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
         >
           My GitHub
         </a>
@@ -58,6 +64,9 @@ const Projects = () => {
             offset={0}
             duration={500}
             className="goto-next"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="top-bottom"
           ></Link>
         </div>
       </div>
