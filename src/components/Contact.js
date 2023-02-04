@@ -1,6 +1,10 @@
 import React from "react";
 import emailjs from "emailjs-com";
 import { Link } from "react-scroll";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 const socialIconsImages = require.context("../assets/img/", true);
 
@@ -50,13 +54,18 @@ const Contact = () => {
   return (
     <section id="contact" className="shadow-section">
       <div className="container-technologies">
-        <header className="">
+        <header className="" data-aos="fade-up" data-aos-duration="2000">
           <h2>Contact me</h2>
           {/* <p>Something</p>  */}
           <div className="separator-line"></div>
         </header>
         <div className="form-container">
-          <form className="contact-form" onSubmit={enviarMail}>
+          <form
+            className="contact-form"
+            onSubmit={enviarMail}
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             {/* <p className="sendme-text">Escribime algo:</p> */}
             <input
               type="text"
@@ -83,7 +92,6 @@ const Contact = () => {
               required
               cols="10"
               rows="3"
-              
             ></textarea>
             <button
               id="submit-contact-button"
@@ -94,7 +102,11 @@ const Contact = () => {
             </button>
           </form>
         </div>
-        <ul className="container-icons">
+        <ul
+          className="container-icons"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           {socials.map((social) => (
             <li className="social-link">
               <a target="_blank" href={social.href}>
@@ -116,6 +128,9 @@ const Contact = () => {
             offset={0}
             duration={500}
             className="goto-next back-to-home"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="top-bottom"
           ></Link>
         </div>
       </div>
