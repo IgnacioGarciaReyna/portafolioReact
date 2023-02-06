@@ -23,19 +23,19 @@
   width: 80vw;
 }
 
-.home-column{
+.home-column {
   display: flex;
   width: 40vw;
 }
 
-.home-column-text{
+.home-column-text {
   align-items: end;
   justify-content: end;
   text-align: right;
   padding-right: 30px;
 }
 
-.home-column-image{
+.home-column-image {
   align-items: start;
   justify-content: start;
 }
@@ -107,16 +107,16 @@ header > p {
     height: auto;
   }
 
-  .home-column{
+  .home-column {
     width: 80vw;
   }
 
-  .home-column-image{
+  .home-column-image {
     align-items: center;
     justify-content: center;
   }
 
-  .home-column-text{
+  .home-column-text {
     align-items: center;
     justify-content: center;
     text-align: right;
@@ -1009,11 +1009,6 @@ body {
   transition: 0.5s;
 }
 
-.resume-item:hover {
-  transition: 0.5s;
-  background-color: var(--details-color-1);
-}
-
 .item-title {
   color: var(--details-color-1);
   transition: 0.5s;
@@ -1044,26 +1039,6 @@ body {
   margin: 6px 15px 6px 15px;
 }
 
-.resume-item:hover .item-title {
-  color: var(--background-color-1);
-  transition: 0.5s;
-}
-
-.resume-item:hover .item-subtitle {
-  color: var(--background-color-1);
-  transition: 0.5s;
-}
-
-.resume-item:hover .item-duration {
-  color: var(--background-color-1);
-  transition: 0.5s;
-}
-
-.resume-item:hover .item-text {
-  color: var(--background-color-1);
-  transition: 0.5s;
-}
-
 /* M */
 @media (max-width: 960px) {
   .grid-resume {
@@ -1073,6 +1048,33 @@ body {
   .grid-resume > .column {
     margin-top: 40px;
     justify-content: center;
+  }
+}
+
+@media (min-width: 600px) {
+  .resume-item:hover {
+    transition: 0.5s;
+    background-color: var(--details-color-1);
+  }
+
+  .resume-item:hover .item-title {
+    color: var(--background-color-1);
+    transition: 0.5s;
+  }
+
+  .resume-item:hover .item-subtitle {
+    color: var(--background-color-1);
+    transition: 0.5s;
+  }
+
+  .resume-item:hover .item-duration {
+    color: var(--background-color-1);
+    transition: 0.5s;
+  }
+
+  .resume-item:hover .item-text {
+    color: var(--background-color-1);
+    transition: 0.5s;
   }
 }
 
