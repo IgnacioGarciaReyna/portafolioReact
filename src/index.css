@@ -145,6 +145,43 @@ header > p {
   }
 }
 
+/* Landscape */
+@media (orientation: landscape) {
+  .background-container > .content {
+    flex-direction: row;
+    width: 100vw;
+    height: calc(102vh - 8.5em);
+    margin-top: 50px;
+  }
+
+  .profile-image {
+    height: 13rem;
+    width: 13rem;
+    margin: 0;
+  }
+
+  .home-column {
+    width: 50vw;
+  }
+
+  .home-column-image {
+    justify-content: start;
+    margin: 0 0 0 10px;
+  }
+
+  .home-column-text {
+    align-items: flex-end;
+    justify-content: center;
+    text-align: right;
+    padding-right: 0;
+    margin: 0 10px 0 0;
+  }
+
+  .home-column-text > header {
+    width: 100%;
+  }
+}
+
 /* CSS Go to next arrows */
 
 .goto-next-container {
