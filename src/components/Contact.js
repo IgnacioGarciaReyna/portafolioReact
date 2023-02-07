@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { Link } from "react-scroll";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ClipLoader } from "react-spinners";
+import FadeLoader from "react-spinners/FadeLoader";
 
 AOS.init();
 
@@ -36,8 +38,11 @@ const socials = [
 ];
 
 const Contact = () => {
+  const [loadSpinner, setLoadSpinner] = useState(false);
+
   const enviarMail = (e) => {
     e.preventDefault();
+    setLoadSpinner(true);
     console.log(e.target);
     emailjs
       .sendForm(
@@ -49,6 +54,7 @@ const Contact = () => {
       .then((res) => {
         console.log(res);
         e.target.reset();
+        setLoadSpinner(false);
       });
   };
 
@@ -61,6 +67,17 @@ const Contact = () => {
           <div className="separator-line"></div>
         </header>
         <div className="form-container">
+          {loadSpinner ? (
+            <div className="contact-spinner-container">
+              <FadeLoader
+                color="#4bffa5"
+                loading={loadSpinner}
+                size={150}
+                aria-label="Loading Spinner"
+                data-testid="loader"
+              />
+            </div>
+          ) : null}
           <form
             className="contact-form"
             onSubmit={enviarMail}

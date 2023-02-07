@@ -1003,6 +1003,21 @@ header > p {
     brightness(280%) contrast(101%);
 }
 
+/* Spinner */
+.contact-spinner-container{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  opacity: 0.3;
+  z-index: 10;
+}
+
 /* M */
 @media (max-width: 960px) {
   .social-link {
