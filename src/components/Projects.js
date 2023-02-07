@@ -38,8 +38,7 @@ const Projects = () => {
     <section id="projects" className="shadow-section">
       <div className="container-projects">
         <header className="" data-aos="fade-up" data-aos-duration="2000">
-          <h2>Projects</h2>
-          {/* <p>Something</p>  */}
+          <h2 className="container-title">Projects</h2>
           <div className="separator-line"></div>
         </header>
         <div className="projects-grid">

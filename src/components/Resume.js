@@ -216,8 +216,7 @@ const Resume = () => {
     <section id="resume" className="shadow-section">
       <div className="container-technologies">
         <header className="" data-aos="fade-up" data-aos-duration="2000">
-          <h2>Resume</h2>
-          {/* <p>Something</p> */}
+          <h2 className="container-title">Resume</h2>
           <div className="separator-line green-separator"></div>
         </header>
         <div className="grid-resume">
