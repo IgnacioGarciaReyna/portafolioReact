@@ -48,14 +48,15 @@ const Contact = () => {
       )
       .then((res) => {
         console.log(res);
+        e.target.reset();
       });
   };
 
   return (
     <section id="contact" className="shadow-section">
       <div className="container-technologies">
-        <header className="" data-aos="fade-up" data-aos-duration="2000">
-          <h2>Contact me</h2>
+        <header data-aos="fade-up" data-aos-duration="2000">
+          <h2 className="container-title">Contact me</h2>
           {/* <p>Something</p>  */}
           <div className="separator-line"></div>
         </header>
