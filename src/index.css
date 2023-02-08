@@ -493,6 +493,27 @@ header > p {
     overflow: scroll;
     height: calc(100% - 3.5em);
   }
+
+  .nav-items-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: -100vh;
+    transition: all 0.4s;
+    flex-direction: column;
+  }
+
+  .nav-item {
+    font-size: 15px;
+  }
+
+  .nav-button-menu {
+    display: block;
+  }
+
+  .nav-close-menu {
+    display: block;
+  }
 }
 
 /* CSS About */
