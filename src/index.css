@@ -556,10 +556,8 @@ header > p {
 @media (max-width: 600px) {
 
   .main-section-about {
-    background-image: url(../src/assets/img/collage2.png);
-    background-position: left;
-    background-size: 95vh auto;
-    background-position: -70px;
+    background-image: url(../src/assets/img/collage2y12.png);
+    background-size: contain;
   }
 
   .main-section-about > .section-container {
