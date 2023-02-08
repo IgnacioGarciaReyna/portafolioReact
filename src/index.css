@@ -554,6 +554,13 @@ header > p {
 
 /* S */
 @media (max-width: 600px) {
+
+  .main-section-about {
+    background-image: url(../src/assets/img/collage2.png);
+    background-position: left;
+    background-size: cover;
+  }
+
   .main-section-about > .section-container {
     vertical-align: baseline;
     height: 100%;
