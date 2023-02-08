@@ -59,7 +59,7 @@ const Contact = () => {
         toast.success("Message sent successfully!", {
           className:"toast",
           position: "bottom-center",
-          autoClose: 30000,
+          autoClose: 3000,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
@@ -98,7 +98,7 @@ const Contact = () => {
           >
             <ToastContainer
               position="bottom-center"
-              autoClose={30000}
+              autoClose={3000}
               hideProgressBar={false}
               newestOnTop={false}
               closeOnClick
