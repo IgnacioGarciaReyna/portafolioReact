@@ -57,8 +57,9 @@ const Contact = () => {
         e.target.reset();
         setLoadSpinner(false);
         toast.success("Message sent successfully!", {
+          className:"toast",
           position: "bottom-center",
-          autoClose: 3000,
+          autoClose: 30000,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
@@ -97,7 +98,7 @@ const Contact = () => {
           >
             <ToastContainer
               position="bottom-center"
-              autoClose={3000}
+              autoClose={30000}
               hideProgressBar={false}
               newestOnTop={false}
               closeOnClick

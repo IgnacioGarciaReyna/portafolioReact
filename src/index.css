@@ -1128,10 +1128,18 @@ header > p {
   z-index: 10;
 }
 
+.Toastify__toast-container {
+  width: 20vw !important;
+}
+
 /* M */
 @media (max-width: 960px) {
   .social-link {
     margin: 0 2rem;
+  }
+
+  .Toastify__toast-container {
+    width: 50vw !important;
   }
 }
 
@@ -1154,6 +1162,10 @@ header > p {
   .input-form,
   #submit-contact-button {
     font-size: 14px;
+  }
+
+  .Toastify__toast-container {
+    width: 73vw !important;
   }
 }
 
