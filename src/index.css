@@ -558,7 +558,7 @@ header > p {
   .main-section-about {
     background-image: url(../src/assets/img/collage2.png);
     background-position: left;
-    background-size: cover;
+    background-size: auto;
   }
 
   .main-section-about > .section-container {
