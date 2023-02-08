@@ -526,7 +526,7 @@ header > p {
 
 /* CSS About */
 .main-section-about {
-  background-image: url(../src/assets/img/programadorsentado.jpg);
+  background-image: url(../src/assets/img/collage2.png);
   display: flex;
   align-items: center;
   justify-content: end;
@@ -599,7 +599,7 @@ header > p {
 /* CSS University */
 
 .main-section-university {
-  background-image: url(../src/assets/img/unqui-salida.jpeg);
+  /* background-image: url(../src/assets/img/unqui-salida.jpeg); */
 }
 
 .main-section-university > .section-container {
@@ -611,7 +611,7 @@ header > p {
 
 /* CSS Programming */
 .main-section-programming {
-  background-image: url(../src/assets/img/computerprogramming2.jpg);
+  /* background-image: url(../src/assets/img/computerprogramming2.jpg); */
 }
 
 .main-section-programming > .section-container {
@@ -624,7 +624,7 @@ header > p {
 /* CSS University */
 
 .main-section-jobs {
-  background-image: url(../src/assets/img/office-mrm.jpg);
+  /* background-image: url(../src/assets/img/office-mrm.jpg); */
 }
 
 .main-section-jobs > .section-container {
