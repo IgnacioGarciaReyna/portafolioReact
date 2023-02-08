@@ -139,12 +139,12 @@ body {
 }
 
 @media (orientation: landscape) and (max-width: 960px) and (max-height: 600px) {
-  .container-title{
+  .container-title {
     margin: 0 0 0.2em 0;
     font-size: 28px;
   }
 
-  .transparent-button{
+  .transparent-button {
     height: 2.2em;
     line-height: 2.2em;
   }
@@ -690,8 +690,6 @@ header > p {
   .container-projects > .transparent-button {
     margin: 0;
   }
-
-  
 }
 
 /* CSS Cards */
@@ -788,7 +786,7 @@ header > p {
   .card-container:hover {
     margin: 20px 30px 10px 30px;
   }
-  
+
   .card-image {
     height: 6rem;
     width: auto;
@@ -879,6 +877,36 @@ header > p {
 
   .technology > .technology-icon {
     filter: none;
+  }
+}
+
+/* Landscape */
+@media (orientation: landscape) and (max-width: 960px) and (max-height: 600px) {
+  .container-technologies > header {
+    margin: 2.9em 0 0 0;
+  }
+
+  .grid-technologies {
+    grid-template-columns: auto auto auto auto;
+    margin: 10px auto 0 auto;
+  }
+
+  .technology {
+    padding-top: 0.5em;
+  }
+
+  .technology > .technology-icon {
+    margin: 0 0 0.5em 0;
+    height: 4em;
+    width: 4em;
+  }
+
+  .technology > h3 {
+    margin: 0 0 0.5em 0;
+  }
+
+  .technology > .technology-icon {
+    filter: grayscale(0%);
   }
 }
 
@@ -1050,7 +1078,7 @@ header > p {
 }
 
 /* Spinner */
-.contact-spinner-container{
+.contact-spinner-container {
   position: absolute;
   top: 0;
   right: 0;
