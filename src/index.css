@@ -598,9 +598,9 @@ header > p {
 
 /* CSS University */
 
-.main-section-university {
-  /* background-image: url(../src/assets/img/unqui-salida.jpeg); */
-}
+/* .main-section-university {
+  background-image: url(../src/assets/img/unqui-salida.jpeg);
+} */
 
 .main-section-university > .section-container {
   right: 0;
@@ -610,9 +610,9 @@ header > p {
 }
 
 /* CSS Programming */
-.main-section-programming {
-  /* background-image: url(../src/assets/img/computerprogramming2.jpg); */
-}
+/* .main-section-programming {
+  background-image: url(../src/assets/img/computerprogramming2.jpg);
+} */
 
 .main-section-programming > .section-container {
   left: 0;
@@ -623,9 +623,9 @@ header > p {
 
 /* CSS University */
 
-.main-section-jobs {
-  /* background-image: url(../src/assets/img/office-mrm.jpg); */
-}
+/* .main-section-jobs {
+  background-image: url(../src/assets/img/office-mrm.jpg);
+} */
 
 .main-section-jobs > .section-container {
   right: 0;
