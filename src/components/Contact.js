@@ -124,6 +124,7 @@ const Contact = () => {
           className="container-icons"
           data-aos="fade-up"
           data-aos-duration="2000"
+          data-aos-anchor-placement="top-bottom"
         >
           {socials.map((social) => (
             <li className="social-link">
