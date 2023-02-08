@@ -891,14 +891,10 @@ header > p {
   width: 6em;
   line-height: 5.65em;
   margin: 0 0 2em 0;
-  filter: grayscale(100%);
   transition: 3s;
 }
 
-.technology:hover .technology-icon {
-  filter: grayscale(0%);
-  transition: 0.5s;
-}
+
 
 @media screen and (max-width: 980px) {
   .grid-technologies {
