@@ -52,6 +52,7 @@ const Projects = () => {
           className="transparent-button white-button"
           data-aos="zoom-in"
           data-aos-duration="1000"
+          data-aos-anchor-placement="top-bottom"
         >
           My GitHub
         </a>
