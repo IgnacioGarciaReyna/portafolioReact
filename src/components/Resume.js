@@ -221,7 +221,11 @@ const Resume = () => {
         </header>
         <div className="grid-resume">
           <div className="column">
-            <div className="resume-title-container" data-aos="fade-up" data-aos-duration="2000">
+            <div
+              className="resume-title-container"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               <img
                 className="resume-title resume-icon"
                 src={JobsIcon}
@@ -238,7 +242,11 @@ const Resume = () => {
             </div>
           </div>
           <div className="column">
-            <div className="resume-title-container" data-aos="fade-up" data-aos-duration="2000">
+            <div
+              className="resume-title-container"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               <img
                 className="resume-title resume-icon"
                 src={StudiesIcon}
@@ -261,6 +269,7 @@ const Resume = () => {
             onClick={downloadResume}
             data-aos="zoom-in"
             data-aos-duration="1000"
+            data-aos-anchor-placement="top-bottom"
           >
             Download Resume
           </a>
