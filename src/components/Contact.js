@@ -3,8 +3,9 @@ import emailjs from "emailjs-com";
 import { Link } from "react-scroll";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { ClipLoader } from "react-spinners";
 import FadeLoader from "react-spinners/FadeLoader";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 AOS.init();
 
@@ -55,6 +56,16 @@ const Contact = () => {
         console.log(res);
         e.target.reset();
         setLoadSpinner(false);
+        toast.success("Message sent successfully!", {
+          position: "bottom-center",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
       });
   };
 
@@ -84,7 +95,18 @@ const Contact = () => {
             data-aos="fade-right"
             data-aos-duration="2000"
           >
-            {/* <p className="sendme-text">Escribime algo:</p> */}
+            <ToastContainer
+              position="bottom-center"
+              autoClose={3000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="dark"
+            />
             <input
               type="text"
               className="input-form"

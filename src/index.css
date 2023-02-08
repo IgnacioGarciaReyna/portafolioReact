@@ -1,6 +1,7 @@
 :root {
   --details-color-1: #4bffa5;
   --background-color-1: #101010;
+  --toastify-color-success: #4bffa5;
 }
 
 /* CSS general */
@@ -554,7 +555,6 @@ header > p {
 
 /* S */
 @media (max-width: 600px) {
-
   .main-section-about {
     background-image: url(../src/assets/img/collage2y12.png);
     background-size: contain;
