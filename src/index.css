@@ -803,6 +803,10 @@ header > p {
     margin: 20px 30px 10px 30px;
     border: 1px solid #797979;
   }
+
+  .card-image {
+    margin-top: 5px;
+  }
 }
 
 /* XS */
@@ -893,8 +897,6 @@ header > p {
   margin: 0 0 2em 0;
   transition: 3s;
 }
-
-
 
 @media screen and (max-width: 980px) {
   .grid-technologies {
