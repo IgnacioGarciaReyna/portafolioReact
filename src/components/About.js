@@ -19,7 +19,7 @@ const About = () => {
         <div className="section-content">
           <div className="section-header">
             <h2>
-              Hi, I'm <span className="green-span">Nacho</span> !
+              I'm <span className="green-span">Nacho</span> !
             </h2>
             <p>About me:</p>
           </div>
