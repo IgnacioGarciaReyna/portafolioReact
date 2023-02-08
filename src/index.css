@@ -1132,6 +1132,14 @@ header > p {
   width: 20vw !important;
 }
 
+.Toastify__toast-icon > svg {
+  fill: var(--details-color-1) !important;
+}
+
+.Toastify__progress-bar--success {
+  background: var(--details-color-1) !important;
+}
+
 /* M */
 @media (max-width: 960px) {
   .social-link {
