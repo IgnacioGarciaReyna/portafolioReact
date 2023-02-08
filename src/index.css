@@ -780,6 +780,7 @@ header > p {
   width: 95%;
   filter: grayscale(50%);
   transition: 0.5s;
+  border-radius: 5%;
 }
 
 .card-container:hover .card-image {
