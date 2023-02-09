@@ -18,30 +18,30 @@ const About = () => {
       >
         <div className="section-content">
           <div className="section-header">
-            <h2>
-              I'm <span className="green-span">Nacho</span> !
-            </h2>
-            <p>About me:</p>
+            <h2>About me:</h2>
           </div>
           <div className="section-text">
             <p>
               Besides programming, I like to hang out watching
               <span className="green-span"> movies</span> and playing
-              <span className="green-span"> guitar</span>. I really enjoy going
-              out for a good specialty
-              <span className="green-span"> coffee</span> with a big piece
-              of cake. Also, I like to play as many
-              <span className="green-span"> football</span> games per week as I
-              can.
+              <span className="green-span"> guitar</span>.
+              <br />I really enjoy going out for a specialty
+              <span className="green-span"> coffee</span> with a big piece of
+              cake.
+              <br />
+              Also, I love<span className="green-span"> football</span>, so I
+              try to play as many games a week as I can.
             </p>
           </div>
           <div className="section-text">
             <p>
               I started studying
               <span className="green-span"> programming</span> because I've
-              always had a knack for technology. From my first university
-              course, through Front End courses and then working on my own
-              projects, programming has always been a lot of
+              always had a knack for technology.
+              <br />
+              From my first university subject, through Front End courses and
+              then working on my own projects, programming has always been a lot
+              of
               <span className="green-span"> fun</span> for me.
             </p>
           </div>
