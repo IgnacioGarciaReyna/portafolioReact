@@ -1,6 +1,7 @@
 import React, { useContext, useRef, useState } from "react";
 import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { AiOutlineTranslation } from "react-icons/ai";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import LanguageContext from "../context/LanguageContext";
@@ -111,6 +112,7 @@ const Navigation = () => {
             </Link>
           </li>
           <li>
+          <AiOutlineTranslation></AiOutlineTranslation>
             <button onClick={toggleLanguage} value={languageValue}>
               Traducir
             </button>
