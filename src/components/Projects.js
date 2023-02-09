@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-scroll";
 import ProjectCard from "./ProjectCard";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import LanguageContext from "../context/LanguageContext";
 
 AOS.init();
 
@@ -34,11 +35,13 @@ const projects = [
 ];
 
 const Projects = () => {
+  const { texts } = useContext(LanguageContext);
+
   return (
     <section id="projects" className="shadow-section">
       <div className="container-projects">
         <header className="" data-aos="fade-up" data-aos-duration="2000">
-          <h2 className="container-title">Projects</h2>
+          <h2 className="container-title">{texts.projects.title}</h2>
           <div className="separator-line"></div>
         </header>
         <div className="projects-grid">
@@ -54,7 +57,7 @@ const Projects = () => {
           data-aos-duration="1000"
           data-aos-anchor-placement="top-bottom"
         >
-          My GitHub
+          {texts.projects.gitHub}
         </a>
         <div className="goto-next-container">
           <Link
