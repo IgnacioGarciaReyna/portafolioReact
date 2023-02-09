@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
 import AOS from "aos";
@@ -8,7 +8,8 @@ import LanguageContext from "../context/LanguageContext";
 AOS.init();
 
 const Navigation = () => {
-  const {texts, handleLanguage} = useContext(LanguageContext)
+  const [languageValue, setLanguageValue] = useState("es");
+  const { texts, handleLanguage } = useContext(LanguageContext);
   const navRef = useRef();
 
   const showNavMenu = () => {
@@ -19,6 +20,14 @@ const Navigation = () => {
     navRef.current.classList.remove("show");
   };
 
+  const toggleLanguage = (e) => {
+    handleLanguage(e);
+    if (e.target.value === "es") {
+      setLanguageValue("en");
+    } else {
+      setLanguageValue("es");
+    }
+  };
   return (
     <div className="container-navigation">
       <nav id="nav" data-aos="fade-down" data-aos-duration="2000">
@@ -100,6 +109,11 @@ const Navigation = () => {
             >
               {texts.nav.contact}
             </Link>
+          </li>
+          <li>
+            <button onClick={toggleLanguage} value={languageValue}>
+              Traducir
+            </button>
           </li>
           <FaTimes className="nav-close-menu" onClick={showNavMenu} />
         </ul>

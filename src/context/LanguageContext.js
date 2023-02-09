@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 
 const LanguageContext = createContext();
 
-const initialLanguage = "es";
+const initialLanguage = "en";
 const translations = {
   es: {
     home: {
