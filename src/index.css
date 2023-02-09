@@ -557,6 +557,7 @@ header > p {
   .main-section-about {
     background-image: url(../src/assets/img/collage2y12.png);
     background-size: cover;
+    background-position: center;
   }
 
   .main-section-about > .section-container {
