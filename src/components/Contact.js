@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import emailjs from "emailjs-com";
 import { Link } from "react-scroll";
 import AOS from "aos";
@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import FadeLoader from "react-spinners/FadeLoader";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import LanguageContext from "../context/LanguageContext";
 
 AOS.init();
 
@@ -39,6 +40,7 @@ const socials = [
 ];
 
 const Contact = () => {
+  const { texts } = useContext(LanguageContext);
   const [loadSpinner, setLoadSpinner] = useState(false);
 
   const enviarMail = (e) => {
@@ -57,7 +59,7 @@ const Contact = () => {
         e.target.reset();
         setLoadSpinner(false);
         toast.success("Message sent successfully!", {
-          className:"toast",
+          className: "toast",
           position: "bottom-center",
           autoClose: 3000,
           hideProgressBar: false,
@@ -74,8 +76,7 @@ const Contact = () => {
     <section id="contact" className="shadow-section">
       <div className="container-technologies">
         <header data-aos="fade-up" data-aos-duration="2000">
-          <h2 className="container-title">Contact me</h2>
-          {/* <p>Something</p>  */}
+          <h2 className="container-title">{texts.contact.title}</h2>
           <div className="separator-line"></div>
         </header>
         <div className="form-container">
@@ -113,7 +114,7 @@ const Contact = () => {
               className="input-form"
               id="name"
               name="name"
-              placeholder="Name"
+              placeholder={texts.contact.name}
               required
             />
             <input
@@ -121,7 +122,7 @@ const Contact = () => {
               className="input-form"
               id="email"
               name="email"
-              placeholder="Email"
+              placeholder={texts.contact.email}
               required
             />
             <textarea
@@ -129,7 +130,7 @@ const Contact = () => {
               className="contact-textarea"
               id="message"
               name="message"
-              placeholder="Message"
+              placeholder={texts.contact.message}
               required
               cols="10"
               rows="3"
@@ -139,7 +140,7 @@ const Contact = () => {
               type="submit"
               className="unstyle"
             >
-              Send
+              {texts.contact.send}
             </button>
           </form>
         </div>
