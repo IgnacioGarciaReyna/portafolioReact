@@ -1,20 +1,23 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-scroll";
 import porfilePicture from "../assets/img/profile-picture.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Typewriter } from "react-simple-typewriter";
+import LanguageContext from "../context/LanguageContext";
 
 AOS.init();
 
 const Home = () => {
+  const { texts } = useContext(LanguageContext);
+
   return (
     <div id="home" className="container background-container">
       <div className="content" data-aos="zoom-out" data-aos-duration="2000">
         <div className="home-column home-column-text">
           <header>
             <p>
-              <b>Hi!</b> <br /> My name is
+              <b>{texts.home.hello}</b> <br /> {texts.home.myName}
             </p>
             <h2 className="">
               <Typewriter
@@ -29,7 +32,7 @@ const Home = () => {
               />
             </h2>
             <p>
-              and I'm a &lt;<b>Front End Developer</b>/&gt;.
+              {texts.home.imA} &lt;<b>{texts.home.frontEndDev}</b>/&gt;.
             </p>
           </header>
         </div>
