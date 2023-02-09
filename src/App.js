@@ -9,21 +9,24 @@ import Projects from "./components/Projects";
 import Resume from "./components/Resume";
 import Technologies from "./components/Technologies";
 import University from "./components/University";
+import { LanguageProvider } from "./context/LanguageContext";
 
 function App() {
   return (
     <div>
-      <Navigation />
-      <Home />
-      <About />
-      <Projects />
-      {/* <University />
+      <LanguageProvider>
+        <Navigation />
+        <Home />
+        <About />
+        <Projects />
+        {/* <University />
       <Programming />
       <Jobs /> */}
-      <Resume />
-      <Technologies />
-      <Contact />
-      <Footer />
+        <Resume />
+        <Technologies />
+        <Contact />
+        <Footer />
+      </LanguageProvider>
     </div>
   );
 }
