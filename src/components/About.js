@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-scroll";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import LanguageContext from "../context/LanguageContext";
 
 AOS.init();
 
 const About = () => {
+  const { texts } = useContext(LanguageContext);
+
   return (
     <section
       id="about"
@@ -18,19 +21,22 @@ const About = () => {
       >
         <div className="section-content">
           <div className="section-header">
-            <h2>About me:</h2>
+            <h2>{texts.about.title}</h2>
           </div>
           <div className="section-text">
             <p>
-              Besides programming, I like to hang out watching
-              <span className="green-span"> movies</span> and playing
-              <span className="green-span"> guitar</span>.
-              <br />I really enjoy going out for a specialty
-              <span className="green-span"> coffee</span> with a big piece of
-              cake.
+              {texts.about.firstSection[0]}
+              <span className="green-span">{texts.about.firstSection[1]}</span>
+              {texts.about.firstSection[2]}
+              <span className="green-span">{texts.about.firstSection[3]}</span>.
               <br />
-              Also, I love<span className="green-span"> football</span>, so I
-              try to play as many games a week as I can.
+              {texts.about.firstSection[4]}
+              <span className="green-span">{texts.about.firstSection[5]}</span>
+              {texts.about.firstSection[6]}
+              <br />
+              {texts.about.firstSection[7]}
+              <span className="green-span">{texts.about.firstSection[8]}</span>
+              {texts.about.firstSection[9]}
             </p>
           </div>
           <div className="section-text">
@@ -54,12 +60,6 @@ const About = () => {
               </span>
             </p>
           </div>
-
-          {/* <div>
-            <a href="#" className="transparent-button white-button">
-              Learn More
-            </a>
-          </div> */}
         </div>
       </div>
       <div className="goto-next-container">
