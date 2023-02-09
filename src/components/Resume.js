@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import ResumeItem from "./ResumeItem";
 import StudiesIcon from "../assets/img/resume-icon1.png";
 import JobsIcon from "../assets/img/resume-icon2.png";
@@ -6,6 +6,7 @@ import { Link } from "react-scroll";
 import resumeURL from "../assets/Resume - Ignacio Garcia Reyna.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import LanguageContext from "../context/LanguageContext";
 
 AOS.init();
 
@@ -212,11 +213,13 @@ const downloadResume = () => {
 };
 
 const Resume = () => {
+  const { texts } = useContext(LanguageContext);
+
   return (
     <section id="resume" className="shadow-section">
       <div className="container-technologies">
         <header className="" data-aos="fade-up" data-aos-duration="2000">
-          <h2 className="container-title">Resume</h2>
+          <h2 className="container-title">{texts.resume.title}</h2>
           <div className="separator-line green-separator"></div>
         </header>
         <div className="grid-resume">
@@ -232,7 +235,7 @@ const Resume = () => {
                 alt="Studies"
               />
               <h3 className="resume-title">
-                <span className="green-span">Education</span>
+                <span className="green-span">{texts.resume.education}</span>
               </h3>
             </div>
             <div data-aos="zoom-in" data-aos-duration="2000">
@@ -253,7 +256,7 @@ const Resume = () => {
                 alt="Jobs"
               />
               <h3 className="resume-title">
-                <span className="green-span">Experience</span>
+                <span className="green-span">{texts.resume.experience}</span>
               </h3>
             </div>
             <div data-aos="zoom-in" data-aos-duration="2000">
@@ -271,7 +274,7 @@ const Resume = () => {
             data-aos-duration="1000"
             data-aos-anchor-placement="top-bottom"
           >
-            Download Resume
+            {texts.resume.downloadResume}
           </a>
         </div>
 
