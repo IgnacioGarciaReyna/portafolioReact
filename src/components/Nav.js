@@ -1,12 +1,14 @@
-import React, { useRef } from "react";
+import React, { useContext, useRef } from "react";
 import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import LanguageContext from "../context/LanguageContext";
 
 AOS.init();
 
 const Navigation = () => {
+  const {texts, handleLanguage} = useContext(LanguageContext)
   const navRef = useRef();
 
   const showNavMenu = () => {
@@ -31,7 +33,7 @@ const Navigation = () => {
               className="nav-item"
               onClick={hideNavbar}
             >
-              Home
+              {texts.nav.home}
             </Link>
           </li>
           <li>
@@ -44,7 +46,7 @@ const Navigation = () => {
               className="nav-item"
               onClick={hideNavbar}
             >
-              About me
+              {texts.nav.about}
             </Link>
           </li>
           <li>
@@ -57,7 +59,7 @@ const Navigation = () => {
               className="nav-item"
               onClick={hideNavbar}
             >
-              Projects
+              {texts.nav.projects}
             </Link>
           </li>
           <li>
@@ -70,7 +72,7 @@ const Navigation = () => {
               className="nav-item"
               onClick={hideNavbar}
             >
-              Resume
+              {texts.nav.resume}
             </Link>
           </li>
           <li>
@@ -83,7 +85,7 @@ const Navigation = () => {
               className="nav-item"
               onClick={hideNavbar}
             >
-              Technologies
+              {texts.nav.technologies}
             </Link>
           </li>
           <li>
@@ -96,7 +98,7 @@ const Navigation = () => {
               className="nav-item"
               onClick={hideNavbar}
             >
-              Contact me
+              {texts.nav.contact}
             </Link>
           </li>
           <FaTimes className="nav-close-menu" onClick={showNavMenu} />
