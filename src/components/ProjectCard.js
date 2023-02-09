@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import LanguageContext from "../context/LanguageContext";
 
 const projectImages = require.context("../assets/img/", true);
 
 AOS.init();
 
 const ProjectCard = ({ project }) => {
+  const { texts } = useContext(LanguageContext);
   return (
     <div data-aos="fade-right" data-aos-duration="2000">
       <div className="card-container">
@@ -24,14 +26,14 @@ const ProjectCard = ({ project }) => {
             target="_blank"
             className="transparent-button white-button"
           >
-            Deploy
+            {texts.projectCard.deploy}
           </a>
           <a
             href={project.repository}
             target="_blank"
             className="transparent-button white-button"
           >
-            Repository
+            {texts.projectCard.repo}
           </a>
         </div>
       </div>
