@@ -41,22 +41,20 @@ const About = () => {
           </div>
           <div className="section-text">
             <p>
-              I started studying
-              <span className="green-span"> programming</span> because I've
-              always had a knack for technology.
+              {texts.about.secondSection[0]}
+              <span className="green-span">{texts.about.secondSection[1]}</span>
+              {texts.about.secondSection[2]}
               <br />
-              From my first university subject, through Front End courses and
-              then working on my own projects, programming has always been a lot
-              of
-              <span className="green-span"> fun</span> for me.
+              {texts.about.secondSection[3]}
+              <span className="green-span">{texts.about.secondSection[4]}</span>
+              {texts.about.secondSection[5]}
             </p>
           </div>
           <div className="section-text">
             <p>
-              *A curious thing:{" "}
+              {texts.about.curiosity.curiousThing}
               <span className="aboutme-curiosity">
-                Before being a programmer, I was studying to be a Music
-                Producer.
+                {texts.about.curiosity.text}
               </span>
             </p>
           </div>
