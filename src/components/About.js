@@ -27,8 +27,10 @@ const About = () => {
             <p>
               Besides programming, I like to hang out watching
               <span className="green-span"> movies</span> and playing
-              <span className="green-span"> guitar</span>. Also, I like to play
-              as many
+              <span className="green-span"> guitar</span>. I really enjoy going
+              out for a good specialty
+              <span className="green-span"> coffee</span> with a big piece
+              of cake. Also, I like to play as many
               <span className="green-span"> football</span> games per week as I
               can.
             </p>
