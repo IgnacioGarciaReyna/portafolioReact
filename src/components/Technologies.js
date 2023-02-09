@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-scroll";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import LanguageContext from "../context/LanguageContext";
 
 AOS.init();
 
@@ -51,11 +52,13 @@ const technologies = [
 ];
 
 const Technologies = () => {
+  const { texts } = useContext(LanguageContext);
+
   return (
     <section id="technologies" className="shadow-section">
       <div className="container-technologies">
         <header className="" data-aos="fade-up" data-aos-duration="2000">
-          <h2 className="container-title">Technologies</h2>
+          <h2 className="container-title">{texts.technologies.title}</h2>
           <div className="separator-line green-separator"></div>
         </header>
         <div className="grid-technologies">
@@ -75,11 +78,6 @@ const Technologies = () => {
             </section>
           ))}
         </div>
-        {/* <footer className="">
-          <a href="#" className="transparent-button white-button">
-            Something
-          </a>
-        </footer> */}
         <div className="goto-next-container">
           <Link
             to="contact"
