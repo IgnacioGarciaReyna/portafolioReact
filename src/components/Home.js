@@ -20,7 +20,7 @@ const Home = () => {
               <Typewriter
                 className="typewriter"
                 words={["Ignacio Garcia Reyna", "Nacho"]}
-                loop={5}
+                loop={20}
                 cursor
                 cursorStyle="_"
                 typeSpeed={70}
