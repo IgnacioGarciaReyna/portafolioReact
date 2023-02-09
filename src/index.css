@@ -777,7 +777,6 @@ header > p {
 .card-buttons > a {
   text-align: center;
   margin: 16px 4px 4px 4px;
-  margin: 2 0;
   padding: 0;
   height: 3em;
 }
@@ -860,7 +859,6 @@ header > p {
   .card-buttons > a {
     text-align: center;
     margin: 14px 4px 2px 4px;
-    margin: 2 0;
     padding: 0;
     height: 2em;
     line-height: 2em;
