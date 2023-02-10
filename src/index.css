@@ -434,7 +434,7 @@ header > p {
   width: 2rem;
   color: #ffffff;
   position: absolute;
-  top: 3rem;
+  top: 1rem;
   right: 3rem;
 }
 
@@ -464,6 +464,9 @@ header > p {
 }
 
 .li-translate {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   height: 3.5rem;
   line-height: 3.5rem;
@@ -472,22 +475,27 @@ header > p {
 }
 
 .icon-translate {
-  margin: 0 3px;
+  margin: 0 0 0 4px;
 }
 
 .translate-button {
   all: unset;
   color: #ffffff;
   z-index: 99;
-  display: block;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 5%;
+  padding: 0 1rem;
+  height: 2rem;
 }
 
 .translate-button:hover {
   transition: 0.5;
   color: var(--details-color-1);
+  border: 1px solid var(--details-color-1);
+  border-radius: 5%;
 }
 
 /* M */
@@ -511,6 +519,11 @@ header > p {
 
   .nav-close-menu {
     display: block;
+  }
+
+  .li-translate {
+    position: initial;
+    margin: 5vh 0 0 0 !important;
   }
 }
 
@@ -539,7 +552,7 @@ header > p {
   }
 
   .nav-item {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .nav-button-menu {
@@ -548,6 +561,16 @@ header > p {
 
   .nav-close-menu {
     display: block;
+  }
+
+  .li-translate {
+    margin: 0 !important;
+  }
+
+  .translate-button {
+    position: absolute;
+    top: 1rem;
+    left: 3rem;
   }
 }
 
