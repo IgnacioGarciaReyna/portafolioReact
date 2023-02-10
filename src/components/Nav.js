@@ -112,9 +112,9 @@ const Navigation = () => {
             </Link>
           </li>
           <li>
-          <AiOutlineTranslation></AiOutlineTranslation>
+            <AiOutlineTranslation></AiOutlineTranslation>
             <button onClick={toggleLanguage} value={languageValue}>
-              Traducir
+              {texts.nav.translate}
             </button>
           </li>
           <FaTimes className="nav-close-menu" onClick={showNavMenu} />

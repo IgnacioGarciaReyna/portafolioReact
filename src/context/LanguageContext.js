@@ -18,6 +18,7 @@ const translations = {
       resume: "Currículum",
       technologies: "Tecnologías",
       contact: "Contacto",
+      translate: "English"
     },
     about: {
       title: "Sobre mí:",
@@ -80,6 +81,7 @@ const translations = {
       resume: "Resume",
       technologies: "Technologies",
       contact: "Contact me",
+      translate: "Español"
     },
     about: {
       title: "About me:",
