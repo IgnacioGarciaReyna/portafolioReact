@@ -111,10 +111,14 @@ const Navigation = () => {
               {texts.nav.contact}
             </Link>
           </li>
-          <li>
-            <AiOutlineTranslation></AiOutlineTranslation>
-            <button onClick={toggleLanguage} value={languageValue}>
+          <li className="nav-item li-translate">
+            <button
+              className="translate-button"
+              onClick={toggleLanguage}
+              value={languageValue}
+            >
               {texts.nav.translate}
+              <AiOutlineTranslation className="icon-translate"></AiOutlineTranslation>
             </button>
           </li>
           <FaTimes className="nav-close-menu" onClick={showNavMenu} />
