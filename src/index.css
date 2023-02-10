@@ -507,6 +507,7 @@ header > p {
     top: -100vh;
     transition: all 0.4s;
     flex-direction: column;
+    z-index: 99;
   }
 
   .nav-item {
@@ -515,6 +516,7 @@ header > p {
 
   .nav-button-menu {
     display: block;
+    z-index: 0.1;
   }
 
   .nav-close-menu {
