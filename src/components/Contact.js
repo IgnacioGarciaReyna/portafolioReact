@@ -7,6 +7,7 @@ import FadeLoader from "react-spinners/FadeLoader";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import LanguageContext from "../context/LanguageContext";
+import { CSSTransition, SwitchTransition } from "react-transition-group";
 
 AOS.init();
 
@@ -76,7 +77,17 @@ const Contact = () => {
     <section id="contact" className="shadow-section">
       <div className="container-technologies">
         <header data-aos="fade-up" data-aos-duration="2000">
-          <h2 className="container-title">{texts.contact.title}</h2>
+          <SwitchTransition>
+            <CSSTransition
+              classNames="fade"
+              key={texts.contact.title}
+              addEndListener={(node, done) =>
+                node.addEventListener("transitionend", done, false)
+              }
+            >
+              <h2 className="container-title">{texts.contact.title}</h2>
+            </CSSTransition>
+          </SwitchTransition>
           <div className="separator-line"></div>
         </header>
         <div className="form-container">
@@ -109,39 +120,80 @@ const Contact = () => {
               pauseOnHover
               theme="dark"
             />
-            <input
-              type="text"
-              className="input-form"
-              id="name"
-              name="name"
-              placeholder={texts.contact.name}
-              required
-            />
-            <input
-              type="email"
-              className="input-form"
-              id="email"
-              name="email"
-              placeholder={texts.contact.email}
-              required
-            />
-            <textarea
-              type="text"
-              className="contact-textarea"
-              id="message"
-              name="message"
-              placeholder={texts.contact.message}
-              required
-              cols="10"
-              rows="3"
-            ></textarea>
-            <button
-              id="submit-contact-button"
-              type="submit"
-              className="unstyle"
-            >
-              {texts.contact.send}
-            </button>
+            <SwitchTransition>
+              <CSSTransition
+                classNames="fade"
+                key={texts.contact.name}
+                addEndListener={(node, done) =>
+                  node.addEventListener("transitionend", done, false)
+                }
+              >
+                <input
+                  type="text"
+                  className="input-form"
+                  id="name"
+                  name="name"
+                  placeholder={texts.contact.name}
+                  required
+                />
+              </CSSTransition>
+            </SwitchTransition>
+
+            <SwitchTransition>
+              <CSSTransition
+                classNames="fade"
+                key={texts.contact.name}
+                addEndListener={(node, done) =>
+                  node.addEventListener("transitionend", done, false)
+                }
+              >
+                <input
+                  type="email"
+                  className="input-form"
+                  id="email"
+                  name="email"
+                  placeholder={texts.contact.email}
+                  required
+                />
+              </CSSTransition>
+            </SwitchTransition>
+            <SwitchTransition>
+              <CSSTransition
+                classNames="fade"
+                key={texts.contact.name}
+                addEndListener={(node, done) =>
+                  node.addEventListener("transitionend", done, false)
+                }
+              >
+                <textarea
+                  type="text"
+                  className="contact-textarea"
+                  id="message"
+                  name="message"
+                  placeholder={texts.contact.message}
+                  required
+                  cols="10"
+                  rows="3"
+                ></textarea>
+              </CSSTransition>
+            </SwitchTransition>
+            <SwitchTransition>
+              <CSSTransition
+                classNames="fade"
+                key={texts.contact.send}
+                addEndListener={(node, done) =>
+                  node.addEventListener("transitionend", done, false)
+                }
+              >
+                <button
+                  id="submit-contact-button"
+                  type="submit"
+                  className="unstyle"
+                >
+                  {texts.contact.send}
+                </button>
+              </CSSTransition>
+            </SwitchTransition>
           </form>
         </div>
         <ul
