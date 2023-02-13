@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import LanguageContext from "../context/LanguageContext";
+import { CSSTransition, SwitchTransition } from "react-transition-group";
 
 AOS.init();
 
@@ -21,42 +22,95 @@ const About = () => {
       >
         <div className="section-content">
           <div className="section-header">
-            <h2>{texts.about.title}</h2>
+            <SwitchTransition>
+              <CSSTransition
+                classNames="fade"
+                key={texts.about.title}
+                addEndListener={(node, done) =>
+                  node.addEventListener("transitionend", done, false)
+                }
+              >
+                <h2>{texts.about.title}</h2>
+              </CSSTransition>
+            </SwitchTransition>
           </div>
           <div className="section-text">
-            <p>
-              {texts.about.firstSection[0]}
-              <span className="green-span">{texts.about.firstSection[1]}</span>
-              {texts.about.firstSection[2]}
-              <span className="green-span">{texts.about.firstSection[3]}</span>.
-              <br />
-              {texts.about.firstSection[4]}
-              <span className="green-span">{texts.about.firstSection[5]}</span>
-              {texts.about.firstSection[6]}
-              <br />
-              {texts.about.firstSection[7]}
-              <span className="green-span">{texts.about.firstSection[8]}</span>
-              {texts.about.firstSection[9]}
-            </p>
+            <SwitchTransition>
+              <CSSTransition
+                classNames="fade"
+                key={texts.about.firstSection[0]}
+                addEndListener={(node, done) =>
+                  node.addEventListener("transitionend", done, false)
+                }
+              >
+                <p>
+                  {texts.about.firstSection[0]}
+                  <span className="green-span">
+                    {texts.about.firstSection[1]}
+                  </span>
+                  {texts.about.firstSection[2]}
+                  <span className="green-span">
+                    {texts.about.firstSection[3]}
+                  </span>
+                  .
+                  <br />
+                  {texts.about.firstSection[4]}
+                  <span className="green-span">
+                    {texts.about.firstSection[5]}
+                  </span>
+                  {texts.about.firstSection[6]}
+                  <br />
+                  {texts.about.firstSection[7]}
+                  <span className="green-span">
+                    {texts.about.firstSection[8]}
+                  </span>
+                  {texts.about.firstSection[9]}
+                </p>
+              </CSSTransition>
+            </SwitchTransition>
           </div>
           <div className="section-text">
-            <p>
-              {texts.about.secondSection[0]}
-              <span className="green-span">{texts.about.secondSection[1]}</span>
-              {texts.about.secondSection[2]}
-              <br />
-              {texts.about.secondSection[3]}
-              <span className="green-span">{texts.about.secondSection[4]}</span>
-              {texts.about.secondSection[5]}
-            </p>
+            <SwitchTransition>
+              <CSSTransition
+                classNames="fade"
+                key={texts.about.secondSection[0]}
+                addEndListener={(node, done) =>
+                  node.addEventListener("transitionend", done, false)
+                }
+              >
+                <p>
+                  {texts.about.secondSection[0]}
+                  <span className="green-span">
+                    {texts.about.secondSection[1]}
+                  </span>
+                  {texts.about.secondSection[2]}
+                  <br />
+                  {texts.about.secondSection[3]}
+                  <span className="green-span">
+                    {texts.about.secondSection[4]}
+                  </span>
+                  {texts.about.secondSection[5]}
+                </p>
+              </CSSTransition>
+            </SwitchTransition>
           </div>
           <div className="section-text">
-            <p>
-              {texts.about.curiosity.curiousThing}
-              <span className="aboutme-curiosity">
-                {texts.about.curiosity.text}
-              </span>
-            </p>
+            <SwitchTransition>
+              <CSSTransition
+                classNames="fade"
+                key={texts.about.curiosity.curiousThing}
+                addEndListener={(node, done) =>
+                  node.addEventListener("transitionend", done, false)
+                }
+              >
+                <p>
+                  {texts.about.curiosity.curiousThing}
+                  <span className="aboutme-curiosity">
+                    {texts.about.curiosity.text}
+                  </span>
+                </p>
+              </CSSTransition>
+            </SwitchTransition>
           </div>
         </div>
       </div>
