@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Typewriter } from "react-simple-typewriter";
 import LanguageContext from "../context/LanguageContext";
+import { CSSTransition, SwitchTransition } from "react-transition-group";
 
 AOS.init();
 
@@ -16,9 +17,20 @@ const Home = () => {
       <div className="content" data-aos="zoom-out" data-aos-duration="2000">
         <div className="home-column home-column-text">
           <header>
-            <p>
-              <b>{texts.home.hello}</b> <br /> {texts.home.myName}
-            </p>
+            <SwitchTransition>
+              <CSSTransition
+                classNames="fade"
+                key={texts.home.hello}
+                addEndListener={(node, done) =>
+                  node.addEventListener("transitionend", done, false)
+                }
+              >
+                <p>
+                  <b>{texts.home.hello}</b> <br /> {texts.home.myName}
+                </p>
+              </CSSTransition>
+            </SwitchTransition>
+
             <h2 className="">
               <Typewriter
                 className="typewriter"
@@ -31,9 +43,19 @@ const Home = () => {
                 delaySpeed={3000}
               />
             </h2>
-            <p>
-              {texts.home.imA} &lt;<b>{texts.home.frontEndDev}</b>/&gt;.
-            </p>
+            <SwitchTransition>
+              <CSSTransition
+                classNames="fade"
+                key={texts.home.imA}
+                addEndListener={(node, done) =>
+                  node.addEventListener("transitionend", done, false)
+                }
+              >
+                <p>
+                  {texts.home.imA} &lt;<b>{texts.home.frontEndDev}</b>/&gt;.
+                </p>
+              </CSSTransition>
+            </SwitchTransition>
           </header>
         </div>
         <div className="home-column home-column-image">
