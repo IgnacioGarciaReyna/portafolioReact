@@ -127,7 +127,6 @@ const translations = {
           },
         ],
       },
-
       experience: {
         title: "Experiencia",
         items: [
@@ -181,7 +180,7 @@ const translations = {
     contact: {
       title: "Contacto",
       name: "Nombre",
-      email: "Email",
+      email: "Mail",
       message: "Mensaje",
       send: "Enviar",
     },

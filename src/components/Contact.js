@@ -142,7 +142,7 @@ const Contact = () => {
             <SwitchTransition>
               <CSSTransition
                 classNames="fade"
-                key={texts.contact.name}
+                key={texts.contact.email}
                 addEndListener={(node, done) =>
                   node.addEventListener("transitionend", done, false)
                 }
@@ -157,10 +157,11 @@ const Contact = () => {
                 />
               </CSSTransition>
             </SwitchTransition>
+
             <SwitchTransition>
               <CSSTransition
                 classNames="fade"
-                key={texts.contact.name}
+                key={texts.contact.message}
                 addEndListener={(node, done) =>
                   node.addEventListener("transitionend", done, false)
                 }
