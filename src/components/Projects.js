@@ -7,32 +7,7 @@ import LanguageContext from "../context/LanguageContext";
 
 AOS.init();
 
-const projects = [
-  {
-    id: "1",
-    title: "PokeApi",
-    img: "./pokeapi-home.png",
-    description: {
-      en: "Application that shows the different pokemons and their abilities.",
-      es: "Aplicación que muestra los distintos pokemones y sus habilidades.",
-    },
-    technology: "Angular",
-    url: "https://ignaciogarciareyna.github.io/PokedexAngular/",
-    repository: "https://github.com/IgnacioGarciaReyna/PokedexAngular",
-  },
-  {
-    id: "2",
-    title: "Portafolio",
-    img: "./portafolio-home.png",
-    description: {
-      en: "Personal page created for job search.",
-      es: "Página personal creada para la busqueda de trabajo.",
-    },
-    technology: "React",
-    url: "https://github.com/IgnacioGarciaReyna",
-    repository: "https://github.com/IgnacioGarciaReyna/portafolioReact",
-  },
-];
+
 
 const Projects = () => {
   const { texts } = useContext(LanguageContext);
@@ -45,7 +20,7 @@ const Projects = () => {
           <div className="separator-line"></div>
         </header>
         <div className="projects-grid">
-          {projects.map((project) => (
+          {texts.projectsData.map((project) => (
             <ProjectCard project={project} key={project.id} />
           ))}
         </div>

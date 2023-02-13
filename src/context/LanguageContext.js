@@ -18,7 +18,7 @@ const translations = {
       resume: "Currículum",
       technologies: "Tecnologías",
       contact: "Contacto",
-      translate: "English"
+      translate: "English",
     },
     about: {
       title: "Sobre mí:",
@@ -51,7 +51,28 @@ const translations = {
       title: "Proyectos",
       gitHub: "Mi GitHub",
     },
-    projectCard: { deploy: "Página", repo: "Repositorio" },
+    projectCardButtons: { deploy: "Página", repo: "Repositorio" },
+    projectsData: [
+      {
+        id: "1",
+        title: "PokeApi",
+        img: "./pokeapi-home.png",
+        description:
+          "Aplicación que muestra los distintos pokemones y sus habilidades.",
+        technology: "Angular",
+        url: "https://ignaciogarciareyna.github.io/PokedexAngular/",
+        repository: "https://github.com/IgnacioGarciaReyna/PokedexAngular",
+      },
+      {
+        id: "2",
+        title: "Portafolio",
+        img: "./portafolio-home.png",
+        description: "Página personal creada para la busqueda de trabajo.",
+        technology: "React",
+        url: "https://github.com/IgnacioGarciaReyna",
+        repository: "https://github.com/IgnacioGarciaReyna/portafolioReact",
+      },
+    ],
     resume: {
       title: "Curriculum Vitae",
       downloadResume: "Descargar CV",
@@ -81,7 +102,7 @@ const translations = {
       resume: "Resume",
       technologies: "Technologies",
       contact: "Contact me",
-      translate: "Español"
+      translate: "Español",
     },
     about: {
       title: "About me:",
@@ -114,7 +135,28 @@ const translations = {
       title: "Projects",
       gitHub: "My GitHub",
     },
-    projectCard: { deploy: "Deploy", repo: "Repository" },
+    projectCardButtons: { deploy: "Deploy", repo: "Repository" },
+    projectsData: [
+      {
+        id: "1",
+        title: "PokeApi",
+        img: "./pokeapi-home.png",
+        description:
+          "Application that shows the different pokemons and their abilities.",
+        technology: "Angular",
+        url: "https://ignaciogarciareyna.github.io/PokedexAngular/",
+        repository: "https://github.com/IgnacioGarciaReyna/PokedexAngular",
+      },
+      {
+        id: "2",
+        title: "Portfolio",
+        img: "./portafolio-home.png",
+        description: "Personal page created for job search.",
+        technology: "React",
+        url: "https://github.com/IgnacioGarciaReyna",
+        repository: "https://github.com/IgnacioGarciaReyna/portafolioReact",
+      },
+    ],
     resume: {
       title: "Resume",
       downloadResume: "Download Resume",
@@ -146,7 +188,7 @@ const LanguageProvider = ({ children }) => {
     }
   };
 
-  const data = { texts, handleLanguage };
+  const data = { texts, handleLanguage, language };
   return (
     <LanguageContext.Provider value={data}>{children}</LanguageContext.Provider>
   );

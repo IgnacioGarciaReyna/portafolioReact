@@ -8,7 +8,8 @@ const projectImages = require.context("../assets/img/", true);
 AOS.init();
 
 const ProjectCard = ({ project }) => {
-  const { texts } = useContext(LanguageContext);
+  const { texts, language } = useContext(LanguageContext);
+  
   return (
     <div data-aos="fade-right" data-aos-duration="2000">
       <div className="card-container">
@@ -19,21 +20,21 @@ const ProjectCard = ({ project }) => {
         />
         <p className="project-title">{project.title}</p>
         <p className="project-technology">{project.technology}</p>
-        <p className="project-description">{project.description.en}</p>
+        <p className="project-description">{project.description}</p>
         <div className="card-buttons">
           <a
             href={project.url}
             target="_blank"
             className="transparent-button white-button"
           >
-            {texts.projectCard.deploy}
+            {texts.projectCardButtons.deploy}
           </a>
           <a
             href={project.repository}
             target="_blank"
             className="transparent-button white-button"
           >
-            {texts.projectCard.repo}
+            {texts.projectCardButtons.repo}
           </a>
         </div>
       </div>
