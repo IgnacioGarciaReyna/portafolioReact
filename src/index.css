@@ -435,8 +435,8 @@ header > p {
   width: 2rem;
   color: #ffffff;
   position: absolute;
-  top: 1rem;
-  right: 3rem;
+  bottom: 3.5rem;
+  right: 3.5rem;
 }
 
 .li-resume-button {
@@ -508,6 +508,7 @@ header > p {
     top: -100vh;
     transition: all 0.4s;
     flex-direction: column;
+    z-index: 99;
   }
 
   .nav-item {
@@ -526,6 +527,35 @@ header > p {
   .li-translate {
     position: initial;
     margin: 5vh 0 0 0 !important;
+  }
+
+  .translate-text {
+    display: none;
+  }
+
+  .translate-button {
+    position: fixed;
+    height: auto;
+    width: auto;
+    padding: 0;
+    top: 16px;
+    right: 24px;
+    border-radius: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .translate-button:hover {
+    border-radius: 60%;
+    transition: 0.5s;
+  }
+
+  .icon-translate {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0.3rem;
+    transform: translate(0.15rem);
   }
 }
 
@@ -569,10 +599,33 @@ header > p {
     margin: 0 !important;
   }
 
+  .translate-text {
+    display: none;
+  }
+
   .translate-button {
-    position: absolute;
-    top: 1rem;
-    left: 3rem;
+    position: fixed;
+    height: auto;
+    width: auto;
+    padding: 0;
+    top: 16px;
+    right: 24px;
+    border-radius: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .translate-button:hover {
+    border-radius: 60%;
+    transition: 0.5s;
+  }
+
+  .icon-translate {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0.3rem;
+    transform: translate(0.15rem);
   }
 }
 
@@ -1459,7 +1512,6 @@ header > p {
     margin: 0;
   }
 }
-
 
 /* React Transition Group */
 
