@@ -76,8 +76,106 @@ const translations = {
     resume: {
       title: "Curriculum Vitae",
       downloadResume: "Descargar CV",
-      education: "Educación",
-      experience: "Experiencia",
+      education: {
+        title: "Educación",
+        items: [
+          {
+            id: "1",
+            title: "Licenciatura en Informática",
+            subtitle: "Universidad Nacional de Quilmes",
+            duration: "2019 - Actualidad",
+            lines: [],
+            reference: {},
+          },
+          {
+            id: "2",
+            title: "React | La guía completa: Hooks, Context, Redux y MERN",
+            subtitle: "Udemy",
+            duration: "2022",
+            lines: [],
+            reference: {
+              text: "Ver Curso",
+              link: "https://www.udemy.com/course/react-de-principiante-a-experto-creando-mas-de-10-aplicaciones/",
+            },
+          },
+          {
+            id: "3",
+            title: "English in Company | Intermediate Level",
+            subtitle: "Lingua Universi",
+            duration: "2022",
+            lines: [],
+            reference: {
+              text: "Ver Lingua Universi",
+              link: "https://www.linguauniversi.com/english",
+            },
+          },
+          {
+            id: "4",
+            title: "Desarrollador Profesional Scrum Certificado v2020",
+            subtitle: "Certiprof ",
+            duration: "2021",
+            lines: [],
+            reference: {},
+          },
+          {
+            id: "5",
+            title: "Curso de Telecomunicaciones y Redes | Reparador de PC",
+            subtitle: "Universidad Nacional de Lanús",
+            duration: "2019",
+            lines: [],
+            reference: {},
+          },
+        ],
+      },
+
+      experience: {
+        title: "Experiencia",
+        items: [
+          {
+            id: "20",
+            title: "QA Analyst",
+            subtitle: "MRM",
+            duration: "2022 - Actualidad",
+            lines: [
+              "Creación de páginas en Adobe AEM para testeo manual de componentes en ambiente de pruebas.",
+              "Creación de Bug Tickets y Test Cases en Zephir.",
+              "Manejo de tickets en Jira.",
+              "Trabajo en conjunto con el equipo de MRM Manila (Filipinas).",
+            ],
+            reference: {
+              text: "Ver MRM",
+              link: "https://www.mrm.com/en/",
+            },
+          },
+          {
+            id: "21",
+            title: "Diseño y Desarrollo Web | Inglés Gramatical",
+            subtitle: "Codellege by Softtek - Programa UP",
+            duration: "2021",
+            lines: [
+              "Angular: RXJS, Observables, HttpClient, Directivas, Routing, JSONs.",
+              "JavaScript: Funciones, Objetos, APIs, Eventos, Callbacks y Promesas.",
+              "CSS: Flexbox, Grid. Booststrap, Angular Material y Bulma.",
+            ],
+            reference: {
+              text: "Ver Codellege",
+              link: "https://codellege.com/",
+            },
+          },
+          {
+            id: "22",
+            title: "Reparador de PC",
+            subtitle: "Freelance",
+            duration: "2019 - 2022",
+            lines: [
+              "Soporte remoto para consultas técnicas.",
+              "Asesoramiento de armado y compra de equipos.",
+              "Instalación de SO y software.",
+            ],
+            reference: {},
+          },
+        ],
+      },
     },
     technologies: { title: "Tecnologías" },
     contact: {
@@ -160,8 +258,105 @@ const translations = {
     resume: {
       title: "Resume",
       downloadResume: "Download Resume",
-      education: "Education",
-      experience: "Experience",
+      education: {
+        title: "Education",
+        items: [
+          {
+            id: "1",
+            title: "Licenciatura en Informática",
+            subtitle: "Universidad Nacional de Quilmes",
+            duration: "2019 - To date",
+            lines: [],
+            reference: {},
+          },
+          {
+            id: "2",
+            title: "React | The Complete Guide",
+            subtitle: "Udemy",
+            duration: "2022",
+            lines: [],
+            reference: {
+              text: "Read more",
+              link: "https://www.udemy.com/course/react-de-principiante-a-experto-creando-mas-de-10-aplicaciones/",
+            },
+          },
+          {
+            id: "3",
+            title: "English in Company | Intermediate Level",
+            subtitle: "Lingua Universi",
+            duration: "2022",
+            lines: [],
+            reference: {
+              text: "Read more",
+              link: "https://www.linguauniversi.com/english",
+            },
+          },
+          {
+            id: "4",
+            title: "Scrum Developer Professional Certificate v2020",
+            subtitle: "Certiprof ",
+            duration: "2021",
+            lines: [],
+            reference: {},
+          },
+          {
+            id: "5",
+            title: "Telecommunications, Networks and Computer Repair",
+            subtitle: "Universidad Nacional de Lanús",
+            duration: "2019",
+            lines: [],
+            reference: {},
+          },
+        ],
+      },
+      experience: {
+        title: "Experience",
+        items: [
+          {
+            id: "20",
+            title: "QA Analyst",
+            subtitle: "MRM",
+            duration: "2022 - To date",
+            lines: [
+              "Building pages in Adobe AEM for manual testing of components in a testenvironment.",
+              "Creating Bug Tickets and Test Cases in Zephir.",
+              "Managing tickets on Jira.",
+              "Teamwork with MRM Manila (Philippines).",
+            ],
+            reference: {
+              text: "Read more",
+              link: "https://www.mrm.com/en/",
+            },
+          },
+          {
+            id: "21",
+            title: "Web Desing and Development | Gramatical English",
+            subtitle: "Codellege by Softtek - Programa UP",
+            duration: "2021",
+            lines: [
+              "Angular: RXJS, Observables, HttpClient, Directives, Routing and JSONs.",
+              "JavaScript: Functions, Objects, APIs, Events, Callbacks and Promises.",
+              "CSS: Flexbox, Grid. Booststrap, Angular Material and Bulma.",
+            ],
+            reference: {
+              text: "Read more",
+              link: "https://codellege.com/",
+            },
+          },
+          {
+            id: "22",
+            title: "Computer Repair",
+            subtitle: "Freelance",
+            duration: "2019 - 2022",
+            lines: [
+              "Remote support for technical inquiries.",
+              "Advice on assembly and purchase of equipment",
+              "Software and Operating System installation.",
+            ],
+            reference: {},
+          },
+        ],
+      },
     },
     technologies: { title: "Technologies" },
     contact: {
