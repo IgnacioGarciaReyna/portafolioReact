@@ -7,6 +7,7 @@ import resumeURL from "../assets/Resume - Ignacio Garcia Reyna.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import LanguageContext from "../context/LanguageContext";
+import { CSSTransition, SwitchTransition } from "react-transition-group";
 
 AOS.init();
 
@@ -43,9 +44,19 @@ const Resume = () => {
                 alt="Studies"
               />
               <h3 className="resume-title">
-                <span className="green-span">
-                  {texts.resume.education.title}
-                </span>
+                <SwitchTransition>
+                  <CSSTransition
+                    classNames="fade"
+                    key={texts.resume.education.title}
+                    addEndListener={(node, done) =>
+                      node.addEventListener("transitionend", done, false)
+                    }
+                  >
+                    <span className="green-span">
+                      {texts.resume.education.title}
+                    </span>
+                  </CSSTransition>
+                </SwitchTransition>
               </h3>
             </div>
             <div data-aos="zoom-in" data-aos-duration="2000">
@@ -66,9 +77,19 @@ const Resume = () => {
                 alt="Jobs"
               />
               <h3 className="resume-title">
-                <span className="green-span">
-                  {texts.resume.experience.title}
-                </span>
+                <SwitchTransition>
+                  <CSSTransition
+                    classNames="fade"
+                    key={texts.resume.experience.title}
+                    addEndListener={(node, done) =>
+                      node.addEventListener("transitionend", done, false)
+                    }
+                  >
+                    <span className="green-span">
+                      {texts.resume.experience.title}
+                    </span>
+                  </CSSTransition>
+                </SwitchTransition>
               </h3>
             </div>
             <div data-aos="zoom-in" data-aos-duration="2000">
@@ -86,7 +107,17 @@ const Resume = () => {
             data-aos-duration="1000"
             data-aos-anchor-placement="top-bottom"
           >
-            {texts.resume.downloadResume}
+            <SwitchTransition>
+              <CSSTransition
+                classNames="fade"
+                key={texts.resume.downloadResume}
+                addEndListener={(node, done) =>
+                  node.addEventListener("transitionend", done, false)
+                }
+              >
+                <span>{texts.resume.downloadResume}</span>
+              </CSSTransition>
+            </SwitchTransition>
           </a>
         </div>
 
