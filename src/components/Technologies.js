@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import LanguageContext from "../context/LanguageContext";
+import { CSSTransition, SwitchTransition } from "react-transition-group";
 
 AOS.init();
 
@@ -58,7 +59,18 @@ const Technologies = () => {
     <section id="technologies" className="shadow-section">
       <div className="container-technologies">
         <header className="" data-aos="fade-up" data-aos-duration="2000">
-          <h2 className="container-title">{texts.technologies.title}</h2>
+          <SwitchTransition>
+            <CSSTransition
+              classNames="fade"
+              key={texts.technologies.title}
+              addEndListener={(node, done) =>
+                node.addEventListener("transitionend", done, false)
+              }
+            >
+              <h2 className="container-title">{texts.technologies.title}</h2>
+            </CSSTransition>
+          </SwitchTransition>
+
           <div className="separator-line green-separator"></div>
         </header>
         <div className="grid-technologies">
