@@ -263,8 +263,8 @@ const translations = {
         items: [
           {
             id: "1",
-            title: "Licenciatura en Informática",
-            subtitle: "Universidad Nacional de Quilmes",
+            title: "Computer Science Bachelor",
+            subtitle: "National University of Quilmes",
             duration: "2019 - To date",
             lines: [],
             reference: {},
@@ -302,7 +302,7 @@ const translations = {
           {
             id: "5",
             title: "Telecommunications, Networks and Computer Repair",
-            subtitle: "Universidad Nacional de Lanús",
+            subtitle: "National University of Lanús",
             duration: "2019",
             lines: [],
             reference: {},
@@ -331,7 +331,7 @@ const translations = {
           {
             id: "21",
             title: "Web Desing and Development | Gramatical English",
-            subtitle: "Codellege by Softtek - Programa UP",
+            subtitle: "Codellege by Softtek - UP Program",
             duration: "2021",
             lines: [
               "Angular: RXJS, Observables, HttpClient, Directives, Routing and JSONs.",
