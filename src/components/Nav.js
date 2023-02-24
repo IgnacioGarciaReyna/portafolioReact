@@ -182,11 +182,11 @@ const Navigation = () => {
             >
               <li className="nav-item li-translate">
                 <button
-                  className="translate-button"
+                  className="translate-button translate-text"
                   onClick={toggleLanguage}
                   value={languageValue}
                 >
-                  <span className="translate-text">{texts.nav.translate}</span>
+                  {texts.nav.translate}
                   <AiOutlineTranslation className="icon-translate"></AiOutlineTranslation>
                 </button>
               </li>
