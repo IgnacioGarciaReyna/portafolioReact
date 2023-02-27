@@ -51,8 +51,22 @@ const translations = {
       title: "Proyectos",
       gitHub: "Mi GitHub",
     },
-    projectCardButtons: { deploy: "Página", repo: "Repositorio" },
+    projectCardButtons: {
+      deploy: "Página",
+      repo: "Repositorio",
+      deployedSoon: "En breve",
+    },
     projectsData: [
+      {
+        id: "0",
+        title: "Cinema Paradiso Trailers",
+        img: "./movies-home.png",
+        description:
+          "Aplicación que muestra trailers e información de peliculas y series.",
+        technology: "React | Axios | Hooks",
+        url: "",
+        repository: "https://github.com/IgnacioGarciaReyna/peliculasReact.git",
+      },
       {
         id: "1",
         title: "PokeApi",
@@ -233,8 +247,22 @@ const translations = {
       title: "Projects",
       gitHub: "My GitHub",
     },
-    projectCardButtons: { deploy: "Deploy", repo: "Repository" },
+    projectCardButtons: {
+      deploy: "Deploy",
+      repo: "Repository",
+      deployedSoon: "Soon",
+    },
     projectsData: [
+      {
+        id: "0",
+        title: "Cinema Paradiso Trailers",
+        img: "./movies-home.png",
+        description:
+          "Application that shows trailers and data from different movies and tv shows.",
+        technology: "React | Axios | Hooks",
+        url: "",
+        repository: "https://github.com/IgnacioGarciaReyna/peliculasReact.git",
+      },
       {
         id: "1",
         title: "PokeApi",

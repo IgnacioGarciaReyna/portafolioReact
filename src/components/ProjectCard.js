@@ -31,13 +31,21 @@ const ProjectCard = ({ project }) => {
             <p className="project-technology">{project.technology}</p>
             <p className="project-description">{project.description}</p>
             <div className="card-buttons">
-              <a
-                href={project.url}
-                target="_blank"
-                className="transparent-button white-button"
-              >
-                {texts.projectCardButtons.deploy}
-              </a>
+              {project.url !== "" ? (
+                <a
+                  href={project.url}
+                  target="_blank"
+                  className="transparent-button white-button"
+                >
+                  {texts.projectCardButtons.deploy}
+                </a>
+              ) : (
+                <a
+                  className="transparent-button gray-button"
+                >
+                  {texts.projectCardButtons.deployedSoon}
+                </a>
+              )}
               <a
                 href={project.repository}
                 target="_blank"
