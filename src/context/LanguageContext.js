@@ -292,7 +292,7 @@ const translations = {
           {
             id: "1",
             title: "Computer Science Bachelor",
-            subtitle: "National University of Quilmes",
+            subtitle: "Universidad Nacional de Quilmes",
             duration: "2019 - To date",
             lines: [],
             reference: {},
@@ -330,7 +330,7 @@ const translations = {
           {
             id: "5",
             title: "Telecommunications, Networks and Computer Repair",
-            subtitle: "National University of Lanús",
+            subtitle: "Universidad Nacional de Lanús",
             duration: "2019",
             lines: [],
             reference: {},
