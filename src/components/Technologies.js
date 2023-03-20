@@ -31,6 +31,11 @@ const technologies = [
     src: "./js-icon.png",
   },
   {
+    id: "41",
+    name: "RXJS",
+    src: "./rxjs-logo.png",
+  },
+  {
     id: "5",
     name: "Git",
     src: "./Git-Icon-1788C.png",
@@ -49,6 +54,11 @@ const technologies = [
     id: "8",
     name: "HTML",
     src: "./html-circ-icon.png",
+  },
+  {
+    id: "9",
+    name: "MySQL",
+    src: "./mysql-icon.png",
   },
 ];
 
