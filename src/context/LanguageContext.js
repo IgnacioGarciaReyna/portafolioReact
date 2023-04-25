@@ -260,7 +260,7 @@ const translations = {
         description:
           "Application that shows trailers and data from different movies and tv shows.",
         technology: "React | Axios | Hooks",
-        url: "",
+        url: "https://cinemaparadiso-trailers.netlify.app/",
         repository: "https://github.com/IgnacioGarciaReyna/peliculasReact.git",
       },
       {
