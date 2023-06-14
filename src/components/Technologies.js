@@ -57,8 +57,8 @@ const technologies = [
   },
   {
     id: "9",
-    name: "MySQL",
-    src: "./mysql-icon.png",
+    name: "Java",
+    src: "./java-icon.png",
   },
 ];
 
