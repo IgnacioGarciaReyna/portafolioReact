@@ -63,7 +63,7 @@ const ResumeItem = ({ item }) => {
               node.addEventListener("transitionend", done, false)
             }
           >
-            <a className="item-text" target="_blank" href={item.reference.link}>
+            <a className="item-link" target="_blank" href={item.reference.link}>
               {item.reference.text}
             </a>
           </CSSTransition>
