@@ -45,6 +45,7 @@ const About = () => {
                 }
               >
                 <p>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   {texts.about.firstSection[0]}
                   <span className="green-span">
                     {texts.about.firstSection[1]}
@@ -70,6 +71,7 @@ const About = () => {
                 }
               >
                 <p>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   {texts.about.secondSection[0]}
                   <span className="green-span">
                     {texts.about.secondSection[1]}
