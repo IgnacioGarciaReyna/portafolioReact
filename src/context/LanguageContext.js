@@ -126,7 +126,7 @@ const translations = {
             id: "3",
             title: "English in Company | Intermediate Level",
             subtitle: "Lingua Universi",
-            duration: "2022",
+            duration: "2022 - Actualidad",
             lines: [],
             reference: {
               text: "Ver Lingua Universi",
@@ -160,10 +160,9 @@ const translations = {
             subtitle: "MRM",
             duration: "2022 - Actualidad",
             lines: [
-              "Creación de páginas en Adobe AEM para testeo manual de componentes en ambiente de pruebas.",
-              "Creación de Bug Tickets y Test Cases en Zephir.",
-              "Manejo de tickets en Jira.",
-              "Trabajo en conjunto con el equipo de MRM Manila (Filipinas).",
+              "Creación de páginas web en Adobe AEM para testeo de componentes.",
+              "Manejo de tickets en Jira y creación de Bug Tickets y Test Cases en Zephir.",
+              "Uso diario del inglés para comunicación con los equipos de USA y Filipinas.",
             ],
             reference: {
               text: "Ver MRM",
@@ -172,13 +171,14 @@ const translations = {
           },
           {
             id: "21",
-            title: "Diseño y Desarrollo Web | Inglés Gramatical",
-            subtitle: "Codellege by Softtek - Programa UP",
+            title: "Desarrollo Web con Angular",
+            subtitle: "Softtek - Codellege | Programa UP",
             duration: "2021",
             lines: [
-              "Angular: RXJS, Observables, HttpClient, Directivas, Routing, JSONs.",
-              "JavaScript: Funciones, Objetos, APIs, Eventos, Callbacks y Promesas.",
-              "CSS: Flexbox, Grid. Booststrap, Angular Material y Bulma.",
+              "RXJS, Observables, HttpClient, Directivas y Routing.",
+              "JavaScript: consumo de APIs, Eventos, Callbacks y Promesas.",
+              "HTML y CSS: Booststrap, Angular Material y Bulma. Flexbox y Grid.",
+              "Inglés Conversacional",
             ],
             reference: {
               text: "Ver Codellege",
@@ -332,7 +332,7 @@ const translations = {
             id: "3",
             title: "English in Company | Intermediate Level",
             subtitle: "Lingua Universi",
-            duration: "2022",
+            duration: "2022 - To date",
             lines: [],
             reference: {
               text: "Read more",
@@ -366,10 +366,9 @@ const translations = {
             subtitle: "MRM",
             duration: "2022 - To date",
             lines: [
-              "Building pages in Adobe AEM for manual testing of components in a testenvironment.",
-              "Creating Bug Tickets and Test Cases in Zephir.",
-              "Managing tickets on Jira.",
-              "Teamwork with MRM Manila (Philippines).",
+              "Creation of web pages in Adobe AEM for web component testing.",
+              "Ticket handling in Jira and creation of bug tickets and test cases in Zephir",
+              "Daily use of English to communicate with US and Philippine teams",
             ],
             reference: {
               text: "Read more",
@@ -378,13 +377,14 @@ const translations = {
           },
           {
             id: "21",
-            title: "Web Desing and Development | Gramatical English",
-            subtitle: "Codellege by Softtek - UP Program",
+            title: "Web Development with Angular",
+            subtitle: "Softtek - Codellege | UP Program",
             duration: "2021",
             lines: [
-              "Angular: RXJS, Observables, HttpClient, Directives, Routing and JSONs.",
-              "JavaScript: Functions, Objects, APIs, Events, Callbacks and Promises.",
-              "CSS: Flexbox, Grid. Booststrap, Angular Material and Bulma.",
+              "RXJS, Observables, HttpClient, Directives and Routing.",
+              "JavaScript: APIs, Events, Callbacks and Promises.",
+              "HTML and CSS: Booststrap, Angular Material and Bulma. Flexbox and Grid.",
+              "Conversational English.",
             ],
             reference: {
               text: "Read more",
@@ -395,7 +395,7 @@ const translations = {
             id: "22",
             title: "Computer Repair",
             subtitle: "Freelance",
-            duration: "2019 - 2022",
+            duration: "2018 - 2022",
             lines: [
               "Remote support for technical inquiries.",
               "Advice on assembly and purchase of equipment",
