@@ -34,6 +34,7 @@ const About = () => {
               </CSSTransition>
             </SwitchTransition>
           </div>
+
           <div className="section-text">
             <SwitchTransition>
               <CSSTransition
@@ -44,27 +45,18 @@ const About = () => {
                 }
               >
                 <p>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   {texts.about.firstSection[0]}
                   <span className="green-span">
                     {texts.about.firstSection[1]}
                   </span>
                   {texts.about.firstSection[2]}
-                  <span className="green-span">
-                    {texts.about.firstSection[3]}
-                  </span>
-                  .
                   <br />
-                  {texts.about.firstSection[4]}
+                  {texts.about.firstSection[3]}
                   <span className="green-span">
-                    {texts.about.firstSection[5]}
+                    {texts.about.firstSection[4]}
                   </span>
-                  {texts.about.firstSection[6]}
-                  <br />
-                  {texts.about.firstSection[7]}
-                  <span className="green-span">
-                    {texts.about.firstSection[8]}
-                  </span>
-                  {texts.about.firstSection[9]}
+                  {texts.about.firstSection[5]}
                 </p>
               </CSSTransition>
             </SwitchTransition>
@@ -79,17 +71,26 @@ const About = () => {
                 }
               >
                 <p>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   {texts.about.secondSection[0]}
                   <span className="green-span">
                     {texts.about.secondSection[1]}
                   </span>
                   {texts.about.secondSection[2]}
-                  <br />
-                  {texts.about.secondSection[3]}
                   <span className="green-span">
-                    {texts.about.secondSection[4]}
+                    {texts.about.secondSection[3]}
                   </span>
-                  {texts.about.secondSection[5]}
+                  {texts.about.secondSection[4]}
+                  <span className="green-span">
+                    {texts.about.secondSection[5]}
+                  </span>
+                  .
+                  <br />
+                  {texts.about.secondSection[6]}
+                  <span className="green-span">
+                    {texts.about.secondSection[7]}
+                  </span>
+                  {texts.about.secondSection[8]}
                 </p>
               </CSSTransition>
             </SwitchTransition>
