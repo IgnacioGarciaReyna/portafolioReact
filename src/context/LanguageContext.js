@@ -63,8 +63,8 @@ const translations = {
         description:
           "Aplicación para armar equipos de futbol en base a la habilidad de cada jugador.",
         technology: "React | TypeScript | Material UI",
-        url: "",
-        repository: "https://armate-los-teams.netlify.app/",
+        url: "https://armate-los-teams.netlify.app/",
+        repository: "https://github.com/IgnacioGarciaReyna/panyqueso",
       },
       {
         id: "1",
@@ -280,8 +280,8 @@ const translations = {
         description:
           "App to build football teams based on the skills of each player.",
         technology: "React | TypeScript | Material UI",
-        url: "",
-        repository: "https://armate-los-teams.netlify.app/",
+        url: "https://armate-los-teams.netlify.app/",
+        repository: "https://github.com/IgnacioGarciaReyna/panyqueso",
       },
       {
         id: "1",
