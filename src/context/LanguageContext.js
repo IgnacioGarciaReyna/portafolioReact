@@ -58,6 +58,16 @@ const translations = {
     projectsData: [
       {
         id: "0",
+        title: "Armate los Teams",
+        img: "./armatelosteams-home2.png",
+        description:
+          "Aplicación para armar equipos de futbol en base a la habilidad de cada jugador.",
+        technology: "React | TypeScript | Material UI",
+        url: "",
+        repository: "https://armate-los-teams.netlify.app/",
+      },
+      {
+        id: "1",
         title: "Cinema Paradiso Trailers",
         img: "./movies-home.png",
         description:
@@ -67,7 +77,7 @@ const translations = {
         repository: "https://github.com/IgnacioGarciaReyna/peliculasReact.git",
       },
       {
-        id: "1",
+        id: "2",
         title: "PokeApi",
         img: "./pokeapi-home.png",
         description:
@@ -77,7 +87,7 @@ const translations = {
         repository: "https://github.com/IgnacioGarciaReyna/PokedexAngular",
       },
       {
-        id: "2",
+        id: "3",
         title: "Portafolio",
         img: "./portafolio-home.png",
         description:
@@ -265,6 +275,16 @@ const translations = {
     projectsData: [
       {
         id: "0",
+        title: "Build the Teams",
+        img: "./armatelosteams-home2.png",
+        description:
+          "App to build football teams based on the skills of each player.",
+        technology: "React | TypeScript | Material UI",
+        url: "",
+        repository: "https://armate-los-teams.netlify.app/",
+      },
+      {
+        id: "1",
         title: "Cinema Paradiso Trailers",
         img: "./movies-home.png",
         description:
@@ -274,7 +294,7 @@ const translations = {
         repository: "https://github.com/IgnacioGarciaReyna/peliculasReact.git",
       },
       {
-        id: "1",
+        id: "2",
         title: "PokeApi",
         img: "./pokeapi-home.png",
         description:
@@ -284,7 +304,7 @@ const translations = {
         repository: "https://github.com/IgnacioGarciaReyna/PokedexAngular",
       },
       {
-        id: "2",
+        id: "3",
         title: "Portfolio",
         img: "./portafolio-home.png",
         description: "Personal page created to save and show my projects.",
